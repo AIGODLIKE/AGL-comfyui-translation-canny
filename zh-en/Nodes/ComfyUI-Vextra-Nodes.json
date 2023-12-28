@@ -1,0 +1,205 @@
+{
+    "Flatten Colors": {
+        "title": "平化颜色Flatten Colors",
+        "inputs": {
+            "images": "图像images"
+        },
+        "widgets": {
+            "number_of_colors": "颜色数量number_of_colors"
+        },
+        "outputs": {
+            "IMAGE": "图像IMAGE"
+        }
+    },
+    "Add Text To Image": {
+        "title": "添加字符到图像Add Text To Image",
+        "inputs": {
+            "images": "图像images"
+        },
+        "widgets": {
+            "font_ttf": "字体font_ttf",
+            "size": "字号size",
+            "x": "Xx",
+            "y": "Yy",
+            "text": "文本text",
+            "color": "颜色color",
+            "anchor": "锚点anchor",
+                "Bottom Left Corner": "左下角Bottom Left Corner",
+                "Center": "中心Center",
+            "rotate": "旋转rotate",
+            "color_mode": "颜色模式color_mode"
+        },
+        "outputs": {
+            "IMAGE": "图像IMAGE"
+        }
+    },
+    "Generate Noise Image": {
+        "title": "生成噪波图像Generate Noise Image",
+        "widgets": {
+            "mode": "模式mode",
+            "noise_scale": "噪波缩放noise_scale",
+            "width": "宽度width",
+            "height": "高度height",
+            "batch_size": "批次大小batch_size"
+        },
+        "outputs": {
+            "IMAGE": "图像IMAGE"
+        }
+    },
+    "GlitchThis Effect": {
+        "title": "故障化GlitchThis Effect",
+        "inputs": {
+            "images": "图像images"
+        },
+        "widgets": {
+            "glitch_amount": "故障数量glitch_amount",
+            "color_offset": "颜色偏移color_offset",
+            "scan_lines": "扫描线scan_lines",
+                "Disable": "关闭Disable",
+                "Enable": "开启Enable",
+            "seed": "随机种seed",
+            "control_after_generate": "运行后操作control_after_generate",
+                "fixed": "固定fixed",
+                "increment": "增加increment",
+                "decrement": "减少decrement",
+                "randomize": "随机randomize"
+        },
+        "outputs": {
+            "IMAGE": "图像IMAGE"
+        }
+    },
+    "Hue Rotation": {
+        "title": "色相旋转Hue Rotation",
+        "inputs": {
+            "images": "图像images"
+        },
+        "widgets": {
+            "hue_rotation": "旋转hue_rotation"
+        },
+        "outputs": {
+            "IMAGE": "图像IMAGE"
+        }
+    },
+    "Load Picture Index": {
+        "title": "加载索引图像Load Picture Index",
+        "inputs": {
+            "images": "图像images"
+        },
+        "widgets": {
+            "path": "路径path",
+            "index": "索引index"
+        },
+        "outputs": {
+            "IMAGE": "图像IMAGE"
+        }
+    },
+    "Apply Instagram Filter": {
+        "title": "Ins风滤镜Apply Instagram Filter",
+        "inputs": {
+            "images": "图像images"
+        },
+        "widgets": {
+            "instagram_filter": "滤镜instagram_filter"
+        },
+        "outputs": {
+            "IMAGE": "图像IMAGE"
+        }
+    },
+    "Pixel Sort": {
+        "title": "像素重排序Pixel Sort",
+        "inputs": {
+            "images": "图像images",
+            "mask_image": "遮罩图像mask_image",
+            "interval_image": "间隔定义图像interval_image"
+        },
+        "widgets": {
+            "character_length": "特性长度character_length",
+            "randomness": "随机randomness",
+            "sorting_function": "排序方式sorting_function",
+                "lightness": "明度lightness",
+                "hue": "色相hue",
+                "saturation": "饱和度saturation",
+                "intensity": "强度intensity",
+                "minimum": "最低minimum",
+            "interval_function": "间隔方式interval_function",
+                "threshold": "阈值threshold",
+                "random": "随机random",
+                "edges": "边缘edges",
+                "waves": "波纹waves",
+                "file": "图像file",
+                "file-edges": "图像边缘file-edges",
+                "none": "无none",
+            "lower_threshold": "低阈值lower_threshold",
+            "upper_threshold": "高阈值upper_threshold",
+            "angle": "旋转角度angle"
+        },
+        "outputs": {
+            "IMAGE": "图像IMAGE"
+        }
+    },
+    "Play Sound At Execution": {
+        "title": "运行时播放声音Play Sound At Execution",
+        "inputs": {
+            "images": "图像images"
+        },
+        "widgets": {
+            "path": "路径path",
+            "volume": "音量volume"
+        },
+        "outputs": {
+            "IMAGE": "图像IMAGE"
+        }
+    },
+    "Prettify Prompt Using distilgpt2": {
+        "title": "GPT2优化提示词Prettify Prompt Using distilgpt2",
+        "inputs": {
+            "images": "图像images"
+        },
+        "widgets": {
+            "temperature": "温度temperature",
+            "top_k": "候选集长度top_k",
+            "max_length": "最大长度max_length",
+            "repetition_penalty": "重复惩罚repetition_penalty",
+            "seed": "随机种seed",
+            "control_after_generate": "运行后操作control_after_generate",
+                "fixed": "固定fixed",
+                "increment": "增加increment",
+                "decrement": "减少decrement",
+                "randomize": "随机randomize",
+            "prompt": "提示词prompt",
+            "Prompt": "提示词Prompt"
+        },
+        "outputs": {
+            "IMAGE": "图像IMAGE",
+            "STRING": "字符串STRING"
+        }
+    },
+    "Create Solid Color": {
+        "title": "创建纯色Create Solid Color",
+        "inputs": {
+            "images": "图像images"
+        },
+        "widgets": {
+            "width": "宽度width",
+            "height": "高度height",
+            "color": "颜色color",
+            "batch_size": "批次大小batch_size",
+            "color_mode": "颜色模式color_mode"
+        },
+        "outputs": {
+            "IMAGE": "图像IMAGE"
+        }
+    },
+    "Swap Color Mode": {
+        "title": "切换颜色模式Swap Color Mode",
+        "inputs": {
+            "images": "图像images"
+        },
+        "widgets": {
+            "color_mode": "颜色模式color_mode"
+        },
+        "outputs": {
+            "IMAGE": "图像IMAGE"
+        }
+    }
+}

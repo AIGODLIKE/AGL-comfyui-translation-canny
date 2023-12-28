@@ -1,0 +1,45 @@
+{
+    "ReActorFaceSwap": {
+        "title": "ReActor换脸ReActorFaceSwap",
+        "inputs": {
+            "input_image": "目标图像input_image",
+            "source_image": "源图像source_image",
+            "face_model": "面部模型face_model"
+        },
+        "widgets": {
+            "enabled": "启用enabled",
+            "swap_model": "置换模型swap_model",
+            "facedetection": "检测模型facedetection",
+            "face_restore_model": "修复模型face_restore_model",
+            "detect_gender_source": "检测源性别detect_gender_source",
+            "detect_gender_input": "检测目标性别detect_gender_input",
+            "source_faces_index": "源面部索引source_faces_index",
+            "input_faces_index": "目标面部索引input_faces_index",
+            "console_log_level": "控制台日志数量console_log_level"
+        },
+        "outputs": {
+            "IMAGE": "图像IMAGE",
+            "FACE_MODEL": "面部模型FACE_MODEL"
+        }
+    },
+    "ReActorLoadFaceModel": {
+        "title": "ReActor加载面部模型ReActorLoadFaceModel",
+        "widgets": {
+            "face_model": "面部模型face_model"
+        },
+        "outputs": {
+            "FACE_MODEL": "面部模型FACE_MODEL"
+        }
+    },
+    "ReActorSaveFaceModel": {
+        "title": "ReActor保存面部模型ReActorSaveFaceModel",
+        "inputs": {
+            "image": "图像image",
+            "face_model": "面部模型face_model"
+        },
+        "widgets": {
+            "save_mode": "保存save_mode",
+            "face_model_name": "模型名称face_model_name"
+        }
+    }
+}

@@ -1,0 +1,377 @@
+{
+    "Context Big (rgthree)": {
+        "title": "上下文(大型)Context Big (rgthree)",
+        "inputs": {
+            "base_ctx": "上下文base_ctx",
+            "model": "模型model",
+            "clip": "CLIPclip",
+            "vae": "VAEvae",
+            "positive": "正面条件positive",
+            "negative": "负面条件negative",
+            "latent": "Latentlatent",
+            "images": "图像images",
+            "mask": "遮罩mask",
+            "control_net": "ControlNetcontrol_net"
+        },
+        "widgets": {
+            "seed": "随机种seed",
+            "steps": "步数steps",
+            "step_refiner": "优化步数step_refiner",
+            "cfg": "CFGcfg",
+            "ckpt_name": "模型名称ckpt_name",
+            "sampler": "采样器sampler",
+            "scheduler": "调度器scheduler",
+            "clip_width": "CLIP宽度clip_width",
+            "clip_height": "CLIP高度clip_height",
+            "text_pos_g": "正面文本Gtext_pos_g",
+            "text_pos_l": "正面文本Ltext_pos_l",
+            "text_neg_g": "负面文本Gtext_neg_g",
+            "text_neg_l": "负面文本Ltext_neg_l"
+        },
+        "outputs": {
+            "CONTEXT": "上下文CONTEXT",
+            "MODEL": "模型MODEL",
+            "CLIP": "CLIPCLIP",
+            "VAE": "VAEVAE",
+            "POSITIVE": "正面条件POSITIVE",
+            "NEGATIVE": "负面条件NEGATIVE",
+            "LATENT": "LatentLATENT",
+            "IMAGE": "图像IMAGE",
+            "STEPS": "步数STEPS",
+            "STEP_REFINER": "优化步数STEP_REFINER",
+            "CFG": "CFGCFG"
+        }
+    },
+    "Context (rgthree)": {
+        "title": "上下文Context (rgthree)",
+        "inputs": {
+            "base_ctx": "上下文base_ctx",
+            "model": "模型model",
+            "clip": "CLIPclip",
+            "vae": "VAEvae",
+            "positive": "正面条件positive",
+            "negative": "负面条件negative",
+            "latent": "Latentlatent",
+            "images": "图像images"
+        },
+        "widgets": {
+            "seed": "随机种seed"
+        },
+        "outputs": {
+            "CONTEXT": "上下文CONTEXT",
+            "MODEL": "模型MODEL",
+            "CLIP": "CLIPCLIP",
+            "VAE": "VAEVAE",
+            "POSITIVE": "正面条件POSITIVE",
+            "NEGATIVE": "负面条件NEGATIVE",
+            "LATENT": "LatentLATENT",
+            "IMAGE": "图像IMAGE",
+            "SEED": "随机种SEED"
+        }
+    },
+    "Context Switch (rgthree)": {
+        "title": "上下文切换Context Switch (rgthree)",
+        "inputs": {
+            "ctx_01": "上下文_01ctx_01",
+            "ctx_02": "上下文_02ctx_02",
+            "ctx_03": "上下文_03ctx_03",
+            "ctx_04": "上下文_04ctx_04",
+            "ctx_05": "上下文_05ctx_05"
+        },
+        "outputs": {
+            "CONTEXT": "上下文CONTEXT",
+            "MODEL": "模型MODEL",
+            "CLIP": "CLIPCLIP",
+            "VAE": "VAEVAE",
+            "POSITIVE": "正面条件POSITIVE",
+            "NEGATIVE": "负面条件NEGATIVE",
+            "LATENT": "LatentLATENT",
+            "IMAGE": "图像IMAGE",
+            "SEED": "随机种SEED"
+        }
+    },
+    "Context Switch Big (rgthree)": {
+        "title": "上下文切换(大型)Context Switch Big (rgthree)",
+        "inputs": {
+            "ctx_01": "上下文_01ctx_01",
+            "ctx_02": "上下文_02ctx_02",
+            "ctx_03": "上下文_03ctx_03",
+            "ctx_04": "上下文_04ctx_04",
+            "ctx_05": "上下文_05ctx_05"
+        },
+        "outputs": {
+            "CONTEXT": "上下文CONTEXT",
+            "MODEL": "模型MODEL",
+            "CLIP": "CLIPCLIP",
+            "VAE": "VAEVAE",
+            "POSITIVE": "正面条件POSITIVE",
+            "NEGATIVE": "负面条件NEGATIVE",
+            "LATENT": "LatentLATENT",
+            "IMAGE": "图像IMAGE",
+            "STEPS": "步数STEPS",
+            "SEED": "随机种SEED",
+            "STEP_REFINER": "优化步数STEP_REFINER",
+            "CFG": "CFGCFG",
+            "CKPT_NAME": "模型名称CKPT_NAME",
+            "SAMPLER": "采样器SAMPLER",
+            "SCHEDULER": "调度器SCHEDULER",
+            "CLIP_WIDTH": "CLIP宽度CLIP_WIDTH",
+            "CLIP_HEIGHT": "CLIP高度CLIP_HEIGHT",
+            "TEXT_POS_G": "正面文本GTEXT_POS_G",
+            "TEXT_POS_L": "正面文本LTEXT_POS_L",
+            "TEXT_NEG_G": "负面文本GTEXT_NEG_G",
+            "TEXT_NEG_L": "负面文本LTEXT_NEG_L",
+            "MASK": "遮罩MASK",
+            "CONTROL_NET": "ControlNetCONTROL_NET"
+        }
+    },
+
+
+
+    "Display Int (rgthree)": {
+        "title": "显示整数Display Int (rgthree)",
+        "widgets": {
+            "input": "输入input"
+        }
+    },
+    "Display Any (rgthree)": {
+        "title": "显示任意Display Any (rgthree)",
+        "inputs": {
+            "source": "输入source"
+        }
+    },
+    
+    
+
+    "Lora Loader Stack (rgthree)": {
+        "title": "LoRA堆加载器Lora Loader Stack (rgthree)",
+        "inputs": {
+            "model": "模型model",
+            "clip": "CLIPclip"
+        },
+        "widgets": {
+            "lora_01": "LoRA_01lora_01",
+            "lora_02": "LoRA_02lora_02",
+            "lora_03": "LoRA_03lora_03",
+            "lora_04": "LoRA_04lora_04",
+            "strength_01": "强度_01strength_01",
+            "strength_02": "强度_02strength_02",
+            "strength_03": "强度_03strength_03",
+            "strength_04": "强度_04strength_04"
+        },
+        "outputs": {
+            "MODEL": "模型MODEL",
+            "CLIP": "CLIPCLIP"
+        }
+    },
+    "Seed (rgthree)": {
+        "title": "随机种Seed (rgthree)",
+        "widgets": {
+            "seed": "随机种seed"
+        },
+        "outputs": {
+            "SEED": "随机种SEED"
+        }
+    },
+    "Image Inset Crop (rgthree)": {
+        "title": "图像嵌入裁剪Image Inset Crop (rgthree)",
+        "inputs": {
+            "image": "图像image"
+        },
+        "widgets": {
+            "measurement": "模式measurement",
+            "bottom": "下bottom",
+            "top": "上top",
+            "left": "左left",
+            "right": "右right"
+        },
+        "outputs": {
+            "IMAGE": "图像IMAGE"
+        }
+    },
+    "Power Prompt (rgthree)": {
+        "title": "提示词Power Prompt (rgthree)",
+        "inputs": {
+            "opt_model": "模型opt_model",
+            "opt_clip": "CLIPopt_clip"
+        },
+        "widgets": {
+            "prompt": "提示词prompt",
+            "insert_lora": "插入LoRAinsert_lora",
+            "insert_embedding": "插入embeddinginsert_embedding",
+            "insert_saved": "插入自定义insert_saved"
+        },
+        "outputs": {
+            "CONDITIONING": "条件CONDITIONING",
+            "MODEL": "模型MODEL",
+            "CLIP": "CLIPCLIP",
+            "TEXT": "文本TEXT"
+        }
+    },
+    "Power Prompt - Simple (rgthree)": {
+        "title": "提示词(简易)Power Prompt - Simple (rgthree)",
+        "inputs": {
+            "opt_clip": "CLIPopt_clip"
+        },
+        "widgets": {
+            "prompt": "提示词prompt",
+            "insert_embedding": "插入embeddinginsert_embedding",
+            "insert_saved": "插入自定义insert_saved"
+        },
+        "outputs": {
+            "CONDITIONING": "条件CONDITIONING",
+            "TEXT": "文本TEXT"
+        }
+    },
+    "KSampler Config (rgthree)": {
+        "title": "K采样器设置KSampler Config (rgthree)",
+        "widgets": {
+            "steps_total": "总步数steps_total",
+            "refiner_step": "优化步数refiner_step",
+            "cfg": "CFGcfg",
+            "sampler": "采样器sampler",
+            "scheduler": "调度器scheduler"
+        },
+        "outputs": {
+            "STEPS": "步数STEPS",
+            "REFINER_STEP": "优化步数REFINER_STEP",
+            "CFG": "CFGCFG"
+        }
+    },
+    "SDXL Empty Latent Image (rgthree)": {
+        "title": "SDXL空Latent图像SDXL Empty Latent Image (rgthree)",
+        "widgets": {
+            "dimensions": "尺寸dimensions",
+            "clip_scale": "CLIP缩放clip_scale",
+            "batch_size": "批次大小batch_size"
+        },
+        "outputs": {
+            "LATENT": "LatentLATENT",
+            "CLIP_WIDTH": "CLIP宽度CLIP_WIDTH",
+            "CLIP_HEIGHT": "CLIP高度CLIP_HEIGHT"
+        }
+    },
+    "SDXL Power Prompt - Positive (rgthree)": {
+        "title": "SDXL提示词(正面)SDXL Power Prompt - Positive (rgthree)",
+        "inputs": {
+            "opt_model": "模型opt_model",
+            "opt_clip": "CLIPopt_clip"
+        },
+        "widgets": {
+            "prompt_g": "提示词Gprompt_g",
+            "prompt_l": "提示词Lprompt_l",
+            "opt_clip_width": "CLIP宽度opt_clip_width",
+            "opt_clip_height": "CLIP高度opt_clip_height",
+            "insert_lora": "插入LoRAinsert_lora",
+            "insert_embedding": "插入embeddinginsert_embedding",
+            "insert_saved": "插入自定义insert_saved",
+            "target_width": "目标宽度target_width",
+            "target_height": "目标高度target_height",
+            "crop_width": "裁剪宽度crop_width",
+            "crop_height": "裁剪高度crop_height"
+        },
+        "outputs": {
+            "CONDITIONING": "条件CONDITIONING",
+            "MODEL": "模型MODEL",
+            "CLIP": "CLIPCLIP",
+            "TEXT_G": "文本GTEXT_G",
+            "TEXT_L": "文本LTEXT_L"
+        }
+    },
+    "SDXL Power Prompt - Simple / Negative (rgthree)": {
+        "title": "SDXL提示词(简易/负面)SDXL Power Prompt - Simple / Negative (rgthree)",
+        "inputs": {
+            "opt_clip": "CLIPopt_clip"
+        },
+        "widgets": {
+            "prompt_g": "提示词Gprompt_g",
+            "prompt_l": "提示词Lprompt_l",
+            "opt_clip_width": "CLIP宽度opt_clip_width",
+            "opt_clip_height": "CLIP高度opt_clip_height",
+            "insert_lora": "插入LoRAinsert_lora",
+            "insert_embedding": "插入embeddinginsert_embedding",
+            "insert_saved": "插入自定义insert_saved",
+            "target_width": "目标宽度target_width",
+            "target_height": "目标高度target_height",
+            "crop_width": "裁剪宽度crop_width",
+            "crop_height": "裁剪高度crop_height"
+        },
+        "outputs": {
+            "CONDITIONING": "条件CONDITIONING",
+            "TEXT_G": "文本GTEXT_G",
+            "TEXT_L": "文本LTEXT_L"
+        }
+    },
+
+
+
+    "Any Switch (rgthree)": {
+        "title": "任意切换Any Switch (rgthree)",
+        "inputs": {
+            "any_01": "输入_01any_01",
+            "any_02": "输入_02any_02",
+            "any_03": "输入_03any_03",
+            "any_04": "输入_04any_04",
+            "any_05": "输入_05any_05"
+        },
+        "outputs": {
+            "*": "输出*"
+        }
+    },
+    "Context Merge (rgthree)": {
+        "title": "上下文融合Context Merge (rgthree)",
+        "inputs": {
+            "ctx_01": "上下文_01ctx_01",
+            "ctx_02": "上下文_02ctx_02",
+            "ctx_03": "上下文_03ctx_03",
+            "ctx_04": "上下文_04ctx_04",
+            "ctx_05": "上下文_05ctx_05"
+        },
+        "outputs": {
+            "CONTEXT": "上下文CONTEXT",
+            "MODEL": "模型MODEL",
+            "CLIP": "CLIPCLIP",
+            "VAE": "VAEVAE",
+            "POSITIVE": "正面条件POSITIVE",
+            "NEGATIVE": "负面条件NEGATIVE",
+            "LATENT": "LatentLATENT",
+            "IMAGE": "图像IMAGE",
+            "STEPS": "步数STEPS"
+        }
+    },
+    "Context Merge Big (rgthree)": {
+        "title": "上下文融合(大型)Context Merge Big (rgthree)",
+        "inputs": {
+            "ctx_01": "上下文_01ctx_01",
+            "ctx_02": "上下文_02ctx_02",
+            "ctx_03": "上下文_03ctx_03",
+            "ctx_04": "上下文_04ctx_04",
+            "ctx_05": "上下文_05ctx_05"
+        },
+        "outputs": {
+            "CONTEXT": "上下文CONTEXT",
+            "MODEL": "模型MODEL",
+            "CLIP": "CLIPCLIP",
+            "VAE": "VAEVAE",
+            "POSITIVE": "正面条件POSITIVE",
+            "NEGATIVE": "负面条件NEGATIVE",
+            "LATENT": "LatentLATENT",
+            "IMAGE": "图像IMAGE",
+            "STEPS": "步数STEPS",
+            "SEED": "随机种SEED",
+            "STEP_REFINER": "优化步数STEP_REFINER",
+            "CFG": "CFGCFG",
+            "CKPT_NAME": "模型名称CKPT_NAME",
+            "SAMPLER": "采样器SAMPLER",
+            "SCHEDULER": "调度器SCHEDULER",
+            "CLIP_WIDTH": "CLIP宽度CLIP_WIDTH",
+            "CLIP_HEIGHT": "CLIP高度CLIP_HEIGHT",
+            "TEXT_POS_G": "正面文本GTEXT_POS_G",
+            "TEXT_POS_L": "正面文本LTEXT_POS_L",
+            "TEXT_NEG_G": "负面文本GTEXT_NEG_G",
+            "TEXT_NEG_L": "负面文本LTEXT_NEG_L",
+            "MASK": "遮罩MASK",
+            "CONTROL_NET": "ControlNetCONTROL_NET"
+        }
+    }
+}

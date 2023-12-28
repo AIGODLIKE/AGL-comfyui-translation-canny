@@ -1,0 +1,77 @@
+{
+    "ZFPreviewText": {
+        "title": "预览文本ZFPreviewText",
+        "inputs": {
+            "text": "文本text"
+        },
+        "outputs": {
+            "text": "文本text",
+            "unique_id": "唯一IDunique_id"
+        }
+    },
+    "ZFPreviewTextMultiline": {
+        "title": "预览文本 (多行)ZFPreviewTextMultiline",
+        "inputs": {
+            "text": "文本text"
+        },
+        "outputs": {
+            "text": "文本text",
+            "unique_id": "唯一IDunique_id"
+        }
+    },
+    "ZFTextTranslation": {
+        "title": "文本翻译ZFTextTranslation",
+        "inputs": {
+            "text": "文本text"
+        },
+        "widgets": {
+            "platform": "平台platform",
+            "source": "源source",
+            "target": "目标target"
+        },
+        "outputs": {
+            "text": "文本text",
+            "platform": "平台platform",
+            "source": "源source",
+            "target": "目标target"
+        }
+    },
+    "ZFLoadImagePath": {
+        "title": "加载图像 (路径)ZFLoadImagePath",
+        "inputs": {
+            "default_image": "默认图像default_image"
+        },
+        "widgets": {
+            "image_path": "图像路径image_path",
+            "RGBA": "RGBARGBA"
+        },
+        "outputs": {
+            "image": "图像image",
+            "mask": "遮罩mask",
+            "filename": "图像文件名filename"
+        }
+    },
+    "ZFShareScreen": {
+        "title": "分享屏幕ZFShareScreen",
+        "inputs": {
+            "default_image": "默认图像default_image"
+        },
+        "widgets": {
+            "RGBA": "RGBARGBA",
+            "prompt": "提示词prompt",
+            "weight": "权重weight",
+            "seed": "随机种seed",
+            "control_after_generate": "运行后操作control_after_generate",
+                "fixed": "固定fixed",
+                "increment": "增加increment",
+                "decrement": "减少decrement",
+                "randomize": "随机randomize"
+        },
+        "outputs": {
+            "image": "图像image",
+            "prompt": "提示词prompt",
+            "weight": "权重weight",
+            "seed": "随机种seed"
+        }
+    }
+}

@@ -1,0 +1,90 @@
+{
+    "UltimateSDUpscale": {
+        "title": "SD放大UltimateSDUpscale",
+        "inputs": {
+            "image": "图像image",
+            "model": "模型model",
+            "positive": "正面条件positive",
+            "negative": "负面条件negative",
+            "vae": "VAEvae",
+            "upscale_model": "放大模型upscale_model"
+        },
+        "widgets": {
+            "upscale_by": "放大系数upscale_by",
+            "seed": "随机种seed",
+            "control_after_generate": "运行后操作control_after_generate",
+                "fixed": "固定fixed",
+                "increment": "增加increment",
+                "decrement": "减少decrement",
+                "randomize": "随机randomize",
+            "steps": "步数steps",
+            "cfg": "CFGcfg",
+            "sampler_name": "采样器sampler_name",
+            "scheduler": "调度器scheduler",
+            "denoise": "降噪denoise",
+            "mode_type": "模式类型mode_type",
+                "Linear": "线性Linear",
+                "Chess": "棋盘格Chess",
+                "None": "无None",
+            "tile_width": "分块宽度tile_width",
+            "tile_height": "分块高度tile_height",
+            "mask_blur": "模糊mask_blur",
+            "tile_padding": "分块分区tile_padding",
+            "seam_fix_mode": "接缝修复模式seam_fix_mode",
+                "Band Pass": "仅接触Band Pass",
+                "Half Tile": "偏移半块Half Tile",
+                "Half Tile + Intersections": "偏移半块+径向交叉Half Tile + Intersections",
+            "seam_fix_denoise": "接缝修复降噪seam_fix_denoise",
+            "seam_fix_width": "接缝修复宽度seam_fix_width",
+            "seam_fix_mask_blur": "接缝修复模糊seam_fix_mask_blur",
+            "seam_fix_padding": "接缝修复分区seam_fix_padding",
+            "force_uniform_tiles": "强制统一分块force_uniform_tiles"
+        },
+        "outputs": {
+            "IMAGE": "图像IMAGE"
+        }
+    },
+    "UltimateSDUpscaleNoUpscale": {
+        "title": "SD放大(不放大)UltimateSDUpscaleNoUpscale",
+        "inputs": {
+            "upscaled_image": "放大图像upscaled_image",
+            "model": "模型model",
+            "positive": "正面条件positive",
+            "negative": "负面条件negative",
+            "vae": "VAEvae"
+        },
+        "widgets": {
+            "seed": "随机种seed",
+            "control_after_generate": "运行后操作control_after_generate",
+                "fixed": "固定fixed",
+                "increment": "增加increment",
+                "decrement": "减少decrement",
+                "randomize": "随机randomize",
+            "steps": "步数steps",
+            "cfg": "CFGcfg",
+            "sampler_name": "采样器sampler_name",
+            "scheduler": "调度器scheduler",
+            "denoise": "降噪denoise",
+            "mode_type": "模式类型mode_type",
+                "Linear": "线性Linear",
+                "Chess": "棋盘格Chess",
+                "None": "无None",
+            "tile_width": "分块宽度tile_width",
+            "tile_height": "分块高度tile_height",
+            "mask_blur": "模糊mask_blur",
+            "tile_padding": "分块分区tile_padding",
+            "seam_fix_mode": "接缝修复模式seam_fix_mode",
+                "Band Pass": "仅接触Band Pass",
+                "Half Tile": "偏移半块Half Tile",
+                "Half Tile + Intersections": "偏移半块+径向交叉Half Tile + Intersections",
+            "seam_fix_denoise": "接缝修复降噪seam_fix_denoise",
+            "seam_fix_width": "接缝修复宽度seam_fix_width",
+            "seam_fix_mask_blur": "接缝修复模糊seam_fix_mask_blur",
+            "seam_fix_padding": "接缝修复分区seam_fix_padding",
+            "force_uniform_tiles": "强制统一分块force_uniform_tiles"
+        },
+        "outputs": {
+            "IMAGE": "图像IMAGE"
+        }
+    }
+}

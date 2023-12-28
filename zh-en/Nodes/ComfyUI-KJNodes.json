@@ -1,0 +1,890 @@
+{
+    "ConditioningMultiCombine": {
+        "title": "条件合并(多重)ConditioningMultiCombine",
+        "inputs": {
+            "conditioning_1": "条件_1conditioning_1",
+            "conditioning_2": "条件_2conditioning_2",
+            "conditioning_3": "条件_3conditioning_3",
+            "conditioning_4": "条件_4conditioning_4",
+            "conditioning_5": "条件_5conditioning_5",
+            "conditioning_6": "条件_6conditioning_6",
+            "conditioning_7": "条件_7conditioning_7",
+            "conditioning_8": "条件_8conditioning_8",
+            "conditioning_9": "条件_9conditioning_9",
+            "conditioning_10": "条件_10conditioning_10",
+            "conditioning_11": "条件_11conditioning_11",
+            "conditioning_12": "条件_12conditioning_12",
+            "conditioning_13": "条件_13conditioning_13",
+            "conditioning_14": "条件_14conditioning_14",
+            "conditioning_15": "条件_15conditioning_15",
+            "conditioning_16": "条件_16conditioning_16",
+            "conditioning_17": "条件_17conditioning_17",
+            "conditioning_18": "条件_18conditioning_18",
+            "conditioning_19": "条件_19conditioning_19",
+            "conditioning_20": "条件_20conditioning_20"
+        },
+        "widgets": {
+            "inputcount": "输入数量inputcount",
+            "Start mic capture": "开始捕捉麦克风Start mic capture",
+            "Stop mic capture": "停止捕捉麦克风Stop mic capture"
+        },
+        "outputs": {
+            "combined": "条件combined",
+            "inputcount": "输入数量inputcount"
+        }
+    },
+    "ConditioningSetMaskAndCombine": {
+        "title": "条件设置遮罩(合并2)ConditioningSetMaskAndCombine",
+        "inputs": {
+            "positive_1": "正面条件_1positive_1",
+            "negative_1": "负面条件_1negative_1",
+            "positive_2": "正面条件_2positive_2",
+            "negative_2": "负面条件_2negative_2",
+            "mask_1": "遮罩_1mask_1",
+            "mask_2": "遮罩_2mask_2"
+        },
+        "widgets": {
+            "mask_1_strength": "遮罩_1_强度mask_1_strength",
+            "mask_2_strength": "遮罩_2_强度mask_2_strength",
+            "set_cond_area": "设置条件区域set_cond_area",
+                "default": "默认default",
+                "mask bounds": "遮罩边界mask bounds"
+        },
+        "outputs": {
+            "combined_positive": "正面条件combined_positive",
+            "combined_negative": "负面条件combined_negative"
+        }
+    },
+    "ConditioningSetMaskAndCombine3": {
+        "title": "条件设置遮罩(合并3)ConditioningSetMaskAndCombine3",
+        "inputs": {
+            "positive_1": "正面条件_1positive_1",
+            "negative_1": "负面条件_1negative_1",
+            "positive_2": "正面条件_2positive_2",
+            "negative_2": "负面条件_2negative_2",
+            "positive_3": "正面条件_3positive_3",
+            "negative_3": "负面条件_3negative_3",
+            "mask_1": "遮罩_1mask_1",
+            "mask_2": "遮罩_2mask_2",
+            "mask_3": "遮罩_3mask_3"
+        },
+        "widgets": {
+            "mask_1_strength": "遮罩_1_强度mask_1_strength",
+            "mask_2_strength": "遮罩_2_强度mask_2_strength",
+            "mask_3_strength": "遮罩_3_强度mask_3_strength",
+            "set_cond_area": "设置条件区域set_cond_area",
+                "default": "默认default",
+                "mask bounds": "遮罩边界mask bounds"
+        },
+        "outputs": {
+            "combined_positive": "正面条件combined_positive",
+            "combined_negative": "负面条件combined_negative"
+        }
+    },
+    "ConditioningSetMaskAndCombine4": {
+        "title": "条件设置遮罩(合并4)ConditioningSetMaskAndCombine4",
+        "inputs": {
+            "positive_1": "正面条件_1positive_1",
+            "negative_1": "负面条件_1negative_1",
+            "positive_2": "正面条件_2positive_2",
+            "negative_2": "负面条件_2negative_2",
+            "positive_3": "正面条件_3positive_3",
+            "negative_3": "负面条件_3negative_3",
+            "positive_4": "正面条件_4positive_4",
+            "negative_4": "负面条件_4negative_4",
+            "mask_1": "遮罩_1mask_1",
+            "mask_2": "遮罩_2mask_2",
+            "mask_3": "遮罩_3mask_3",
+            "mask_4": "遮罩_4mask_4"
+        },
+        "widgets": {
+            "mask_1_strength": "遮罩_1_强度mask_1_strength",
+            "mask_2_strength": "遮罩_2_强度mask_2_strength",
+            "mask_3_strength": "遮罩_3_强度mask_3_strength",
+            "mask_4_strength": "遮罩_4_强度mask_4_strength",
+            "set_cond_area": "设置条件区域set_cond_area",
+                "default": "默认default",
+                "mask bounds": "遮罩边界mask bounds"
+        },
+        "outputs": {
+            "combined_positive": "正面条件combined_positive",
+            "combined_negative": "负面条件combined_negative"
+        }
+    },
+    "ConditioningSetMaskAndCombine5": {
+        "title": "条件设置遮罩(合并5)ConditioningSetMaskAndCombine5",
+        "inputs": {
+            "positive_1": "正面条件_1positive_1",
+            "negative_1": "负面条件_1negative_1",
+            "positive_2": "正面条件_2positive_2",
+            "negative_2": "负面条件_2negative_2",
+            "positive_3": "正面条件_3positive_3",
+            "negative_3": "负面条件_3negative_3",
+            "positive_4": "正面条件_4positive_4",
+            "negative_4": "负面条件_4negative_4",
+            "positive_5": "正面条件_5positive_5",
+            "negative_5": "负面条件_5negative_5",
+            "mask_1": "遮罩_1mask_1",
+            "mask_2": "遮罩_2mask_2",
+            "mask_3": "遮罩_3mask_3",
+            "mask_4": "遮罩_4mask_4",
+            "mask_5": "遮罩_5mask_5"
+        },
+        "widgets": {
+            "mask_1_strength": "遮罩_1_强度mask_1_strength",
+            "mask_2_strength": "遮罩_2_强度mask_2_strength",
+            "mask_3_strength": "遮罩_3_强度mask_3_strength",
+            "mask_4_strength": "遮罩_4_强度mask_4_strength",
+            "mask_5_strength": "遮罩_5_强度mask_5_strength",
+            "set_cond_area": "设置条件区域set_cond_area",
+                "default": "默认default",
+                "mask bounds": "遮罩边界mask bounds"
+        },
+        "outputs": {
+            "combined_positive": "正面条件combined_positive",
+            "combined_negative": "负面条件combined_negative"
+        }
+    },
+
+
+
+    "CreateGradientMask": {
+        "title": "渐变遮罩CreateGradientMask",
+        "widgets": {
+            "invert": "反转invert",
+            "frames": "帧数frames",
+            "width": "宽度width",
+            "height": "高度height"
+        },
+        "outputs": {
+            "MASK": "遮罩MASK"
+        }
+    },
+    "CreateTextMask": {
+        "title": "文本遮罩CreateTextMask",
+        "widgets": {
+            "invert": "反转invert",
+            "frames": "帧数frames",
+            "text_x": "位置_Xtext_x",
+            "text_y": "位置_Ytext_y",
+            "font_size": "字体大小font_size",
+            "font_color": "字体颜色font_color",
+            "text": "文本text",
+            "font_path": "字体路径font_path",
+            "width": "宽度width",
+            "height": "高度height",
+            "start_rotation": "起始旋转start_rotation",
+            "end_rotation": "最终旋转end_rotation"
+        },
+        "outputs": {
+            "IMAGE": "图像IMAGE",
+            "MASK": "遮罩MASK"
+        }
+    },
+    "CreateAudioMask": {
+        "title": "音频遮罩CreateAudioMask",
+        "widgets": {
+            "invert": "反转invert",
+            "frames": "帧数frames",
+            "scale": "缩放scale",
+            "audio_path": "音频路径audio_path",
+            "width": "宽度width",
+            "height": "高度height"
+        }
+    },
+    "CreateFadeMask": {
+        "title": "渐隐遮罩CreateFadeMask",
+        "widgets": {
+            "invert": "反转invert",
+            "frames": "帧数frames",
+            "width": "宽度width",
+            "height": "高度height",
+            "interpolation": "插值方式interpolation",
+            "start_level": "起始色值start_level",
+            "midpoint_level": "中点色值midpoint_level",
+            "end_level": "最终色值end_level",
+            "midpoint_frame": "中点帧编号midpoint_frame"
+        },
+        "outputs": {
+            "MASK": "遮罩MASK"
+        }
+    },
+    "CreateFadeMaskAdvanced": {
+        "title": "渐隐遮罩(高级)CreateFadeMaskAdvanced",
+        "widgets": {
+            "points_string": "色值点points_string",
+            "invert": "反转invert",
+            "frames": "帧数frames",
+            "width": "宽度width",
+            "height": "高度height",
+            "interpolation": "插值方式interpolation"
+        },
+        "outputs": {
+            "MASK": "遮罩MASK"
+        }
+    },
+    "CreateFluidMask": {
+        "title": "流体遮罩CreateFluidMask",
+        "widgets": {
+            "invert": "反转invert",
+            "frames": "帧数frames",
+            "width": "宽度width",
+            "height": "高度height",
+            "inflow_count": "流入数量inflow_count",
+            "inflow_radius": "流入半径inflow_radius",
+            "inflow_padding": "流入填充inflow_padding",
+            "inflow_duration": "流入时间inflow_duration"
+        },
+        "outputs": {
+            "IMAGE": "图像IMAGE",
+            "MASK": "遮罩MASK"
+        }
+    },
+    "CreateShapeMask": {
+        "title": "形状遮罩CreateShapeMask",
+        "widgets": {
+            "shape": "形状shape",
+                "circle": "圆形circle",
+                "square": "正方形square",
+                "triangle": "三角形triangle",
+            "frames": "帧数frames",
+            "location_x": "位置_Xlocation_x",
+            "location_y": "位置_Ylocation_y",
+            "size": "大小size",
+            "grow": "生长grow",
+            "frame_width": "宽度frame_width",
+            "frame_height": "高度frame_height"
+        },
+        "outputs": {
+            "mask": "遮罩mask",
+            "mask_inverted": "反转遮罩mask_inverted"
+        }
+    },
+    "CreateVoronoiMask": {
+        "title": "沃洛诺伊遮罩CreateVoronoiMask",
+        "widgets": {
+            "frames": "帧数frames",
+            "num_points": "点数num_points",
+            "line_width": "线宽line_width",
+            "speed": "速度speed",
+            "frame_width": "宽度frame_width",
+            "frame_height": "高度frame_height"
+        },
+        "outputs": {
+            "mask": "遮罩mask",
+            "mask_inverted": "反转遮罩mask_inverted"
+        }
+    },
+    "CreateMagicMask": {
+        "title": "迷幻遮罩CreateMagicMask",
+        "widgets": {
+            "frames": "帧数frames",
+            "depth": "深度depth",
+            "distortion": "畸变distortion",
+            "seed": "随机种seed",
+            "control_after_generate": "运行后操作control_after_generate",
+                "fixed": "固定fixed",
+                "increment": "增加increment",
+                "decrement": "减少decrement",
+                "randomize": "随机randomize",
+            "transitions": "过渡transitions",
+            "frame_height": "高度frame_height",
+            "frame_width": "宽度frame_width"
+        },
+        "outputs": {
+            "mask": "遮罩mask",
+            "mask_inverted": "反转遮罩mask_inverted"
+        }
+    },
+    
+
+
+    "GrowMaskWithBlur": {
+        "title": "遮罩模糊生长GrowMaskWithBlur",
+        "inputs": {
+            "mask": "遮罩mask"
+        },
+        "widgets": {
+            "expand": "扩展expand",
+            "incremental_expandrate": "扩展增量incremental_expandrate",
+            "tapered_corners": "倒角tapered_corners",
+            "flip_input": "反转输入flip_input",
+            "use_cuda": "使用CUDAuse_cuda",
+            "blur_radius": "模糊半径blur_radius",
+            "sigma": "Sigmasigma",
+            "lerp_alpha": "线性透明lerp_alpha",
+            "decay_factor": "腐蚀系数decay_factor"
+        },
+        "outputs": {
+            "mask": "遮罩mask",
+            "mask_inverted": "反转遮罩mask_inverted"
+        }
+    },
+    "ColorToMask": {
+        "title": "图像颜色到遮罩ColorToMask",
+        "inputs": {
+            "images": "图像images"
+        },
+        "widgets": {
+            "invert": "反转invert",
+            "red": "红色red",
+            "green": "绿色green",
+            "blue": "蓝色blue",
+            "threshold": "阈值threshold"
+        },
+        "outputs": {
+            "MASK": "遮罩MASK"
+        }
+    },
+    "ColorMatch": {
+        "title": "图像调色ColorMatch",
+        "inputs": {
+            "image_ref": "参考图像image_ref",
+            "image_target": "目标图像image_target"
+        },
+        "widgets": {
+            "method": "方法method"
+        },
+        "outputs": {
+            "image": "图像image"
+        }
+    },
+    "BatchCropFromMask": {
+        "title": "遮罩裁剪BatchCropFromMask",
+        "inputs": {
+            "original_images": "图像original_images",
+            "masks": "遮罩masks"
+        },
+        "widgets": {
+            "crop_size_nult": "裁剪系数crop_size_nult",
+            "bbox_smooth_alpha": "BBox平滑透明bbox_smooth_alpha"
+        },
+        "outputs": {
+            "original_images": "原图像original_images",
+            "cropped_images": "裁剪图像cropped_images",
+            "bboxes": "BBoxbboxes",
+            "width": "宽度width",
+            "height": "高度height"
+        }
+    },
+    "BatchCropFromMaskAdvanced": {
+        "title": "遮罩裁剪(高级)BatchCropFromMaskAdvanced",
+        "inputs": {
+            "original_images": "图像original_images",
+            "masks": "遮罩masks"
+        },
+        "widgets": {
+            "crop_size_nult": "裁剪系数crop_size_nult",
+            "bbox_smooth_alpha": "BBox平滑透明bbox_smooth_alpha"
+        },
+        "outputs": {
+            "original_images": "原图像original_images",
+            "cropped_images": "裁剪图像cropped_images",
+            "cropped_masks": "裁剪遮罩cropped_masks",
+            "combined_crop_image": "合并裁剪图像combined_crop_image",
+            "combined_crop_masks": "合并裁剪遮罩combined_crop_masks",
+            "bboxes": "BBoxbboxes",
+            "combined_bounding_box": "合并BBoxcombined_bounding_box",
+            "bbox_width": "BBox宽度bbox_width",
+            "bbox_height": "BBox高度bbox_height"
+        }
+    },
+    "BatchUncrop": {
+        "title": "UncropBatchUncrop",
+        "inputs": {
+            "original_images": "原图像original_images",
+            "cropped_images": "裁剪图像cropped_images",
+            "bboxes": "BBoxbboxes"
+        },
+        "widgets": {
+            "border_blending": "边框融合border_blending",
+            "crop_rescale": "重缩放crop_rescale",
+            "border_bottom": "下border_bottom",
+            "border_top": "上border_top",
+            "border_left": "左border_left",
+            "border_right": "右border_right"
+        },
+        "outputs": {
+            "IMAGE": "图像IMAGE"
+        }
+    },
+    "BatchUncropAdvanced": {
+        "title": "Uncrop(高级)BatchUncropAdvanced",
+        "inputs": {
+            "original_images": "原图像original_images",
+            "cropped_images": "裁剪图像cropped_images",
+            "cropped_masks": "裁剪遮罩cropped_masks",
+            "combined_crop_mask": "合并裁剪遮罩combined_crop_mask",
+            "bboxes": "BBoxbboxes",
+            "combined_bounding_box": "合并BBoxcombined_bounding_box"
+        },
+        "widgets": {
+            "border_blending": "边框融合border_blending",
+            "crop_rescale": "重缩放crop_rescale",
+            "use_combined_mask": "使用合并遮罩use_combined_mask",
+            "use_square_mask": "使用正方形遮罩use_square_mask"
+        },
+        "outputs": {
+            "IMAGE": "图像IMAGE"
+        }
+    },
+    "BatchCLIPSeg": {
+        "title": "CLIP语义分割BatchCLIPSeg",
+        "inputs": {
+            "images": "图像images"
+        },
+        "widgets": {
+            "text": "文本text",
+            "threshold": "阈值threshold",
+            "binary_mask": "二值遮罩binary_mask",
+            "combine_mask": "合并遮罩combine_mask",
+            "use_cuda": "使用CUDAuse_cuda"
+        },
+        "outputs": {
+            "Mask": "遮罩Mask"
+        }
+    },
+    "RoundMask": {
+        "title": "舍入遮罩RoundMask",
+        "inputs": {
+            "mask": "遮罩mask"
+        },
+        "outputs": {
+            "MASK": "遮罩MASK"
+        }
+    },
+    "ResizeMask": {
+        "title": "缩放遮罩ResizeMask",
+        "inputs": {
+            "mask": "遮罩mask"
+        },
+        "widgets": {
+            "width": "宽度width",
+            "height": "高度height",
+            "keep_proportions": "固定宽高比keep_proportions"
+        },
+        "outputs": {
+            "mask": "遮罩mask",
+            "width": "宽度width",
+            "height": "高度height"
+        }
+    },
+    "OffsetMask": {
+        "title": "偏移遮罩OffsetMask",
+        "inputs": {
+            "mask": "遮罩mask"
+        },
+        "widgets": {
+            "x": "Xx",
+            "y": "Yy",
+            "angle": "角度angle",
+            "duplication_factor": "重复次数duplication_factor",
+            "roll": "使用滚动roll",
+            "incremental": "使用增量incremental",
+            "padding_mode": "填充模式padding_mode",
+                "empty": "空empty",
+                "border": "边界border",
+                "reflection": "反射reflection"
+        },
+        "outputs": {
+            "mask": "遮罩mask"
+        }
+    },
+    "BboxToInt": {
+        "title": "BBox到整数BboxToInt",
+        "inputs": {
+            "bboxes": "BBoxbboxes"
+        },
+        "widgets": {
+            "index": "索引index"
+        },
+        "outputs": {
+            "x_min": "X最小值x_min",
+            "y_min": "Y最大值y_min",
+            "width": "宽度width",
+            "height": "高度height",
+            "center_x": "X中心center_x",
+            "center_y": "Y中心center_y"
+        }
+    },
+    "SplitBboxes": {
+        "title": "分离BBoxSplitBboxes",
+        "inputs": {
+            "bboxes": "BBoxbboxes"
+        },
+        "widgets": {
+            "index": "索引index"
+        },
+        "outputs": {
+            "bboxes_a": "BBox_Abboxes_a",
+            "bboxes_b": "BBox_Bbboxes_b"
+        }
+    },
+
+
+
+    "ImageGrabPIL": {
+        "title": "PIL画面捕捉ImageGrabPIL",
+        "widgets": {
+            "x": "Xx",
+            "y": "Yy",
+            "width": "宽度width",
+            "height": "高度height",
+            "num_frames": "帧数num_frames",
+            "delay": "延迟delay"
+        },
+        "outputs": {
+            "image": "图像image"
+        }
+    },
+    "SoundReactive": {
+        "title": "音频反馈SoundReactive",
+        "widgets": {
+            "sound_level": "音量sound_level",
+            "start_range_hz": "起始hz范围start_range_hz",
+            "end_range_hz": "最终hz范围end_range_hz",
+            "multiplier": "倍数multiplier",
+            "smoothing_factor": "平滑系数smoothing_factor",
+            "normalize": "规格化normalize",
+            "Start mic capture": "开始捕捉麦克风Start mic capture",
+            "Stop mic capture": "停止捕捉麦克风Stop mic capture"
+        },
+        "outputs": {
+            "sound_level": "音量图sound_level",
+            "sound_level_int": "音量整数sound_level_int"
+        }
+    },
+
+
+
+    "NormalizeLatent": {
+        "title": "规格化LatentNormalizeLatent",
+        "inputs": {
+            "latent": "Latentlatent"
+        },
+        "outputs": {
+            "LATENT": "LatentLATENT"
+        }
+    },
+    "FlipSigmasAdjusted": {
+        "title": "反转SigmasFlipSigmasAdjusted",
+        "inputs": {
+            "sigmas": "Sigmassigmas"
+        },
+        "outputs": {
+            "SIGMAS": "SigmasSIGMAS"
+        }
+    },
+    "InjectNoiseToLatent": {
+        "title": "插入噪波到LatentInjectNoiseToLatent",
+        "inputs": {
+            "latents": "Latentlatents",
+            "noise": "噪波Latentnoise",
+            "mask": "遮罩mask"
+        },
+        "widgets": {
+            "strength": "强度strength",
+            "normalize": "规格化normalize",
+            "average": "平均average"
+        },
+        "outputs": {
+            "LATENT": "LatentLATENT"
+        }
+    },
+    "GenerateNoise": {
+        "title": "生成噪波GenerateNoise",
+        "inputs": {
+            "model": "模型model",
+            "sigmas": "Sigmassigmas"
+        },
+        "widgets": {
+            "width": "宽度width",
+            "height": "高度height",
+            "batch_size": "批次大小batch_size",
+            "seed": "随机种seed",
+            "control_after_generate": "运行后操作control_after_generate",
+                "fixed": "固定fixed",
+                "increment": "增加increment",
+                "decrement": "减少decrement",
+                "randomize": "随机randomize",
+            "multiplier": "倍数multiplier",
+            "constant_batch_noise": "批次噪波不变constant_batch_noise",
+            "normalize": "规格化normalize"
+        },
+        "outputs": {
+            "LATENT": "LatentLATENT"
+        }
+    },
+
+
+
+    "ReferenceOnlySimple3": {
+        "title": "简易仅参考3ReferenceOnlySimple3",
+        "inputs": {
+            "model": "模型model",
+            "reference": "参考Latent1reference",
+            "reference2": "参考Latent2reference2",
+            "input": "Latentinput"
+        },
+        "widgets": {
+            "batch_size": "批次大小batch_size"
+        },
+        "outputs": {
+            "MODEL": "模型MODEL",
+            "LATENT": "LatentLATENT"
+        }
+    },
+
+
+
+    "INTConstant": {
+        "title": "整数常量INTConstant",
+        "widgets": {
+            "value": "值value"
+        },
+        "outputs": {
+            "value": "值value"
+        }
+    },
+    "FloatConstant": {
+        "title": "浮点常量FloatConstant",
+        "widgets": {
+            "value": "值value"
+        },
+        "outputs": {
+            "value": "值value"
+        }
+    },
+    "VRAM_Debug": {
+        "title": "VRAM_DebugVRAM_Debug",
+        "inputs": {
+            "model": "模型model",
+            "clip_vision": "CLIP视觉clip_vision"
+        },
+        "widgets": {
+            "empty_cuda_cache": "空CUDA缓存empty_cuda_cache"
+        },
+        "outputs": {
+            "model": "模型model",
+            "freemem_before": "前剩余内存freemem_before",
+            "freemem_after": "后剩余内存freemem_after"
+        }
+    },
+    "SomethingToString": {
+        "title": "任意到字符串SomethingToString",
+        "inputs": {
+            "input": "输入input"
+        },
+        "outputs": {
+            "STRING": "字符串STRING"
+        }
+    },
+    "CrossFadeImages": {
+        "title": "交叉渐隐图像CrossFadeImages",
+        "inputs": {
+            "images_1": "图像_1images_1",
+            "images_2": "图像_2images_2"
+        },
+        "widgets": {
+            "interpolation": "插值方式interpolation",
+            "transition_start_index": "开始过渡序号transition_start_index",
+            "transitioning_frames": "过渡帧数transitioning_frames",
+            "start_level": "起始色值start_level",
+            "end_level": "最终色值end_level"
+        },
+        "outputs": {
+            "IMAGE": "图像IMAGE"
+        }
+    },
+    "EmptyLatentImagePresets": {
+        "title": "空Latent预设EmptyLatentImagePresets",
+        "widgets": {
+            "dimensions": "宽高dimensions",
+            "invert": "反转invert",
+            "batch_size": "批次大小batch_size"
+        },
+        "outputs": {
+            "Latent": "LatentLatent",
+            "Width": "宽度Width",
+            "Height": "高度Height"
+        }
+    },
+    "GetImageRangeFromBatch": {
+        "title": "获取图像范围GetImageRangeFromBatch",
+        "inputs": {
+            "images": "图像images"
+        },
+        "widgets": {
+            "start_index": "起始编号start_index",
+            "num_frames": "帧数num_frames"
+        },
+        "outputs": {
+            "IMAGE": "图像IMAGE"
+        }
+    },
+    "ReverseImageBatch": {
+        "title": "反转图像批次ReverseImageBatch",
+        "inputs": {
+            "images": "图像images"
+        },
+        "outputs": {
+            "IMAGE": "图像IMAGE"
+        }
+    },
+    "ImageGridComposite2x2": {
+        "title": "图像栅格合并2x2ImageGridComposite2x2",
+        "inputs": {
+            "image1": "图像_1image1",
+            "image2": "图像_2image2",
+            "image3": "图像_3image3",
+            "image4": "图像_4image4"
+        },
+        "outputs": {
+            "IMAGE": "图像IMAGE"
+        }
+    },
+    "ImageGridComposite3x3": {
+        "title": "图像栅格合并3x3ImageGridComposite3x3",
+        "inputs": {
+            "image1": "图像_1image1",
+            "image2": "图像_2image2",
+            "image3": "图像_3image3",
+            "image4": "图像_4image4",
+            "image5": "图像_5image5",
+            "image6": "图像_6image6",
+            "image7": "图像_7image7",
+            "image8": "图像_8image8",
+            "image9": "图像_9image9"
+        },
+        "outputs": {
+            "IMAGE": "图像IMAGE"
+        }
+    },
+    "ImageConcanate": {
+        "title": "图像联结ImageConcanate",
+        "inputs": {
+            "image1": "图像_1image1",
+            "image2": "图像_2image2"
+        },
+        "widgets": {
+            "direction": "方向direction"
+        },
+        "outputs": {
+            "IMAGE": "图像IMAGE"
+        }
+    },
+    "ImageBatchTestPattern": {
+        "title": "图像批次图案ImageBatchTestPattern",
+        "widgets": {
+            "batch_size": "批次大小batch_size",
+            "start_from": "起始值start_from",
+            "width": "宽度width",
+            "height": "高度height"
+        },
+        "outputs": {
+            "IMAGE": "图像IMAGE"
+        }
+    },
+    "ReplaceImagesInBatch": {
+        "title": "替换批次图像ReplaceImagesInBatch",
+        "inputs": {
+            "original_images": "原图像original_images",
+            "replacement_images": "替换图像replacement_images"
+        },
+        "widgets": {
+            "start_index": "起始编号start_index"
+        },
+        "outputs": {
+            "IMAGE": "图像IMAGE"
+        }
+    },
+    "WidgetToString": {
+        "title": "组件到字符串WidgetToString",
+        "widgets": {
+            "id": "节点IDid",
+            "widget_name": "组件名称widget_name",
+            "return_all": "返回全部return_all"
+        },
+        "outputs": {
+            "STRING": "字符串STRING"
+        }
+    },
+    "DummyLatentOut": {
+        "title": "虚拟Latent输出DummyLatentOut",
+        "inputs": {
+            "latent": "Latentlatent"
+        },
+        "outputs": {
+            "LATENT": "LatentLATENT"
+        }
+    },
+    "AddLabel": {
+        "title": "添加标签AddLabel",
+        "inputs": {
+            "image": "图像image"
+        },
+        "widgets": {
+            "text_x": "位置_Xtext_x",
+            "text_y": "位置_Ytext_y",
+            "height": "高度height",
+            "font_size": "字体大小font_size",
+            "font_color": "字体颜色font_color",
+            "label_color": "背景颜色label_color",
+            "font": "字体font",
+            "text": "文本text",
+            "direction": "方向direction"
+        },
+        "outputs": {
+            "IMAGE": "图像IMAGE"
+        }
+    },
+    "StableZero123_BatchSchedule": {
+        "title": "SZ123_批次调度StableZero123_BatchSchedule",
+        "inputs": {
+            "clip_vision": "CLIP视觉clip_vision",
+            "init_image": "图像init_image",
+            "vae": "VAEvae"
+        },
+        "widgets": {
+            "width": "宽度width",
+            "height": "高度height",
+            "batch_size": "批次大小batch_size",
+            "interpolation": "插值方式interpolation",
+                "linear": "线性linear",
+                "ease_in": "渐进ease_in",
+                "ease_out": "渐出ease_out",
+                "ease_in_out": "渐近渐出ease_in_out",
+            "azimuth_points_string": "方位角azimuth_points_string",
+            "elevation_points_string": "俯仰角elevation_points_string"
+        },
+        "outputs": {
+            "positive": "正面条件positive",
+            "negative": "负面条件negative",
+            "latent": "Latentlatent"
+        }
+    },
+    "GetImagesFromBatchIndexed": {
+        "title": "从批次获取图像GetImagesFromBatchIndexed",
+        "inputs": {
+            "images": "图像images"
+        },
+        "widgets": {
+            "indexes": "序号indexes"
+        },
+        "outputs": {
+            "IMAGE": "图像IMAGE"
+        }
+    },
+    "ImageBatchRepeatInterleaving": {
+        "title": "复制图像批次ImageBatchRepeatInterleaving",
+        "inputs": {
+            "images": "图像images"
+        },
+        "widgets": {
+            "repeats": "次数repeats"
+        },
+        "outputs": {
+            "IMAGE": "图像IMAGE"
+        }
+    }
+}

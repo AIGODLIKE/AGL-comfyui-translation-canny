@@ -1,0 +1,48 @@
+{
+    "SAMModelLoader (segment anything)": {
+        "title": "SAM模型加载器SAMModelLoader (segment anything)",
+        "widgets": {
+            "model_name": "模型名称model_name"
+        },
+        "outputs": {
+            "SAM_MODEL": "SAM模型SAM_MODEL"
+        }
+    },
+
+    "GroundingDinoModelLoader (segment anything)": {
+        "title": "G-Dino模型加载器GroundingDinoModelLoader (segment anything)",
+        "widgets": {
+            "model_name": "模型名称model_name"
+        },
+        "outputs": {
+            "GROUNDING_DINO_MODEL": "G-Dino模型GROUNDING_DINO_MODEL"
+        }
+    },
+
+    "GroundingDinoSAMSegment (segment anything)": {
+        "title": "G-DinoSAM语义分割GroundingDinoSAMSegment (segment anything)",
+        "inputs": {
+            "sam_model": "SAM模型sam_model",
+            "grounding_dino_model": "G-Dino模型grounding_dino_model",
+            "image": "图像image"
+        },
+        "widgets": {
+            "prompt": "提示词prompt",
+            "threshold": "阈值threshold"
+        },
+        "outputs": {
+            "IMAGE":" 图像",
+            "MASK": "遮罩MASK"
+        }
+    },
+
+    "InvertMask (segment anything)": {
+        "title": "反转遮罩InvertMask (segment anything)",
+        "inputs": {
+            "mask": "遮罩mask"
+        },
+        "outputs": {
+            "MASK": "遮罩MASK"
+        }
+    }
+}

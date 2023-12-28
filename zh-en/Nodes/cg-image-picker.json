@@ -1,0 +1,54 @@
+{
+    "Preview Chooser": {
+        "title": "图像选择器Preview Chooser",
+        "inputs": {
+            "images": "图像images",
+            "latents": "Latentlatents"
+        },
+        "widgets": {
+            "mode": "模式mode",
+                "Always pause": "总是暂停Always pause",
+                "Only pause if batch": "仅批次暂停Only pause if batch",
+                "Pass through": "忽略Pass through",
+                "Take First n": "选择前N项Take First n",
+                "Take Last n": "选择后N项Take Last n",
+            "count": "数量count",
+            "Cancel current run": "取消当前任务Cancel current run",
+            "Progress selected image": "确认选择Progress selected image",
+            "Progress selected images": "确认选择Progress selected images",
+            "Progress selected image as restart": "重新选择Progress selected image as restart",
+            "Progress with nothing selected": "确认选择Progress with nothing selected",
+            "Progress with nothing selected as restart": "重新选择Progress with nothing selected as restart"
+        },
+        "outputs": {
+            "images": "图像images",
+            "latent": "Latentlatent"
+        }
+    },
+    "Preview Chooser Fabric": {
+        "title": "图像选择器(Fabric)Preview Chooser Fabric",
+        "inputs": {
+            "images": "图像images",
+            "latents": "Latentlatents"
+        },
+        "widgets": {
+            "mode": "模式mode",
+                "Always pause": "总是暂停Always pause",
+                "Only pause if batch": "仅批次暂停Only pause if batch",
+                "Pass through": "忽略Pass through",
+                "Take First n": "选择前N项Take First n",
+                "Take Last n": "选择后N项Take Last n",
+            "count": "数量count",
+            "Cancel current run": "取消当前任务Cancel current run",
+            "Progress selected image": "确认选择Progress selected image",
+            "Progress selected images": "确认选择Progress selected images",
+            "Progress selected image as restart": "重新选择Progress selected image as restart",
+            "Progress with nothing selected": "确认选择Progress with nothing selected",
+            "Progress with nothing selected as restart": "重新选择Progress with nothing selected as restart"
+        },
+        "outputs": {
+            "positive": "正面Latentpositive",
+            "negative": "负面Latentnegative"
+        }
+    }
+}

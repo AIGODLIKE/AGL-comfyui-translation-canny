@@ -1,0 +1,52 @@
+{
+    "ReferenceOnlySimple": {
+        "title": "简易仅参考ReferenceOnlySimple",
+        "inputs": {
+            "model": "模型model",
+            "reference": "参考Latentreference"
+        },
+        "widgets": {
+            "batch_size": "批次大小batch_size"
+        },
+        "outputs": {
+            "MODEL": "模型MODEL"
+        }
+    },
+    "RescaleClassifierFreeGuidanceTest": {
+        "title": "规范自由引导RescaleClassifierFreeGuidanceTest",
+        "inputs": {
+            "model": "模型model"
+        },
+        "widgets": {
+            "multiplier": "倍数multiplier"
+        },
+        "outputs": {
+            "MODEL": "模型MODEL"
+        }
+    },    
+    "ModelSamplerTonemapNoiseTest": {
+        "title": "噪波色调映射ModelSamplerTonemapNoiseTest",
+        "inputs": {
+            "model": "模型model"
+        },
+        "widgets": {
+            "multiplier": "系数multiplier"
+        },
+        "outputs": {
+            "MODEL": "模型MODEL"
+        }
+    },
+    "TonemapNoiseWithRescaleCFG": {
+        "title": "噪波色调映射与缩放CFGTonemapNoiseWithRescaleCFG",
+        "inputs": {
+            "model": "模型model"
+        },
+        "widgets": {
+            "tonemap_multiplie": "映射系数tonemap_multiplie",
+            "rescale_multiplier": "缩放系数rescale_multiplier"
+        },
+        "outputs": {
+            "MODEL": "模型MODEL"
+        }
+    }
+}

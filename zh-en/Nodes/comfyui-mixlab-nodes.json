@@ -1,0 +1,554 @@
+{
+    "SplitLongMask": {
+        "title": "分割遮罩列表SplitLongMask",
+        "inputs": {
+            "long_mask": "遮罩long_mask"
+        },
+        "widgets": {
+            "count": "计数count"
+        },
+        "outputs": {
+            "MASK": "遮罩MASK"
+        }
+    },
+    "FeatheredMask": {
+        "title": "羽化遮罩FeatheredMask",
+        "inputs": {
+            "mask": "遮罩mask"
+        },
+        "widgets": {
+            "start_offset": "偏移start_offset",
+            "feathering_weight": "权重feathering_weight"
+        },
+        "outputs": {
+            "MASK": "遮罩MASK"
+        }
+    },
+    "SmoothMask": {
+        "title": "平滑遮罩SmoothMask",
+        "inputs": {
+            "mask": "遮罩mask"
+        },
+        "widgets": {
+            "smoothness": "平滑smoothness"
+        },
+        "outputs": {
+            "MASK": "遮罩MASK"
+        }
+    },
+    "AreaToMask": {
+        "title": "区域到遮罩AreaToMask",
+        "inputs": {
+            "RGBA": "RGBARGBA"
+        },
+        "outputs": {
+            "MASK": "遮罩MASK"
+        }
+    },
+    "FaceToMask": {
+        "title": "面部到遮罩FaceToMask",
+        "inputs": {
+            "image": "图像image"
+        },
+        "outputs": {
+            "MASK": "遮罩MASK"
+        }
+    },
+    "CombineMasks": {
+        "title": "合并遮罩CombineMasks",
+        "inputs": {
+            "input_image": "图像input_image",
+            "mask_1": "遮罩_1mask_1",
+            "mask_2": "遮罩_2mask_2",
+            "mask_3": "遮罩_3mask_3"
+        },
+        "outputs": {
+            "Combined Mask": "遮罩Combined Mask",
+            "Heatmap Mask": "热度图Heatmap Mask",
+            "BW Mask": "灰度图BW Mask"
+        }
+    },
+    "CLIPSeg_":{
+        "title": "CLIP语义分割",
+        "inputs": {
+            "image": "图像image"
+        },
+        "widgets": {
+            "text": "文本text",
+            "blur": "模糊blur",
+            "threshold": "阈值threshold",
+            "dilation_factor": "膨胀dilation_factor"
+        },
+        "outputs": {
+            "Mask": "遮罩Mask",
+            "Heatmap Mask": "热度图Heatmap Mask",
+            "BW Mask": "灰度图BW Mask"
+        }
+    },
+    "CombineMasks_": {
+        "title": "合并遮罩CombineMasks_",
+        "inputs": {
+            "input_image": "图像input_image",
+            "mask_1": "遮罩_1mask_1",
+            "mask_2": "遮罩_2mask_2",
+            "mask_3": "遮罩_3mask_3"
+        },
+        "outputs": {
+            "Combined Mask": "遮罩Combined Mask",
+            "Heatmap Mask": "热度图Heatmap Mask",
+            "BW Mask": "灰度图BW Mask"
+        }
+    },
+
+
+
+    "RandomPrompt": {
+        "title": "随机提示词RandomPrompt",
+        "widgets": {
+            "max_count": "最大数量max_count",
+            "mutable_prompt": "可变提示词mutable_prompt",
+            "immutable_prompt": "不变提示词immutable_prompt",
+            "random_sample": "随机采样random_sample",
+                "enable": "启用enable",
+                "disable": "关闭disable"
+        },
+        "outputs": {
+            "STRING": "字符串STRING"
+        }
+    },
+
+
+
+    "NoiseImage": {
+        "title": "噪波图像NoiseImage",
+        "widgets": {
+            "width": "宽度width",
+            "height": "高度height",
+            "noise_level": "噪波等级noise_level"
+        },
+        "outputs": {
+            "IMAGE": "图像IMAGE"
+        }
+    },
+    "TransparentImage": {
+        "title": "透明图像TransparentImage",
+        "inputs": {
+            "images": "图像images",
+            "masks": "遮罩masks"
+        },
+        "widgets": {
+            "invert": "反转invert",
+                "yes": "是yes",
+                "no": "否no",
+            "save": "保存save",
+            "filename_prefix": "文件名前缀filename_prefix"
+        },
+        "outputs": {
+            "STRING": "字符串STRING",
+            "IMAGE": "图像IMAGE",
+            "MASK": "遮罩MASK"
+        }
+    },
+    "ResizeImageMixlab": {
+        "title": "图像重缩放ResizeImageMixlab",
+        "inputs": {
+            "image": "图像image"
+        },
+        "widgets": {
+            "width": "宽度width",
+            "height": "高度height",
+            "scale_option": "缩放方法scale_option",
+                "overall": "全部overall"
+        }
+    },
+    "LoadImagesFromPath": {
+        "title": "加载图像(路径)LoadImagesFromPath",
+        "widgets": {
+            "file_path": "文件路径file_path",
+            "white_bg": "白背景white_bg",
+                "disable": "关闭disable",
+                "enable": "启用enable",
+            "newest_files": "最新文件newest_files",
+            "index_variable": "索引index_variable",
+            "seed": "随机种seed",
+            "control_after_generate": "运行后操作control_after_generate",
+                "fixed": "固定fixed",
+                "increment": "增加increment",
+                "decrement": "减少decrement",
+                "randomize": "随机randomize"
+        },
+        "outputs": {
+            "IMAGE": "图像IMAGE",
+            "MASK": "遮罩MASK"
+        }
+    },
+    "TextImage": {
+        "title": "文本图像TextImage",
+        "widgets": {
+            "text": "文本text",
+            "font_path": "字体路径font_path",
+            "font_size": "字体大小font_size",
+            "spacing": "间隔spacing",
+            "text_color": "文本颜色text_color"
+        },
+        "outputs": {
+            "IMAGE": "图像IMAGE",
+            "MASK": "遮罩MASK"
+        }
+    },
+    "EnhanceImage": {
+        "title": "增强图像EnhanceImage",
+        "inputs": {
+            "image": "图像image"
+        },
+        "widgets": {
+            "contrast": "对比度contrast"
+        },
+        "outputs": {
+            "IMAGE": "图像IMAGE"
+        }
+    },
+    "ImageCropByAlpha": {
+        "title": "图像Alpha裁剪ImageCropByAlpha",
+        "inputs": {
+            "image": "图像image",
+            "RGBA": "RGBARGBA"
+        },
+        "outputs": {
+            "IMAGE": "图像IMAGE"
+        }
+    },
+    "SvgImage": {
+        "title": "SVG图像SvgImage",
+        "inputs": {
+            "upload": "上传upload"
+        },
+        "outputs": {
+            "IMAGE": "图像IMAGE",
+            "layers": "图层layers"
+        }
+    },
+    "3DImage": {
+        "title": "3D图像3DImage",
+        "inputs": {
+            "upload": "上传upload"
+        },
+        "outputs": {
+            "IMAGE": "图像IMAGE",
+            "MASK": "遮罩MASK"
+        }
+    },
+
+
+
+    "ScreenShare": {
+        "title": "屏幕分享ScreenShare",
+        "inputs": {
+            "image_base64": "图像_base64image_base64"
+        },
+        "widgets": {
+            "seed": "随机种seed",
+            "control_after_generate": "运行后操作control_after_generate",
+                "fixed": "固定fixed",
+                "increment": "增加increment",
+                "decrement": "减少decrement",
+                "randomize": "随机randomize"
+        },
+        "outputs": {
+            "IMAGE": "图像IMAGE",
+            "MASK": "遮罩MASK"
+        }
+    },
+    "FloatingVideo": {
+        "title": "屏幕窗口FloatingVideo",
+        "inputs": {
+            "images": "图像images"
+        },
+        "widgets": {
+            "seed": "随机种seed",
+            "control_after_generate": "运行后操作control_after_generate",
+                "fixed": "固定fixed",
+                "increment": "增加increment",
+                "decrement": "减少decrement",
+                "randomize": "随机randomize"
+        }
+    },
+
+
+
+    "EmptyLayer": {
+        "title": "空图层EmptyLayer",
+        "widgets": {
+            "width": "宽度width",
+            "height": "高度height"
+        },
+        "outputs": {
+            "layers": "图层layers"
+        }
+    },
+    "NewLayer": {
+        "title": "新图层NewLayer",
+        "inputs": {
+            "image": "图像image",
+            "mask": "遮罩mask",
+            "layers": "图层layers"
+        },
+        "widgets": {
+            "x": "Xx",
+            "y": "Yy",
+            "width": "宽度width",
+            "height": "高度height",
+            "z_index": "编号z_index",
+            "scale_option": "缩放方法scale_option"
+        },
+        "outputs": {
+            "layers": "图层layers"
+        }
+    },
+    "ShowLayer": {
+        "title": "显示图层ShowLayer",
+        "inputs": {
+            "layers": "图层layers"
+        },
+        "widgets": {
+            "Layer Index": "图层编号Layer Index",
+            "x": "Xx",
+            "y": "Yy",
+            "width": "宽度width",
+            "height": "高度height",
+            "z_index": "编号z_index",
+            "scale_option": "缩放方法scale_option"
+        }
+    },
+    "MergeLayers": {
+        "title": "合并图层MergeLayers",
+        "inputs": {
+            "layers": "图层layers",
+            "image": "图像image"
+        },
+        "outputs": {
+            "IMAGE": "图像IMAGE"
+        }
+    },
+
+
+
+    "VAELoaderConsistencyDecoder": {
+        "title": "稳定VAE加载器VAELoaderConsistencyDecoder",
+        "widgets": {
+            "vae_name": "VAEvae_name"
+        },
+        "outputs": {
+            "VAE": "VAEVAE"
+        }
+    },
+    "VAEDecodeConsistencyDecoder": {
+        "title": "稳定VAE解码VAEDecodeConsistencyDecoder",
+        "inputs": {
+            "samples": "Latentsamples",
+            "vae": "VAevae"
+        },
+        "outputs": {
+            "IMAGE": "图像IMAGE"
+        }
+    },
+
+
+
+    "ChatGPT": {
+        "title": "ChatGPTChatGPT",
+        "inputs": {
+            "api_key": "APIapi_key",
+            "api_url": "API_urlapi_url"
+        },
+        "widgets": {
+            "prompt": "提示词prompt",
+            "system_content": "系统提示词system_content",
+            "model": "模型model",
+            "seed": "随机种seed",
+            "control_after_generate": "运行后操作control_after_generate",
+                "fixed": "固定fixed",
+                "increment": "增加increment",
+                "decrement": "减少decrement",
+                "randomize": "随机randomize",
+            "context_size": "上下文大小context_size"
+        },
+        "outputs": {
+            "text": "文本text",
+            "message": "信息message",
+            "session_history": "会话历史session_history"
+        }
+    },
+    "ChatGPTOpenAI": {
+        "title": "ChatGPTChatGPTOpenAI",
+        "inputs": {
+            "api_key": "API_Keyapi_key",
+            "api_url": "API_urlapi_url"
+        },
+        "widgets": {
+            "prompt": "提示词prompt",
+            "system_content": "系统提示词system_content",
+            "model": "模型model",
+            "seed": "随机种seed",
+            "control_after_generate": "运行后操作control_after_generate",
+                "fixed": "固定fixed",
+                "increment": "增加increment",
+                "decrement": "减少decrement",
+                "randomize": "随机randomize",
+            "context_size": "上下文大小context_size"
+        },
+        "outputs": {
+            "text": "文本text",
+            "message": "信息message",
+            "session_history": "会话历史session_history"
+        }
+    },
+    "ShowTextForGPT": {
+        "title": "显示文本ShowTextForGPT",
+        "widgets": {
+            "text": "文本text"
+        },
+        "outputs": {
+            "STRING": "字符串STRING"
+        }
+    },
+    "CharacterInText": {
+        "title": "文本内的字符CharacterInText",
+        "widgets": {
+            "text": "文本text",
+            "character": "字符character"
+        },
+        "outputs": {
+            "INT": "整数INT"
+        }
+    },
+
+
+
+    "SpeechRecognition": {
+        "title": "语音识别SpeechRecognition",
+        "widgets": {
+            "START": "开始START"
+        },
+        "outputs": {
+            "prompt": "提示词prompt"
+        }
+    },
+    "SpeechSynthesis": {
+        "title": "语音合成SpeechSynthesis",
+        "widgets": {
+            "text": "文本text"
+        },
+        "outputs": {
+            "STRING": "字符串STRING"
+        }
+    },
+
+
+
+    "Color": {
+        "title": "颜色Color",
+        "inputs": {
+            "color": "颜色color"
+        },
+        "outputs": {
+            "STRING": "字符串STRING"
+        }
+    },
+    "FloatSlider": {
+        "title": "浮点滑条FloatSlider",
+        "widgets": {
+            "number": "数字number"
+        },
+        "outputs": {
+            "FLOAT": "浮点FLOAT"
+        }
+    },
+    "IntNumber": {
+        "title": "整数IntNumber",
+        "widgets": {
+            "number": "数字number"
+        },
+        "outputs": {
+            "INT": "整数INT"
+        }
+    },
+    "TextInput_": {
+        "title": "文本TextInput_",
+        "widgets": {
+            "text": "文本text"
+        },
+        "outputs": {
+            "STRING": "字符串STRING"
+        }
+    },
+    "Font": {
+        "title": "字体Font",
+        "widgets": {
+            "font": "字体font"
+        },
+        "outputs": {
+            "STRING": "字符串STRING"
+        }
+    },
+    "TextToNumber": {
+        "title": "文本到数字TextToNumber",
+        "widgets": {
+            "text": "文本text",
+            "random_number": "随机数random_number",
+            "number": "数字number"
+        },
+        "outputs": {
+            "INT": "整数INT"
+        }
+    },
+    "DynamicDelayProcessor": {
+        "title": "动态延迟处理器DynamicDelayProcessor",
+        "inputs": {
+            "any_input": "任意输入any_input"
+        },
+        "widgets": {
+            "dalay_seconds": "延迟秒数dalay_seconds",
+            "delay_by_text": "文本延迟delay_by_text",
+            "words_per_seconds": "每秒词数words_per_seconds",
+            "replace_output": "替换输出replace_output",
+            "replace_value": "替换值replace_value"
+        },
+        "outputs": {
+            "output": "输入output"
+        }
+    },
+    "MultiplicationNode": {
+        "title": "乘法MultiplicationNode",
+        "inputs": {
+            "numberA": "AnumberA"
+        },
+        "widgets": {
+            "numberB": "BnumberB"
+        },
+        "outputs": {
+            "FLOAT": "浮点FLOAT",
+            "INT": "整数INT"
+        }
+    },
+    
+
+    "Appinfo": {
+        "title": "APP制作Appinfo",
+        "inputs": {
+            "image": "图像image"
+        },
+        "widgets": {
+            "name": "名称name",
+            "input_ids": "输入IDinput_ids",
+            "output_ids": "输出IDoutput_ids",
+            "description": "描述description",
+            "version": "版本version",
+            "Save FOr App": "保存为APPSave FOr App",
+            "Download For App": "下载APPDownload For App"
+        },
+        "outputs": {
+            "IMAGE": "图像IMAGE"
+        }
+    }
+}

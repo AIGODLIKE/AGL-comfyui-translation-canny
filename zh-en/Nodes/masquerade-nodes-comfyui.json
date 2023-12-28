@@ -1,0 +1,329 @@
+{
+    "Mask By Text": {
+        "title": "文本生成遮罩Mask By Text",
+        "inputs": {
+            "image": "图像image"
+        },
+        "widgets": {
+            "prompt": "正面条件prompt",
+            "negative_prompt": "负面条件negative_prompt",
+            "precision": "置信度precision",
+            "normalize": "规格化normalize"
+        },
+        "outputs": {
+            "IMAGE": "图像IMAGE"
+        }
+    },
+    "Mask Morphology": {
+        "title": "遮罩形态学Mask Morphology",
+        "inputs": {
+            "image": "图像image"
+        },
+        "widgets": {
+            "distance": "距离distance",
+            "op": "操作op",
+                "dilate": "膨胀dilate",
+                "erode": "侵蚀erode",
+                "open": "侵蚀后膨胀open",
+                "close": "膨胀后侵蚀close"
+        },
+        "outputs": {
+            "IMAGE": "图像IMAGE"
+        }
+    },
+    "Combine Masks": {
+        "title": "合并遮罩Combine Masks",
+        "inputs": {
+            "image1": "图像1image1",
+            "image2": "图像2image2"
+        },
+        "widgets": {
+            "op": "操作op",
+                "union (max)": "最大值union (max)",
+                "intersection (min)": "最小值intersection (min)",
+                "difference": "差值difference",
+                "multiply": "相乘multiply",
+                "multiply_alpha": "相乘(透明)multiply_alpha",
+                "add": "相加add",
+                "greater_or_equal": "大于或等于greater_or_equal",
+                "greater": "大于greater",
+            "clamp_result": "钳制clamp_result",
+            "round_result": "舍入round_result"
+        },
+        "outputs": {
+            "IMAGE": "图像IMAGE"
+        }
+    },
+    "Unary Mask Op": {
+        "title": "单遮罩操作Unary Mask Op",
+        "inputs": {
+            "image": "图像image"
+        },
+        "widgets": {
+            "op": "操作op",
+                "invert": "反转invert",
+                "average": "平均average",
+                "round": "舍入round",
+                "clamp": "钳制clamp",
+                "abs": "绝对abs"
+        },
+        "outputs": {
+            "IMAGE": "图像IMAGE"
+        }
+    },
+    "Unary Image Op": {
+        "title": "单图像操作Unary Image Op",
+        "inputs": {
+            "image": "图像image"
+        },
+        "widgets": {
+            "op": "操作op",
+                "invert": "反转invert",
+                "average": "平均average",
+                "round": "舍入round",
+                "clamp": "钳制clamp",
+                "abs": "绝对abs"
+        },
+        "outputs": {
+            "IMAGE": "图像IMAGE"
+        }
+    },
+    "Image To Mask": {
+        "title": "图像到遮罩Image To Mask",
+        "inputs": {
+            "image": "图像image"
+        },
+        "widgets": {
+            "method": "方法method",
+                "intensity": "强度/明度intensity",
+                "alpha": "透明alpha"
+        },
+        "outputs": {
+            "MASK": "遮罩MASK"
+        }
+    },
+    "Mix Images By Mask": {
+        "title": "遮罩混合图像Mix Images By Mask",
+        "inputs": {
+            "image1": "图像1image1",
+            "image2": "图像2image2",
+            "mask": "遮罩mask"
+        },
+        "outputs": {
+            "IMAGE": "图像IMAGE"
+        }
+    },
+    "Mix Color By Mask": {
+        "title": "遮罩混合颜色Mix Color By Mask",
+        "inputs": {
+            "image": "图像image",
+            "mask": "遮罩mask"
+        },
+        "widgets": {
+            "r": "Rr",
+            "g": "Gg",
+            "b": "B"
+        },
+        "outputs": {
+            "IMAGE": "图像IMAGE"
+        }
+    },
+    "Mask To Region": {
+        "title": "遮罩到区域Mask To Region",
+        "inputs": {
+            "mask": "遮罩mask"
+        },
+        "widgets": {
+            "padding": "分区padding",
+            "constraints": "约束constraints",
+                "keep_ratio": "保持宽高比keep_ratio",
+                "keep_ratio_divisible": "保持宽高比并分区keep_ratio_divisible",
+                "multiple_of": "乘以multiple_of",
+                "ignore": "无ignore",
+            "constraint_x": "约束Xconstraint_x",
+            "constraint_y": "约束yconstraint_y",
+            "min_width": "最小宽度min_width",
+            "min_height": "最小高度min_height",
+            "batch_behavior": "批次操作batch_behavior",
+                "match_ratio": "匹配宽高比match_ratio",
+                "match_size": "匹配分辨率match_size"
+        },
+        "outputs": {
+            "IMAGE": "图像IMAGE"
+        }
+    },
+    "Cut By Mask": {
+        "title": "遮罩裁剪Cut By Mask",
+        "inputs": {
+            "image": "图像image",
+            "mask": "遮罩mask",
+            "mask_mapping_optional": "遮罩映射mask_mapping_optional"
+        },
+        "widgets": {
+            "force_resize_width": "拉伸宽度force_resize_width",
+            "force_resize_height": "拉伸高度force_resize_height"
+        },
+        "outputs": {
+            "IMAGE": "图像IMAGE"
+        }
+    },
+    "Paste By Mask": {
+        "title": "遮罩粘贴Paste By Mask",
+        "inputs": {
+            "image_base": "源图像image_base",
+            "image_to_paste": "目标图像image_to_paste",
+            "mask": "遮罩mask",
+            "mask_mapping_optional": "遮罩映射mask_mapping_optional"
+        },
+        "widgets": {
+            "resize_behavior": "拉伸模式resize_behavior",
+                "resize": "拉伸resize",
+                "keep_ratio_fill": "保持宽高比并填充keep_ratio_fill",
+                "keep_ratio_fit": "保持宽高比并适应keep_ratio_fit",
+                "source_size": "原大小source_size",
+                "source_size_unmasked": "原大小(无遮罩)source_size_unmasked"
+        },
+        "outputs": {
+            "IMAGE": "图像IMAGE"
+        }
+    },
+    "Get Image Size": {
+        "title": "获取图像尺寸Get Image Size",
+        "inputs": {
+            "image": "图像image"
+        },
+        "outputs": {
+            "INT": "整数INT"
+        }
+    },
+    "Change Channel Count": {
+        "title": "改变通道Change Channel Count",
+        "inputs": {
+            "image": "图像image"
+        },
+        "widgets": {
+            "kind": "类型kind",
+                "mask" :"遮罩",
+                "RGB": "RGBRGB",
+                "RGBA": "RGBARGBA"
+        },
+        "outputs": {
+            "IMAGE": "图像IMAGE"
+        }
+    },
+    "Constant Mask": {
+        "title": "常遮罩Constant Mask",
+        "inputs": {
+            "copy_image_size": "图像copy_image_size"
+        },
+        "widgets": {
+            "value": "值value",
+            "explicit_height": "高度explicit_height",
+            "explicit_width": "宽度explicit_width"
+        },
+        "outputs": {
+            "IMAGE": "图像IMAGE"
+        }
+    },
+    "Prune By Mask": {
+        "title": "遮罩修剪Prune By Mask",
+        "inputs": {
+            "image": "图像image",
+            "mask": "遮罩mask"
+        },
+        "outputs": {
+            "IMAGE": "图像IMAGE"
+        }
+    },
+    "Separate Mask Components": {
+        "title": "分离遮罩元素Separate Mask Components",
+        "inputs": {
+            "mask": "遮罩mask"
+        },
+        "outputs": {
+            "IMAGE": "图像IMAGE",
+            "MASK_MAPPING": "遮罩映射MASK_MAPPING"
+        }
+    },
+    "Create Rect Mask": {
+        "title": "矩形遮罩Create Rect Mask",
+        "inputs": {
+            "copy_image_size": "图像copy_image_size"
+        },
+        "widgets": {
+            "mode": "模式mode",
+                "percent": "百分比percent",
+                "pixels": "像素pixels",
+            "origin": "锚点origin",
+                "topleft": "左上topleft",
+                "bottomleft": "左下bottomleft",
+                "topright": "右上topright",
+                "bottomright": "右下bottomright",
+            "x": "Xx",
+            "y": "Yy",
+            "width": "宽度width",
+            "height": "高度height",
+            "image_width": "图像宽度image_width",
+            "image_height": "图像高度image_height"
+        },
+        "outputs": {
+            "IMAGE": "图像IMAGE"
+        }
+    },
+    "Make Image Batch": {
+        "title": "图像组合批次Make Image Batch",
+        "inputs": {
+            "image1": "图像1image1",
+            "image2": "图像2image2",
+            "image3": "图像3image3",
+            "image4": "图像4image4",
+            "image5": "图像5image5",
+            "image6": "图像6image6"
+        },
+        "outputs": {
+            "IMAGE": "图像IMAGE"
+        }
+    },
+    "Create QR Code": {
+        "title": "生成QR码Create QR Code",
+        "widgets": {
+            "text": "文本text",
+            "size": "尺寸size",
+            "qr_version": "QR版本qr_version",
+            "box_size": "模块大小box_size",
+            "border": "边框宽度border",
+            "error_correction": "容错error_correction"
+        },
+        "outputs": {
+            "IMAGE": "图像IMAGE"
+        }
+    },
+    "Convert Color Space": {
+        "title": "转换色彩空间Convert Color Space",
+        "inputs": {
+            "image": "图像image"
+        },
+        "widgets": {
+            "in_space": "输入空间in_space",
+            "out_space": "输出空间out_space"
+        },
+        "outputs": {
+            "IMAGE": "图像IMAGE"
+        }
+    },
+    "MasqueradeIncrementer": {
+        "title": "Masque整数MasqueradeIncrementer",
+        "widgets": {
+            "seed": "随机种seed",
+            "control_after_generate": "运行后操作control_after_generate",
+                "fixed": "固定fixed",
+                "increment": "增加increment",
+                "decrement": "减少decrement",
+                "randomize": "随机randomize",
+            "max_value": "最大值max_value"
+        },
+        "outputs": {
+            "INT": "整数INT"
+        }
+    }
+}

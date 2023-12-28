@@ -1,0 +1,373 @@
+{
+    "HEDPreprocessor": {
+        "title": "HED模糊线预处理器HEDPreprocessor",
+        "inputs": {
+            "image": "图像image"
+        },
+        "widgets": {
+            "version": "版本version",
+            "safe": "增稳safe",
+                "disable": "关闭disable",
+                "enable": "开启enable",
+            "resolution": "分辨率resolution"
+        },
+        "outputs": {
+            "IMAGE": "图像IMAGE"
+        }
+    },
+    "ScribblePreprocessor": {
+        "title": "Scribble涂鸦预处理器ScribblePreprocessor",
+        "inputs": {
+            "image": "图像image"
+        },
+        "widgets": {
+            "resolution": "分辨率resolution"
+        },
+        "outputs": {
+            "IMAGE": "图像IMAGE"
+        }
+    },
+    "FakeScribblePreprocessor": {
+        "title": "FakeScribble伪涂鸦预处理器FakeScribblePreprocessor",
+        "inputs": {
+            "image": "图像image"
+        },
+        "widgets": {
+            "safe": "增稳safe",
+                "enable": "开启enable",
+                "disable": "关闭disable",
+            "resolution": "分辨率resolution"
+        },
+        "outputs": {
+            "IMAGE": "图像IMAGE"
+        }
+    },
+    "BinaryPreprocessor": {
+        "title": "Binary二值化预处理器BinaryPreprocessor",
+        "inputs": {
+            "image": "图像image"
+        },
+        "widgets": {
+            "threshold": "阈值threshold",
+            "bin_threshold": "阈值bin_threshold",
+            "resolution": "分辨率resolution"
+        },
+        "outputs": {
+            "IMAGE": "图像IMAGE"
+        }
+    },
+    "PiDiNetPreprocessor": {
+        "title": "PidiNet模糊线预处理器PiDiNetPreprocessor",
+        "inputs": {
+            "image": "图像image"
+        },
+        "widgets": {
+            "safe": "增稳safe",
+                "disable": "关闭disable",
+                "enable": "开启enable",
+            "resolution": "分辨率resolution"
+        },
+        "outputs": {
+            "IMAGE": "图像IMAGE"
+        }
+    },
+    "LineArtPreprocessor": {
+        "title": "LineArt艺术线预处理器LineArtPreprocessor",
+        "inputs": {
+            "image": "图像image"
+        },
+        "widgets": {
+            "coarse": "粗糙化coarse",
+                "disable": "关闭disable",
+                "enable": "开启enable",
+            "resolution": "分辨率resolution"
+        },
+        "outputs": {
+            "IMAGE": "图像IMAGE"
+        }
+    },
+    "AnimeLineArtPreprocessor": {
+        "title": "AnimeLineArt动漫艺术线预处理器AnimeLineArtPreprocessor",
+        "inputs": {
+            "image": "图像image"
+        },
+        "widgets": {
+            "resolution": "分辨率resolution"
+        },
+        "outputs": {
+            "IMAGE": "图像IMAGE"
+        }
+    },
+    "Manga2Anime-LineArtPreprocessor": {
+        "title": "Manga2Anime-LineArt漫画艺术线预处理器Manga2Anime-LineArtPreprocessor",
+        "inputs": {
+            "image": "图像image"
+        },
+        "widgets": {
+            "resolution": "分辨率resolution"
+        },
+        "outputs": {
+            "IMAGE": "图像IMAGE"
+        }
+    },
+    "CannyEdgePreprocessor": {
+        "title": "Canny细致线预处理器CannyEdgePreprocessor",
+        "inputs": {
+            "image": "图像image"
+        },
+        "widgets": {
+            "low_threshold": "低阈值low_threshold",
+            "high_threshold": "高阈值high_threshold",
+            "l2gradient": "L2范数l2gradient",
+                "disable": "关闭disable",
+                "enable": "开启enable",
+            "resolution": "分辨率resolution"
+        },
+        "outputs": {
+            "IMAGE": "图像IMAGE"
+        }
+    },
+    "M-LSDPreprocessor": {
+        "title": "M-LSD线段预处理器M-LSDPreprocessor",
+        "inputs": {
+            "image": "图像image"
+        },
+        "widgets": {
+            "score_threshold": "刻痕阈值score_threshold",
+            "dist_threshold": "距离阈值dist_threshold",
+            "resolution": "分辨率resolution"
+        },
+        "outputs": {
+            "IMAGE": "图像IMAGE"
+        }
+    },
+
+
+
+
+    "MiDaS-DepthMapPreprocessor": {
+        "title": "MiDaS深度预处理器MiDaS-DepthMapPreprocessor",
+        "inputs": {
+            "image": "图像image"
+        },
+        "widgets": {
+            "a": "角度a",
+            "bg_threshold": "背景阈值bg_threshold",
+            "resolution": "分辨率resolution"
+        },
+        "outputs": {
+            "IMAGE": "图像IMAGE"
+        }
+    },
+    "MiDaS-NormalMapPreprocessor": {
+        "title": "MiDaS法向预处理器MiDaS-NormalMapPreprocessor",
+        "inputs": {
+            "image": "图像image"
+        },
+        "widgets": {
+            "a": "角度a",
+            "bg_threshold": "背景阈值bg_threshold",
+            "resolution": "分辨率resolution"
+        },
+        "outputs": {
+            "IMAGE": "图像IMAGE"
+        }
+    },
+    "LeReS-DepthMapPreprocessor": {
+        "title": "LeReS深度预处理器LeReS-DepthMapPreprocessor",
+        "inputs": {
+            "image": "图像image"
+        },
+        "widgets": {
+            "rm_nearest": "前景移除rm_nearest",
+            "rm_background": "背景移除rm_background",
+            "boost": "强化boost",
+            "resolution": "分辨率resolution"
+        },
+        "outputs": {
+            "IMAGE": "图像IMAGE"
+        }
+    },
+    "BAE-NormalMapPreprocessor": {
+        "title": "BAE法向预处理器BAE-NormalMapPreprocessor",
+        "inputs": {
+            "image": "图像image"
+        },
+        "widgets": {
+            "resolution": "分辨率resolution"
+        },
+        "outputs": {
+            "IMAGE": "图像IMAGE"
+        }
+    },
+    "Zoe-DepthMapPreprocessor": {
+        "title": "Zoe深度预处理器Zoe-DepthMapPreprocessor",
+        "inputs": {
+            "image": "图像image"
+        },
+        "widgets": {
+            "resolution": "分辨率resolution"
+        },
+        "outputs": {
+            "IMAGE": "图像IMAGE"
+        }
+    },
+
+
+
+
+    "OpenposePreprocessor": {
+        "title": "Openpose姿态预处理器OpenposePreprocessor",
+        "inputs": {
+            "image": "图像image"
+        },
+        "widgets": {
+            "detect_hand": "检测手部detect_hand",
+            "detect_body": "检测身体detect_body",
+            "detect_face": "检测面部detect_face",
+                "enable": "开启enable",
+                "disable": "关闭disable",
+            "version": "版本version",
+            "resolution": "分辨率resolution"
+        },
+        "outputs": {
+            "IMAGE": "图像IMAGE"
+        }
+    },
+    "MediaPipe-HandPosePreprocessor": {
+        "title": "MediaPipe姿态预处理器MediaPipe-HandPosePreprocessor",
+        "inputs": {
+            "image": "图像image"
+        },
+        "widgets": {
+            "detect_pose": "检测姿态detect_pose",
+            "detect_hands": "检测手部detect_hands",
+                "enable": "开启enable",
+                "disable": "关闭disable",
+            "resolution": "分辨率resolution"
+        },
+        "outputs": {
+            "IMAGE": "图像IMAGE"
+        }
+    },
+
+
+
+
+    "SemSegPreprocessor": {
+        "title": "Sem语义分割预处理器SemSegPreprocessor",
+        "inputs": {
+            "image": "图像image"
+        },
+        "widgets": {
+            "resolution": "分辨率resolution"
+        },
+        "outputs": {
+            "IMAGE": "图像IMAGE"
+        }
+    },
+    "UniFormer-SemSegPreprocessor": {
+        "title": "UniFormer语义分割预处理器UniFormer-SemSegPreprocessor",
+        "inputs": {
+            "image": "图像image"
+        },
+        "widgets": {
+            "resolution": "分辨率resolution"
+        },
+        "outputs": {
+            "IMAGE": "图像IMAGE"
+        }
+    },
+    "OneFormer-COCO-SemSegPreprocessor": {
+        "title": "OF-COCO语义分割预处理器OneFormer-COCO-SemSegPreprocessor",
+        "inputs": {
+            "image": "图像image"
+        },
+        "widgets": {
+            "resolution": "分辨率resolution"
+        },
+        "outputs": {
+            "IMAGE": "图像IMAGE"
+        }
+    },
+    "OneFormer-ADE20K-SemSegPreprocessor": {
+        "title": "OF-ADE20K语义分割预处理器OneFormer-ADE20K-SemSegPreprocessor",
+        "inputs": {
+            "image": "图像image"
+        },
+        "widgets": {
+            "resolution": "分辨率resolution"
+        },
+        "outputs": {
+            "IMAGE": "图像IMAGE"
+        }
+    },
+
+
+
+
+    "MediaPipe-FaceMeshPreprocessor": {
+        "title": "MediaPipe面部网格预处理器MediaPipe-FaceMeshPreprocessor",
+        "inputs": {
+            "image": "图像image"
+        },
+        "widgets": {
+            "max_faces": "最大面部数量max_faces",
+            "min_confidence": "最小置信度min_confidence",
+            "resolution": "分辨率resolution"
+        },
+        "outputs": {
+            "IMAGE": "图像IMAGE"
+        }
+    },
+    "ColorPreprocessor": {
+        "title": "Color颜色预处理器ColorPreprocessor",
+        "inputs": {
+            "image": "图像image"
+        },
+        "widgets": {
+            "resolution": "分辨率resolution"
+        },
+        "outputs": {
+            "IMAGE": "图像IMAGE"
+        }
+    },
+    "TilePreprocessor": {
+        "title": "Tile平铺预处理器TilePreprocessor",
+        "inputs": {
+            "image": "图像image"
+        },
+        "widgets": {
+            "pyrUp_iters": "迭代次数pyrUp_iters",
+            "resolution": "分辨率resolution"
+        },
+        "outputs": {
+            "IMAGE": "图像IMAGE"
+        }
+    },
+    "InpaintPreprocessor": {
+        "title": "Inpaint内补预处理器InpaintPreprocessor",
+        "inputs": {
+            "image": "图像image",
+            "mask": "遮罩mask"
+        },
+        "widgets": {
+            "resolution": "分辨率resolution"
+        },
+        "outputs": {
+            "IMAGE": "图像IMAGE"
+        }
+    },
+    "ShufflePreprocessor": {
+        "title": "Shuffle内容重组预处理器ShufflePreprocessor",
+        "inputs": {
+            "image": "图像image"
+        },
+        "widgets": {
+            "resolution": "分辨率resolution"
+        },
+        "outputs": {
+            "IMAGE": "图像IMAGE"
+        }
+    }
+}

@@ -1,0 +1,149 @@
+{
+    "FABRICPatchModel": {
+        "title": "Fabric修补模型FABRICPatchModel",
+        "inputs": {
+            "model": "模型model",
+            "clip": "CLIPclip",
+            "pos_latents": "正面Latentpos_latents",
+            "neg_latents": "负面Latentneg_latents"
+        },
+        "widgets": {
+            "pos_weight": "正面权重pos_weight",
+            "neg_weight": "负面权重neg_weight"
+        },
+        "outputs": {
+            "MODEL": "模型MODEL"
+        }
+    },
+    "FABRICPatchModelAdv":{
+        "title": "Fabric修补模型(高级)",
+        "inputs": {
+            "model": "模型model",
+            "clip": "CLIPclip",
+            "null_pos": "空正面条件null_pos",
+            "null_neg": "空负面条件null_neg",
+            "pos_latents": "正面Latentpos_latents",
+            "neg_latents": "负面Latentneg_latents"
+        },
+        "widgets": {
+            "pos_weight": "正面权重pos_weight",
+            "neg_weight": "负面权重neg_weight"
+        },
+        "outputs": {
+            "MODEL": "模型MODEL"
+        }
+    },
+    "LatentBatch": {
+        "title": "Latent组合批次LatentBatch",
+        "inputs": {
+            "latent1": "Latent1latent1",
+            "latent2": "Latent2latent2"
+        },
+        "outputs": {
+            "LATENT": "LatentLATENT"
+        }
+    },
+    "KSamplerFABRIC": {
+        "title": "K采样器(Fabric)KSamplerFABRIC",
+        "inputs": {
+            "model": "模型model",
+            "positive": "正面条件positive",
+            "negative": "负面条件negative",
+            "latent_image": "Latentlatent_image",
+            "clip": "CLIPclip",
+            "pos_latents": "正面Latentpos_latents",
+            "neg_latents": "负面Latentneg_latents"
+        },
+        "widgets": {
+            "seed": "随机种seed",
+            "control_after_generate": "运行后操作control_after_generate",
+                "fixed": "固定fixed",
+                "increment": "增加increment",
+                "decrement": "减少decrement",
+                "randomize": "随机randomize",
+            "steps": "步数steps",
+            "cfg": "CFGcfg",
+            "sampler_name": "采样器sampler_name",
+            "scheduler": "调度器scheduler",
+            "denoise": "降噪denoise",
+            "pos_weight": "正面权重pos_weight",
+            "neg_weight": "负面权重neg_weight",
+            "feedback_percent": "反馈占比feedback_percent"
+        },
+        "outputs": {
+            "LATENT": "LatentLATENT"
+        }
+    },
+    "KSamplerFABRICAdv": {
+        "title": "K采样器(FabricAdv)KSamplerFABRICAdv",
+        "inputs": {
+            "model": "模型model",
+            "positive": "正面条件positive",
+            "negative": "负面条件negative",
+            "latent_image": "Latentlatent_image",
+            "clip": "CLIPclip",
+            "null_pos": "空正面条件null_pos",
+            "null_neg": "空负面条件null_neg",
+            "pos_latents": "正面Latentpos_latents",
+            "neg_latents": "负面Latentneg_latents"
+        },
+        "widgets": {
+            "seed": "随机种seed",
+            "control_after_generate": "运行后操作control_after_generate",
+                "fixed": "固定fixed",
+                "increment": "增加increment",
+                "decrement": "减少decrement",
+                "randomize": "随机randomize",
+            "steps": "步数steps",
+            "cfg": "CFGcfg",
+            "sampler_name": "采样器sampler_name",
+            "scheduler": "调度器scheduler",
+            "denoise": "降噪denoise",
+            "pos_weight": "正面权重pos_weight",
+            "neg_weight": "负面权重neg_weight",
+            "feedback_start": "反馈开始步数feedback_start",
+            "feedback_end": "反馈结束步数feedback_end"
+        },
+        "outputs": {
+            "LATENT": "LatentLATENT"
+        }
+    },
+    "KSamplerAdvFABRICAdv": {
+        "title": "K采样器(高级FabricAdv)KSamplerAdvFABRICAdv",
+        "inputs": {
+            "model": "模型model",
+            "positive": "正面条件positive",
+            "negative": "负面条件negative",
+            "latent_image": "Latentlatent_image",
+            "clip": "CLIPclip",
+            "null_pos": "空正面条件null_pos",
+            "null_neg": "空负面条件null_neg",
+            "pos_latents": "正面Latentpos_latents",
+            "neg_latents": "负面Latentneg_latents"
+        },
+        "widgets": {
+            "add_noise": "添加噪波add_noise",
+            "noise_seed": "随机种noise_seed",
+            "control_after_generate": "运行后操作control_after_generate",
+                "fixed": "固定fixed",
+                "increment": "增加increment",
+                "decrement": "减少decrement",
+                "randomize": "随机randomize",
+            "steps": "步数steps",
+            "cfg": "CFGcfg",
+            "sampler_name": "采样器sampler_name",
+            "scheduler": "调度器scheduler",
+            "denoise": "降噪denoise",
+            "start_at_step": "开始降噪步数start_at_step",
+            "end_at_step": "结束降噪步数end_at_step",
+            "return_with_leftover_noise": "返回噪波return_with_leftover_noise",
+            "pos_weight": "正面权重pos_weight",
+            "neg_weight": "负面权重neg_weight",
+            "feedback_start": "反馈开始步数feedback_start",
+            "feedback_end": "反馈结束步数feedback_end"
+        },
+        "outputs": {
+            "LATENT": "LatentLATENT"
+        }
+    }
+}

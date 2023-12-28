@@ -1,0 +1,89 @@
+{
+    "comfy-qr-by-module-size": {
+        "title": "QR码(模块)comfy-qr-by-module-size",
+        "widgets": {
+            "protocol": "格式protocol",
+            "text": "内容text",
+            "module_size": "模块大小module_size",
+            "max_image_size": "最大图像大小max_image_size",
+            "fill_hexcolor": "内容HEXfill_hexcolor",
+            "back_hexcolor": "背景HEXback_hexcolor",
+            "error_correction": "容错能力error_correction",
+            "border": "边界大小border"
+        },
+        "outputs": {
+            "QR_CODE": "QR图像QR_CODE",
+            "QR_VERSION": "QR版本QR_VERSION",
+            "IMAGE_SIZE": "图像大小IMAGE_SIZE"
+        }
+    },
+    "comfy-qr-by-image-size": {
+        "title": "QR码(图像)comfy-qr-by-image-size",
+        "widgets": {
+            "protocol": "格式protocol",
+            "text": "内容text",
+            "image_size": "图像大小image_size",
+            "fill_hexcolor": "内容HEXfill_hexcolor",
+            "back_hexcolor": "背景HEXback_hexcolor",
+            "error_correction": "容错能力error_correction",
+            "border": "边界大小border",
+            "resampling": "重采样resampling",
+                "bicubic": "双三次插值bicubic",
+                "bilinear": "双线性插值bilinear",
+                "box": "方框滤波box",
+                "Hamming": "汉明窗Hamming",
+                "Lanczos": "Lanczos插值Lanczos",
+                "nearest": "邻近nearest"
+        },
+        "outputs": {
+            "QR_CODE": "QR图像QR_CODE",
+            "QR_VERSION": "QR版本QR_VERSION"
+        }
+    },
+    "comfy-qr-by-module-split": {
+        "title": "QR码(分割)comfy-qr-by-module-split",
+        "widgets": {
+            "protocol": "格式protocol",
+            "text": "内容text",
+            "module_size": "模块大小module_size",
+            "max_image_size": "最大图像大小max_image_size",
+            "fill_hexcolor": "内容HEXfill_hexcolor",
+            "back_hexcolor": "背景HEXback_hexcolor",
+            "error_correction": "容错能力error_correction",
+            "border": "边界大小border"
+        },
+        "outputs": {
+            "QR_CODE": "QR图像QR_CODE",
+            "MODULE_LAYER": "模块图像MODULE_LAYER",
+            "FINDER_LAYER": "定位图像FINDER_LAYER",
+            "FINDER_MASK": "定位遮罩FINDER_MASK",
+            "QR_VERSION": "QR版本QR_VERSION",
+            "IMAGE_SIZE": "图像大小IMAGE_SIZE"
+        }
+    },
+    "comfy-qr-mask_errors": {
+        "title": "QR码(容错校验)comfy-qr-mask_errors",
+        "inputs": {
+            "source_qr": "源QR图像source_qr",
+            "modified_qr": "修改QR图像modified_qr"
+        },
+        "widgets": {
+            "module_size": "模块大小module_size",
+            "grayscale_method": "灰度计算模式grayscale_method",
+                "mean": "平均mean",
+            "aggregate_method": "色值计算模式aggregate_method",
+            "evaluate": "计算目标evaluate",
+                "full_qr": "整体full_qr",
+                "module_pattern": "模块module_pattern",
+                "finder_pattern": "定位finder_pattern",
+            "error_difficulty": "容错难度error_difficulty",
+            "inverted_pattern": "反转内容inverted_pattern"
+        },
+        "outputs": {
+            "QR_ERROR_MASK": "QR错误遮罩QR_ERROR_MASK",
+            "PERCENT_ERROR": "错误占比PERCENT_ERROR",
+            "CORRELATION": "相关系数CORRELATION",
+            "RMSE": "误差值RMSE"
+        }
+    }
+}

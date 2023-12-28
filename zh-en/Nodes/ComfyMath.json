@@ -1,0 +1,579 @@
+{
+    "CM_BoolToInt": {
+        "title": "布尔到整数CM_BoolToInt",
+        "inputs": {
+            "a": "A"
+        },
+        "outputs": {
+            "INT": "整数INT"
+        }
+    },
+    "CM_IntToBool": {
+        "title": "整数到布尔CM_IntToBool",
+        "inputs": {
+            "a": "A"
+        },
+        "outputs": {
+            "BOOL": "布尔BOOL"
+        }
+    },
+    "CM_IntToFloat": {
+        "title": "整数到浮点CM_IntToFloat",
+        "inputs": {
+            "a": "A"
+        },
+        "outputs": {
+            "FLOAT": "浮点FLOAT"
+        }
+    },
+    "CM_FLoatToInt": {
+        "title": "浮点到整数CM_FLoatToInt",
+        "inputs": {
+            "a": "A"
+        },
+        "outputs": {
+            "INT": "整数INT"
+        }
+    },
+    "CM_IntToNumber": {
+        "title": "整数到数字CM_IntToNumber",
+        "inputs": {
+            "a": "A"
+        },
+        "outputs": {
+            "NUMBER": "数字NUMBER"
+        }
+    },
+    "CM_NumberToInt": {
+        "title": "数字到整数CM_NumberToInt",
+        "inputs": {
+            "a": "A"
+        },
+        "outputs": {
+            "INT": "整数INT"
+        }
+    },
+    "CM_FloatToNumber": {
+        "title": "浮点到数字CM_FloatToNumber",
+        "inputs": {
+            "a": "A"
+        },
+        "outputs": {
+            "NUMBER": "数字NUMBER"
+        }
+    },
+    "CM_NumberToFloat": {
+        "title": "数字到浮点CM_NumberToFloat",
+        "inputs": {
+            "a": "A"
+        },
+        "outputs": {
+            "FLOAT": "浮点FLOAT"
+        }
+    },
+    "CM_ComposeVec2": {
+        "title": "编码Vec2CM_ComposeVec2",
+        "inputs": {
+            "x": "Xx",
+            "y": "Yy"
+        },
+        "outputs": {
+            "VEC2": "Vec2VEC2"
+        }
+    },
+    "CM_BreakoutVec2": {
+        "title": "解码Vec2CM_BreakoutVec2",
+        "inputs": {
+            "a": "Vec2a"
+        },
+        "outputs": {
+            "FLOAT": "浮点FLOAT"
+        }
+    },
+    "CM_ComposeVec3": {
+        "title": "编码Vec3CM_ComposeVec3",
+        "inputs": {
+            "x": "Xx",
+            "y": "Yy",
+            "z": "Zz"
+        },
+        "outputs": {
+            "VEC3": "Vec3VEC3"
+        }
+    },
+    "CM_BreakoutVec3": {
+        "title": "解码Vec3CM_BreakoutVec3",
+        "inputs": {
+            "a": "Vec3a"
+        },
+        "outputs": {
+            "FLOAT": "浮点FLOAT"
+        }
+    },
+    "CM_ComposeVec4": {
+        "title": "编码Vec4CM_ComposeVec4",
+        "inputs": {
+            "x": "Xx",
+            "y": "Yy",
+            "z": "Zz",
+            "w": "Ww"
+        },
+        "outputs": {
+            "VEC4": "Vec4VEC4"
+        }
+    },
+    "CM_BreakoutVec4": {
+        "title": "解码Vec4CM_BreakoutVec4",
+        "inputs": {
+            "a": "Vec4a"
+        },
+        "outputs": {
+            "FLOAT": "浮点FLOAT"
+        }
+    },
+
+
+
+    "CM_BoolUnaryOperation": {
+        "title": "布尔运算(单值)CM_BoolUnaryOperation",
+        "inputs": {
+            "a": "A"
+        },
+        "widgets": {
+            "op": "操作op"
+        },
+        "outputs": {
+            "BOOL": "布尔BOOL"
+        }
+    },
+    "CM_BoolBinaryOperation": {
+        "title": "布尔运算(双值)CM_BoolBinaryOperation",
+        "inputs": {
+            "a": "A"
+        },
+        "widgets": {
+            "op": "操作op"
+        },
+        "outputs": {
+            "BOOL": "布尔BOOL"
+        }
+    },
+    "CM_IntUnaryOperation": {
+        "title": "整数运算(单值)CM_IntUnaryOperation",
+        "widgets": {
+            "op": "操作op",
+            "a": "A"
+        },
+        "outputs": {
+            "INT": "整数INT"
+        }
+    },
+    "CM_IntUnaryCondition": {
+        "title": "整数布尔运算(单值)CM_IntUnaryCondition",
+        "widgets": {
+            "op": "操作op",
+            "a": "A"
+        },
+        "outputs": {
+            "BOOL": "布尔BOOL"
+        }
+    },
+    "CM_IntBinaryOperation": {
+        "title": "整数运算(双值)CM_IntBinaryOperation",
+        "widgets": {
+            "op": "操作op",
+            "a": "A",
+            "b": "B"
+        },
+        "outputs": {
+            "INT": "整数INT"
+        }
+    },
+    "CM_IntBinaryCondition": {
+        "title": "整数布尔运算(双值)CM_IntBinaryCondition",
+        "widgets": {
+            "op": "操作op",
+            "a": "A",
+            "b": "B"
+        },
+        "outputs": {
+            "BOOL": "布尔BOOL"
+        }
+    },
+    "CM_FloatUnaryOperation": {
+        "title": "浮点运算(单值)CM_FloatUnaryOperation",
+        "widgets": {
+            "op": "操作op",
+            "a": "A"
+        },
+        "outputs": {
+            "FLOAT": "浮点FLOAT"
+        }
+    },
+    "CM_FloatUnaryCondition": {
+        "title": "浮点布尔运算(单值)CM_FloatUnaryCondition",
+        "widgets": {
+            "op": "操作op",
+            "a": "A"
+        },
+        "outputs": {
+            "BOOL": "布尔BOOL"
+        }
+    },
+    "CM_FloatBinaryOperation": {
+        "title": "浮点运算(双值)CM_FloatBinaryOperation",
+        "widgets": {
+            "op": "操作op",
+            "a": "A",
+            "b": "B"
+        },
+        "outputs": {
+            "FLOAT": "浮点FLOAT"
+        }
+    },
+    "CM_FloatBinaryCondition": {
+        "title": "浮点布尔运算(双值)CM_FloatBinaryCondition",
+        "widgets": {
+            "op": "操作op",
+            "a": "A",
+            "b": "B"
+        },
+        "outputs": {
+            "BOOL": "布尔BOOL"
+        }
+    },
+    "CM_NumberUnaryOperation": {
+        "title": "数字运算(单值)CM_NumberUnaryOperation",
+        "inputs": {
+            "a": "A"
+        },
+        "widgets": {
+            "op": "操作op"
+        },
+        "outputs": {
+            "NUMBER": "数字NUMBER"
+        }
+    },
+    "CM_NumberUnaryCondition": {
+        "title": "数字布尔运算(单值)CM_NumberUnaryCondition",
+        "inputs": {
+            "a": "A"
+        },
+        "widgets": {
+            "op": "操作op"
+        },
+        "outputs": {
+            "BOOL": "布尔BOOL"
+        }
+    },
+    "CM_NumberBinaryOperation": {
+        "title": "数字运算(双值)CM_NumberBinaryOperation",
+        "inputs": {
+            "a": "A",
+            "b": "B"
+        },
+        "widgets": {
+            "op": "操作op"
+        },
+        "outputs": {
+            "NUMBER": "数字NUMBER"
+        }
+    },
+    "CM_NumberBinaryCondition": {
+        "title": "数字布尔运算(双值)CM_NumberBinaryCondition",
+        "inputs": {
+            "a": "A",
+            "b": "B"
+        },
+        "widgets": {
+            "op": "操作op"
+        },
+        "outputs": {
+            "BOOL": "布尔BOOL"
+        }
+    },
+    "CM_Vec2UnaryOperation": {
+        "title": "Vec2运算(单值)CM_Vec2UnaryOperation",
+        "inputs": {
+            "a": "A"
+        },
+        "widgets": {
+            "op": "操作op"
+        },
+        "outputs": {
+            "VEC2": "Vec2VEC2"
+        }
+    },
+    "CM_Vec2UnaryCondition": {
+        "title": "Vec2布尔运算(单值)CM_Vec2UnaryCondition",
+        "inputs": {
+            "a": "A"
+        },
+        "widgets": {
+            "op": "操作op"
+        },
+        "outputs": {
+            "BOOL": "布尔BOOL"
+        }
+    },
+    "CM_Vec2ToScalarUnaryOperation": {
+        "title": "Vec2到标量运算(单值)CM_Vec2ToScalarUnaryOperation",
+        "inputs": {
+            "a": "A"
+        },
+        "widgets": {
+            "op": "操作op"
+        },
+        "outputs": {
+            "FLOAT": "浮点FLOAT"
+        }
+    },
+    "CM_Vec2BinaryOperation": {
+        "title": "Vec2运算(双值)CM_Vec2BinaryOperation",
+        "inputs": {
+            "a": "A",
+            "b": "Ab"
+        },
+        "widgets": {
+            "op": "操作op"
+        },
+        "outputs": {
+            "VEC2": "Vec2VEC2"
+        }
+    },
+    "CM_Vec2BinaryCondition": {
+        "title": "Vec2布尔运算(双值)CM_Vec2BinaryCondition",
+        "inputs": {
+            "a": "A",
+            "b": "Ab"
+        },
+        "widgets": {
+            "op": "操作op"
+        },
+        "outputs": {
+            "BOOL": "布尔BOOL"
+        }
+    },
+    "CM_Vec2ToScalarBinaryOperation": {
+        "title": "Vec2到标量运算(双值)CM_Vec2ToScalarBinaryOperation",
+        "inputs": {
+            "a": "A",
+            "b": "Ab"
+        },
+        "widgets": {
+            "op": "操作op"
+        },
+        "outputs": {
+            "FLOAT": "浮点FLOAT"
+        }
+    },
+    "CM_Vec2ScalarOperation": {
+        "title": "Vec2标量运算CM_Vec2ScalarOperation",
+        "inputs": {
+            "a": "A"
+        },
+        "widgets": {
+            "op": "操作op",
+            "b": "B操作b"
+        },
+        "outputs": {
+            "FLOAT": "浮点FLOAT"
+        }
+    },
+    "CM_Vec3UnaryOperation": {
+        "title": "Vec3运算(单值)CM_Vec3UnaryOperation",
+        "inputs": {
+            "a": "A"
+        },
+        "widgets": {
+            "op": "操作op"
+        },
+        "outputs": {
+            "VEC3": "Vec3VEC3"
+        }
+    },
+    "CM_Vec3UnaryCondition": {
+        "title": "Vec3布尔运算(单值)CM_Vec3UnaryCondition",
+        "inputs": {
+            "a": "A"
+        },
+        "widgets": {
+            "op": "操作op"
+        },
+        "outputs": {
+            "BOOL": "布尔BOOL"
+        }
+    },
+    "CM_Vec3ToScalarUnaryOperation": {
+        "title": "Vec3到标量运算(单值)CM_Vec3ToScalarUnaryOperation",
+        "inputs": {
+            "a": "A"
+        },
+        "widgets": {
+            "op": "操作op"
+        },
+        "outputs": {
+            "FLOAT": "浮点FLOAT"
+        }
+    },
+    "CM_Vec3BinaryOperation": {
+        "title": "Vec3运算(双值)CM_Vec3BinaryOperation",
+        "inputs": {
+            "a": "A",
+            "b": "Ab"
+        },
+        "widgets": {
+            "op": "操作op"
+        },
+        "outputs": {
+            "VEC3": "Vec3VEC3"
+        }
+    },
+    "CM_Vec3BinaryCondition": {
+        "title": "Vec3布尔运算(双值)CM_Vec3BinaryCondition",
+        "inputs": {
+            "a": "A",
+            "b": "Ab"
+        },
+        "widgets": {
+            "op": "操作op"
+        },
+        "outputs": {
+            "BOOL": "布尔BOOL"
+        }
+    },
+    "CM_Vec3ToScalarBinaryOperation": {
+        "title": "Vec3到标量运算(双值)CM_Vec3ToScalarBinaryOperation",
+        "inputs": {
+            "a": "A",
+            "b": "Ab"
+        },
+        "widgets": {
+            "op": "操作op"
+        },
+        "outputs": {
+            "FLOAT": "浮点FLOAT"
+        }
+    },
+    "CM_Vec3ScalarOperation": {
+        "title": "Vec3标量运算CM_Vec3ScalarOperation",
+        "inputs": {
+            "a": "A"
+        },
+        "widgets": {
+            "op": "操作op",
+            "b": "B操作b"
+        },
+        "outputs": {
+            "FLOAT": "浮点FLOAT"
+        }
+    },
+    "CM_Vec4UnaryOperation": {
+        "title": "Vec4运算(单值)CM_Vec4UnaryOperation",
+        "inputs": {
+            "a": "A"
+        },
+        "widgets": {
+            "op": "操作op"
+        },
+        "outputs": {
+            "VEC4": "Vec4VEC4"
+        }
+    },
+    "CM_Vec4UnaryCondition": {
+        "title": "Vec4布尔运算(单值)CM_Vec4UnaryCondition",
+        "inputs": {
+            "a": "A"
+        },
+        "widgets": {
+            "op": "操作op"
+        },
+        "outputs": {
+            "BOOL": "布尔BOOL"
+        }
+    },
+    "CM_Vec4ToScalarUnaryOperation": {
+        "title": "Vec4到标量运算(单值)CM_Vec4ToScalarUnaryOperation",
+        "inputs": {
+            "a": "A"
+        },
+        "widgets": {
+            "op": "操作op"
+        },
+        "outputs": {
+            "FLOAT": "浮点FLOAT"
+        }
+    },
+    "CM_Vec4BinaryOperation": {
+        "title": "Vec4运算(双值)CM_Vec4BinaryOperation",
+        "inputs": {
+            "a": "A",
+            "b": "Ab"
+        },
+        "widgets": {
+            "op": "操作op"
+        },
+        "outputs": {
+            "VEC4": "Vec4VEC4"
+        }
+    },
+    "CM_Vec4BinaryCondition": {
+        "title": "Vec4布尔运算(双值)CM_Vec4BinaryCondition",
+        "inputs": {
+            "a": "A",
+            "b": "Ab"
+        },
+        "widgets": {
+            "op": "操作op"
+        },
+        "outputs": {
+            "BOOL": "布尔BOOL"
+        }
+    },
+    "CM_Vec4ToScalarBinaryOperation": {
+        "title": "Vec4到标量运算(双值)CM_Vec4ToScalarBinaryOperation",
+        "inputs": {
+            "a": "A",
+            "b": "Ab"
+        },
+        "widgets": {
+            "op": "操作op"
+        },
+        "outputs": {
+            "FLOAT": "浮点FLOAT"
+        }
+    },
+    "CM_Vec4ScalarOperation": {
+        "title": "Vec4标量运算CM_Vec4ScalarOperation",
+        "inputs": {
+            "a": "A"
+        },
+        "widgets": {
+            "op": "操作op",
+            "b": "B操作b"
+        },
+        "outputs": {
+            "FLOAT": "浮点FLOAT"
+        }
+    },
+    "CM_SDXLResolution": {
+        "title": "SDXL分辨率CM_SDXLResolution",
+        "widgets": {
+            "resolution": "分辨率resolution"
+        },
+        "outputs": {
+            "width": "宽度width",
+            "height": "高度height"
+        }
+    },
+    "CM_NearestSDXLResolution": {
+        "title": "最近SDXL分辨率CM_NearestSDXLResolution",
+        "inputs": {
+            "image": "图像image"
+        },
+        "outputs": {
+            "width": "宽度width",
+            "height": "高度height"
+        }
+    }
+}

@@ -1,0 +1,35 @@
+{
+    "ControlLoraSave": {
+        "title": "保存ControlLoraControlLoraSave",
+        "inputs": {
+            "model": "模型model",
+            "control_net": "ControlNetcontrol_net"
+        },
+        "widgets": {
+            "filename_prefix": "文件名前缀filename_prefix",
+            "rank": "Rankrank"
+        }
+    },
+    
+    "ColorBlend": {
+        "title": "颜色混合ColorBlend",
+        "inputs": {
+            "bw_layer": "黑白层图像bw_layer",
+            "color_layer": "颜色层图像color_layer"
+        },
+        "outputs": {
+            "IMAGE": "图像IMAGE"
+        }
+    },
+
+    "GetImageSize": {
+        "title": "获取图像尺寸GetImageSize",
+        "inputs": {
+            "image": "图像image"
+        },
+        "outputs": {
+            "width": "宽度width",
+            "height": "高度height"
+        }
+    }
+}

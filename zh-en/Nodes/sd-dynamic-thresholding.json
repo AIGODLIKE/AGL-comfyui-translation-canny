@@ -1,0 +1,53 @@
+{
+    "DynamicThresholdingSimple": {
+        "title": "动态阈值(简易)DynamicThresholdingSimple",
+        "inputs": {
+            "model": "模型model"
+        },
+        "widgets": {
+            "mimic_scale": "模拟CFGmimic_scale",
+            "threshold_percentile": "阈值百分比threshold_percentile"
+        },
+        "outputs": {
+            "MODEL": "模型MODEL"
+        }
+    },
+    "DynamicThresholdingFull": {
+        "title": "动态阈值DynamicThresholdingFull",
+        "inputs": {
+            "model": "模型model"
+        },
+        "widgets": {
+            "mimic_scale": "模拟CFGmimic_scale",
+            "threshold_percentile": "阈值百分比threshold_percentile",
+            "mimic_mode": "模拟模式mimic_mode",
+                "Constant": "常数Constant",
+                "Sawtooth": "锯齿波Sawtooth",
+                "Cosine Repeating": "余弦循环Cosine Repeating",
+                "Linear Repeating": "线性循环Linear Repeating",
+                "Power Down": "幂函数下降Power Down",
+                "Power Up": "幂函数上升Power Up",
+                "Half Cosine Up": "半余弦上升Half Cosine Up",
+                "Cosine Up": "余弦上升Cosine Up",
+                "Linear Up": "线性上升Linear Up",
+                "Half Cosine Down": "半余弦下降Half Cosine Down",
+                "Consine Down": "余弦下降Consine Down",
+                "Linear Down": "线性下降Linear Down",
+            "mimic_scale_min": "最小模拟mimic_scale_min",
+            "cfg_mode": "CFG模式cfg_mode",
+            "cfg_scale_min": "最小CFGcfg_scale_min",
+            "sched_val": "调度定义值sched_val",
+            "separate_feature_channels": "区分通道separate_feature_channels",
+            "scaling_startpoint": "缩放起始点scaling_startpoint",
+                "MEAN": "平均MEAN",
+                "ZERO": "零ZERO",
+            "variability_measure": "变量检测variability_measure",
+                "AD": "绝对差值AD",
+                "STD": "标准差值STD",
+            "interpolate_phi": "混合插值interpolate_phi"
+        },
+        "outputs": {
+            "MODEL": "模型MODEL"
+        }
+    }
+}

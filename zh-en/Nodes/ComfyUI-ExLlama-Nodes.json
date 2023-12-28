@@ -1,0 +1,75 @@
+{
+    "ZuellniExLlamaLoader": {
+        "title": "ExLLaMA加载器ZuellniExLlamaLoader",
+        "widgets": {
+            "model_dir": "模型路径model_dir",
+            "max_seq_len": "最大序列长度max_seq_len"
+        },
+        "outputs": {
+            "MODEL": "模型MODEL"
+        }
+    },
+    "ZuellniExLlamaLoraLoader": {
+        "title": "ExLLaMALoRA加载器ZuellniExLlamaLoraLoader",
+        "inputs": {
+            "model": "模型model"
+        },
+        "widgets": {
+            "lora_dir": "LoRA路径lora_dir"
+        },
+        "outputs": {
+            "LORA": "LoRALORA"
+        }
+    },
+    "ZuellniExLlamaLora": {
+        "title": "ExLLaMALoRA加载器ZuellniExLlamaLora",
+        "inputs": {
+            "model": "模型model"
+        },
+        "widgets": {
+            "lora_dir": "LoRA路径lora_dir"
+        },
+        "outputs": {
+            "LORA": "LoRALORA"
+        }
+    },
+    "ZuellniExLlamaGenerator": {
+        "title": "ExLLaMA生成器ZuellniExLlamaGenerator",
+        "inputs": {
+            "model": "模型model",
+            "lora": "LoRAlora"
+        },
+        "widgets": {
+            "lora_dir": "LoRA路径lora_dir",
+            "stop_on_newline": "换行停止stop_on_newline",
+            "temperature": "温度temperature",
+            "max_tokens": "最大Token数量max_tokens",
+            "top_k": "top_ktop_k",
+            "top_l": "top_ltop_l",
+            "typical": "typicaltypical",
+            "penalty": "重复惩罚penalty",
+            "seed": "随机种seed",
+            "control_after_generate": "运行后操作control_after_generate",
+                "fixed": "固定fixed",
+                "increment": "增加increment",
+                "decrement": "减少decrement",
+                "randomize": "随机randomize",
+            "prompt": "提示词prompt",
+            "Prompt": "提示词Prompt",
+            "PROMPT": "提示词PROMPT"
+        },
+        "outputs": {
+            "TEXT": "文本TEXT"
+        }
+    },
+    "ZuellniExLlamaPreviewer": {
+        "title": "ExLLaMA预览文本ZuellniExLlamaPreviewer",
+        "inputs": {
+            "text": "文本text"
+        },
+        "widgets": {
+            "text": "文本text",
+            "TEXT": "文本TEXT"
+        }
+    }
+}

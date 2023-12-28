@@ -1,0 +1,68 @@
+{
+    "BNK_TiledKSampler": {
+        "title": "K采样器(分块)BNK_TiledKSampler",
+        "inputs": {
+            "model": "模型model",
+            "positive": "正面条件positive",
+            "negative": "负面条件negative",
+            "latent_image": "Latentlatent_image"
+        },
+        "widgets": {
+            "seed": "随机种seed",
+            "control_after_generate": "运行后操作control_after_generate",
+                "fixed": "固定fixed",
+                "increment": "增加increment",
+                "decrement": "减少decrement",
+                "randomize": "随机randomize",
+            "tile_width": "分块宽度tile_width",
+            "tile_height": "分块高度tile_height",
+            "tiling_strategy": "无缝分块策略tiling_strategy",
+                "random": "随机random",
+                "padded": "分区padded",
+                "simple": "简易simple",
+            "steps": "步数steps",
+            "cfg": "CFGcfg",
+            "sampler_name": "采样器sampler_name",
+            "scheduler": "调度器scheduler",
+            "denoise": "降噪denoise"
+        },
+        "outputs": {
+            "LATENT": "LatentLATENT"
+        }
+    },
+    "BNK_TiledKSamplerAdvanced": {
+        "title": "K采样器(高级分块)BNK_TiledKSamplerAdvanced",
+        "inputs": {
+            "model": "模型model",
+            "positive": "正面条件positive",
+            "negative": "负面条件negative",
+            "latent_image": "Latentlatent_image"
+        },
+        "widgets": {
+            "add_noise": "添加噪波add_noise",
+            "noise_seed": "随机种noise_seed",
+            "control_after_generate": "运行后操作control_after_generate",
+                "fixed": "固定fixed",
+                "increment": "增加increment",
+                "decrement": "减少decrement",
+                "randomize": "随机randomize",
+            "tile_width": "分块宽度tile_width",
+            "tile_height": "分块高度tile_height",
+            "tiling_strategy": "无缝分块策略tiling_strategy",
+                "random": "随机random",
+                "padded": "分区padded",
+                "simple": "简易simple",
+            "steps": "步数steps",
+            "cfg": "CFGcfg",
+            "sampler_name": "采样器sampler_name",
+            "scheduler": "调度器scheduler",
+            "start_at_step": "开始降噪步数start_at_step",
+            "end_at_step": "结束降噪步数end_at_step",
+            "return_with_leftover_noise": "返回噪波return_with_leftover_noise",
+            "preview": "预览图象preview"
+        },
+        "outputs": {
+            "LATENT": "LatentLATENT"
+        }
+    }
+}

@@ -1,0 +1,39 @@
+{
+    "CLIPSeg":{
+        "title": "CLIP语义分割",
+        "inputs": {
+            "image": "图像image"
+        },
+        "widgets": {
+            "text": "文本text",
+            "blur": "模糊blur",
+            "threshold": "阈值threshold",
+            "dilation_factor": "膨胀dilation_factor"
+        },
+        "outputs": {
+            "Mask": "遮罩Mask",
+            "Heatmap Mask": "热度图Heatmap Mask",
+            "BW Mask": "灰度图BW Mask"
+        }
+    },
+    "CombineSegMasks":{
+        "title": "合并分割遮罩",
+        "inputs": {
+            "input_image": "图像input_image",
+            "mask_1": "遮罩1mask_1",
+            "mask_2": "遮罩2mask_2",
+            "mask_3": "遮罩3mask_3"
+        },
+        "widgets": {
+            "text": "文本text",
+            "blur": "模糊blur",
+            "threshold": "阈值threshold",
+            "dilation_factor": "膨胀dilation_factor"
+        },
+        "outputs": {
+            "Combined Mask": "遮罩Combined Mask",
+            "Heatmap Mask": "热度图Heatmap Mask",
+            "BW Mask": "灰度图BW Mask"
+        }
+    }
+}

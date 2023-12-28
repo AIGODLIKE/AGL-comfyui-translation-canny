@@ -1,0 +1,190 @@
+{
+    
+    "ADE_AnimateDiffModelSettingsSimple": {
+        "title": "动态扩散模型设置(简易)ADE_AnimateDiffModelSettingsSimple",
+        "inputs": {
+            "mask_motion_scale": "动态缩放遮罩mask_motion_scale"
+        },
+        "widgets": {
+            "motion_pe_stretch": "动态位置拉伸motion_pe_stretch",
+            "min_motion_scale": "最小动态缩放min_motion_scale",
+            "max_motion_scale": "最大动态缩放max_motion_scale"
+        },
+        "outputs": {
+            "MOTION_MODEL_SETTINGS": "动态模型设置MOTION_MODEL_SETTINGS"
+        }
+    },
+    "ADE_AnimateDiffModelSettings": {
+        "title": "动态扩散模型设置ADE_AnimateDiffModelSettings",
+        "inputs": {
+            "mask_motion_scale": "动态缩放遮罩mask_motion_scale"
+        },
+        "outputs": {
+            "MOTION_MODEL_SETTINGS": "动态模型设置MOTION_MODEL_SETTINGS"
+        }
+    },
+    "ADE_AnimateDiffModelSettingsAdvancedAttnStrengths": {
+        "title": "动态扩散模型设置(高级)ADE_AnimateDiffModelSettingsAdvancedAttnStrengths",
+        "inputs": {
+            "mask_motion_scale": "动态缩放遮罩mask_motion_scale"
+        },
+        "outputs": {
+            "MOTION_MODEL_SETTINGS": "动态模型设置MOTION_MODEL_SETTINGS"
+        }
+    },
+    "ADE_AnimateDiffModelSettings_Release": {
+        "title": "动态扩散模型设置(发行)ADE_AnimateDiffModelSettings_Release",
+        "inputs": {
+            "mask_motion_scale": "动态缩放遮罩mask_motion_scale"
+        },
+        "widgets": {
+            "min_motion_scale": "最小动态缩放min_motion_scale",
+            "max_motion_scale": "最大动态缩放max_motion_scale"
+        },
+        "outputs": {
+            "MOTION_MODEL_SETTINGS": "动态模型设置MOTION_MODEL_SETTINGS"
+        }
+    },
+
+
+
+    "ADE_AnimateDiffUniformContextOptions": {
+        "title": "动态扩散上下文选项ADE_AnimateDiffUniformContextOptions",
+        "widgets": {
+            "context_length": "上下文长度context_length",
+            "context_stride": "上下文步幅context_stride",
+            "context_overlap": "上下文重叠context_overlap",
+            "context_schedule": "上下文调度器context_schedule",
+            "closed_loop": "闭合上下文循环closed_loop"
+        },
+        "outputs": {
+            "CONTEXT_OPTIONS": "上下文设置CONTEXT_OPTIONS"
+        }
+    },
+    "ADE_AnimateDiffLoaderWithContext": {
+        "title": "动态扩散加载器(上下文)ADE_AnimateDiffLoaderWithContext",
+        "inputs": {
+            "model": "模型model",
+            "context_options": "上下文设置context_options",
+            "motion_lora": "动态LoRAmotion_lora",
+            "motion_model_settings": "动态模型设置motion_model_settings"
+        },
+        "widgets": {
+            "model_name": "模型名称model_name",
+            "beta_schedule": "调度器beta_schedule",
+            "motion_scale": "动态缩放motion_scale",
+            "apply_v2_models_properly": "使用v2模型apply_v2_models_properly"
+        },
+        "outputs": {
+            "MODEL": "模型MODEL"
+        }
+    },
+    "ADE_AnimateDiffLoRALoader": {
+        "title": "动态LoRA加载器ADE_AnimateDiffLoRALoader",
+        "inputs": {
+            "prev_motion_lora": "前LoRAprev_motion_lora"
+        },
+        "widgets": {
+            "lora_name": "LoRA名称lora_name",
+            "strength": "强度strength"
+        },
+        "outputs": {
+            "MOTION_LORA": "动态LoRAMOTION_LORA"
+        }
+    },
+    "ADE_AnimateDiffUnload": {
+        "title": "动态扩散卸载器ADE_AnimateDiffUnload",
+        "inputs": {
+            "model": "模型model"
+        },
+        "outputs": {
+            "MODEL": "模型MODEL"
+        }
+    },
+
+
+
+    "ADE_EmptyLatentImageLarge": {
+        "title": "空Latent(大型)ADE_EmptyLatentImageLarge",
+        "widgets": {
+            "width": "宽度width",
+            "height": "高度height",
+            "batch_size": "批次大小batch_size"
+        },
+        "outputs": {
+            "LATENT": "LatentLATENT"
+        }
+    },
+    
+    "CheckpointLoaderSimpleWithNoiseSelect": {
+        "title": "Checkpoint加载器(简易噪波)CheckpointLoaderSimpleWithNoiseSelect",
+        "widgets": {
+            "ckpt_name": "ckpt名称ckpt_name",
+            "beta_schedule": "调度器beta_schedule"
+        },
+        "outputs": {
+            "MODEL": "模型MODEL",
+            "CLIP": "CLIPCLIP",
+            "VAE": "VAEVAE"
+        }
+    },
+
+
+
+    "AnimateDiffLoaderV1": {
+        "title": "动态扩散加载器v1AnimateDiffLoaderV1",
+        "inputs": {
+            "model": "模型model",
+            "latents": "Latentlatents"
+        },
+        "widgets": {
+            "model_name": "模型名称model_name",
+            "unlimited_area_hack": "无限制区域unlimited_area_hack",
+            "beta_schedule": "调度器beta_schedule"
+        },
+        "outputs": {
+            "MODEL": "模型MODEL",
+            "LATENT": "LatentLATENT"
+        }
+    },
+    "ADE_AnimateDiffLoaderV1Advanced": {
+        "title": "动态扩散加载器v1(高级)ADE_AnimateDiffLoaderV1Advanced",
+        "inputs": {
+            "model": "模型model",
+            "latents": "Latentlatents"
+        },
+        "widgets": {
+            "model_name": "模型名称model_name",
+            "unlimited_area_hack": "无限制区域unlimited_area_hack",
+            "context_length": "上下文长度context_length",
+            "context_stride": "上下文步幅context_stride",
+            "context_overlap": "上下文重叠context_overlap",
+            "context_schedule": "上下文调度器context_schedule",
+            "closed_loop": "闭合上下文循环closed_loop",
+            "beta_schedule": "调度器beta_schedule"
+        },
+        "outputs": {
+            "MODEL": "模型MODEL",
+            "LATENT": "LatentLATENT"
+        }
+    },
+    "ADE_AnimateDiffCombine": {
+        "title": "动态扩散合并ADE_AnimateDiffCombine",
+        "inputs": {
+            "images": "图像images"
+        },
+        "widgets": {
+            "frame_rate": "帧率frame_rate",
+            "loop_count": "循环次数loop_count",
+            "filename_prefix": "文件名前缀filename_prefix",
+            "format": "格式format",
+            "pingpong": "Ping-Pongpingpong",
+            "save_image": "是否保存save_image",
+                "Enabled": "是Enabled",
+                "Disabled": "否Disabled"
+        },
+        "outputs": {
+            "GIF": "GIFGIF"
+        }
+    }
+}

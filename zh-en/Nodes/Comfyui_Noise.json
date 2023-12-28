@@ -1,0 +1,97 @@
+{
+    "BNK_Unsampler": {
+        "title": "逆K采样器BNK_Unsampler",
+        "inputs": {
+            "model": "模型model",
+            "positive": "正面条件positive",
+            "negative": "负面条件negative",
+            "latent_image": "Latentlatent_image"
+        },
+        "widgets": {
+            "steps": "步数steps",
+            "cfg": "CFGcfg",
+            "end_at_step": "结束步数end_at_step",
+            "sampler_name": "采样器sampler_name",
+            "scheduler": "调度器scheduler",
+            "normalize": "规格化normalize"
+        },
+        "outputs": {
+            "LATENT": "LatentLATENT"
+        }
+    },
+    "BNK_NoisyLatentImage": {
+        "title": "噪波LatentBNK_NoisyLatentImage",
+        "widgets": {
+            "source": "生成设备source",
+            "seed": "随机种seed",
+            "control_after_generate": "运行后操作control_after_generate",
+                "fixed": "固定fixed",
+                "increment": "增加increment",
+                "decrement": "减少decrement",
+                "randomize": "随机randomize",
+            "width": "宽度width",
+            "height": "高度height",
+            "batch_size": "批次大小batch_size"
+        },
+        "outputs": {
+            "LATENT": "LatentLATENT"
+        }
+    },
+    "BNK_GetSigma": {
+        "title": "获取SigmaBNK_GetSigma",
+        "inputs": {
+            "model": "模型model"
+        },
+        "widgets": {
+            "sampler_name": "采样器sampler_name",
+            "scheduler": "调度器scheduler",
+            "steps": "步数steps",
+            "start_at_step": "开始步数start_at_step",
+            "end_at_step": "结束步数end_at_step"
+        },
+        "outputs": {
+            "FLOAT": "浮点FLOAT"
+        }
+    },
+    "BNK_InjectNoise": {
+        "title": "插入噪波BNK_InjectNoise",
+        "inputs": {
+            "latents": "Latentlatents",
+            "noise": "噪波Latentnoise",
+            "mask": "遮罩mask"
+        },
+        "widgets": {
+            "strength": "强度strength"
+        },
+        "outputs": {
+            "LATENT": "LatentLATENT"
+        }
+    },
+    "BNK_DuplicateBatchIndex": {
+        "title": "复制索引批次BNK_DuplicateBatchIndex",
+        "inputs": {
+            "latents": "Latentlatents"
+        },
+        "widgets": {
+            "batch_index": "批次索引batch_index",
+            "batch_size": "批次大小batch_size"
+        },
+        "outputs": {
+            "LATENT": "LatentLATENT"
+        }
+    },
+    "BNK_SlerpLatent": {
+        "title": "Latent插值BNK_SlerpLatent",
+        "inputs": {
+        "latents1": "Latent1",
+        "latents2": "Latent2",
+        "mask": "遮罩"
+        },
+        "widgets": {
+            "factor": "系数factor"
+        },
+        "outputs": {
+            "LATENT": "LatentLATENT"
+        }
+    }
+}

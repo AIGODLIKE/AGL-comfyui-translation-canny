@@ -1,0 +1,65 @@
+{
+    "LCMSampler": {
+        "title": "LCM采样器LCMSampler",
+        "widgets": {
+            "seed": "随机种seed",
+            "control_after_generate": "运行后操作control_after_generate",
+                "fixed": "固定fixed",
+                "increment": "增加increment",
+                "decrement": "减少decrement",
+                "randomize": "随机randomize",
+            "steps": "步数steps",
+            "cfg": "CFGcfg",
+            "size": "分辨率size",
+            "num_images": "图像数量num_images",
+            "use_fp16": "使用fp16use_fp16",
+            "positive_prompt": "正面条件positive_prompt"
+        },
+        "outputs": {
+            "IMAGE": "图像IMAGE"
+        }
+    },
+    "LCM_Sampler": {
+        "title": "LCM采样器LCM_Sampler",
+        "widgets": {
+            "seed": "随机种seed",
+            "control_after_generate": "运行后操作control_after_generate",
+                "fixed": "固定fixed",
+                "increment": "增加increment",
+                "decrement": "减少decrement",
+                "randomize": "随机randomize",
+            "steps": "步数steps",
+            "cfg": "CFGcfg",
+            "height": "高度height",
+            "width": "宽度width",
+            "num_images": "图像数量num_images",
+            "use_fp16": "使用fp16use_fp16",
+            "positive_prompt": "正面条件positive_prompt"
+        },
+        "outputs": {
+            "IMAGE": "图像IMAGE"
+        }
+    },
+    "LCM_img2img_Sampler": {
+        "title": "LCM图生图采样器LCM_img2img_Sampler",
+        "widgets": {
+            "seed": "随机种seed",
+            "control_after_generate": "运行后操作control_after_generate",
+                "fixed": "固定fixed",
+                "increment": "增加increment",
+                "decrement": "减少decrement",
+                "randomize": "随机randomize",
+            "prompt_strength": "提示词强度prompt_strength",
+            "steps": "步数steps",
+            "cfg": "CFGcfg",
+            "height": "高度height",
+            "width": "宽度width",
+            "num_images": "图像数量num_images",
+            "use_fp16": "使用fp16use_fp16",
+            "positive_prompt": "正面条件positive_prompt"
+        },
+        "outputs": {
+            "IMAGE": "图像IMAGE"
+        }
+    }
+}

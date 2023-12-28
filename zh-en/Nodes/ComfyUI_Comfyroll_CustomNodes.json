@@ -1,0 +1,2706 @@
+{
+    "CR Image Input Switch": {
+        "title": "图像切换CR Image Input Switch",
+        "inputs": {
+            "image1": "图像1image1",
+            "image2": "图像2image2"
+        },
+        "widgets": {
+            "Input": "输入Input"
+        },
+        "outputs": {
+            "IMAGE": "图像IMAGE"
+        }
+    },
+    "CR Image Input Switch (4 way)": {
+        "title": "图像切换(CR-4路)CR Image Input Switch (4 way)",
+        "inputs": {
+            "image1": "图像1image1",
+            "image2": "图像2image2",
+            "image3": "图像3image3",
+            "image4": "图像4image4"
+        },
+        "widgets": {
+            "Input": "输入Input"
+        },
+        "outputs": {
+            "IMAGE": "图像IMAGE"
+        }
+    },
+    "CR Latent Input Switch": {
+        "title": "Latent切换CR Latent Input Switch",
+        "inputs": {
+            "latent1": "Latent1latent1",
+            "latent2": "Latent2latent2"
+        },
+        "widgets": {
+            "Input": "输入Input"
+        },
+        "outputs": {
+            "LATENT": "LatentLATENT"
+        }
+    },
+    "CR Conditioning Input Switch": {
+        "title": "条件切换CR Conditioning Input Switch",
+        "inputs": {
+            "conditioning1": "条件1conditioning1",
+            "conditioning2": "条件2conditioning2"
+        },
+        "widgets": {
+            "Input": "输入Input"
+        },
+        "outputs": {
+            "CONDITIONING": "条件CONDITIONING"
+        }
+    },
+    "CR Clip Input Switch": {
+        "title": "CLIP切换CR Clip Input Switch",
+        "inputs": {
+            "clip1": "CLIP1clip1",
+            "clip2": "CLIP2clip2"
+        },
+        "widgets": {
+            "Input": "输入Input"
+        },
+        "outputs": {
+            "CLIP": "CLIPCLIP"
+        }
+    },
+    "CR Model Input Switch": {
+        "title": "模型切换CR Model Input Switch",
+        "inputs": {
+            "model1": "模型1model1",
+            "model2": "模型2model2"
+        },
+        "widgets": {
+            "Input": "输入Input"
+        },
+        "outputs": {
+            "MODEL": "模型MODEL"
+        }
+    },
+    "CR ControlNet Input Switch": {
+        "title": "ControlNet切换CR ControlNet Input Switch",
+        "inputs": {
+            "control_net1": "ControlNet1control_net1",
+            "control_net2": "ControlNet2control_net2"
+        },
+        "widgets": {
+            "Input": "输入Input"
+        },
+        "outputs": {
+            "CONTROL_NET": "ControlNetCONTROL_NET"
+        }
+    },
+    "CR Text Input Switch": {
+        "title": "文本切换CR Text Input Switch",
+        "inputs": {
+            "text1": "文本1text1",
+            "text2": "文本2text2"
+        },
+        "widgets": {
+            "Input": "输入Input"
+        },
+        "outputs": {
+            "STRING": "字符串STRING"
+        }
+    },
+    "CR Text Input Switch (4 way)": {
+        "title": "文本切换(CR-4路)CR Text Input Switch (4 way)",
+        "inputs": {
+            "text1": "文本1text1",
+            "text2": "文本2text2",
+            "text3": "文本3text3",
+            "text4": "文本4text4"
+        },
+        "widgets": {
+            "Input": "输入Input"
+        },
+        "outputs": {
+            "STRING": "字符串STRING"
+        }
+    },
+    "CR Switch Model and CLIP": {
+        "title": "模型CLIP切换CR Switch Model and CLIP",
+        "inputs": {
+            "model1": "模型1model1",
+            "model2": "模型2model2",
+            "clip1": "CLIP1clip1",
+            "clip2": "CLIP2clip2"
+        },
+        "widgets": {
+            "Input": "输入Input"
+        },
+        "outputs": {
+            "MODEL": "模型MODEL",
+            "CLIP": "CLIPCLIP"
+        }
+    },
+
+
+
+
+    "CR Load LoRA": {
+        "title": "LoRA加载器CR Load LoRA",
+        "inputs": {
+            "model": "模型model",
+            "clip": "CLIPclip"
+        },
+        "widgets": {
+            "switch": "开关switch",
+                "On": "开启On",
+                "Off": "关闭Off",
+            "lora_name": "LoRA名称lora_name",
+            "strength_model": "模型强度strength_model",
+            "strength_clip": "CLIP强度strength_clip"
+        },
+        "outputs": {
+            "MODEL": "模型MODEL",
+            "CLIP": "CLIPCLIP"
+        }
+    },
+    "CR LoRA Stack": {
+        "title": "LoRA堆CR LoRA Stack",
+        "inputs": {
+            "lora_stack": "LoRA堆lora_stack"
+        },
+        "widgets": {
+            "switch_1": "开关1switch_1",
+                "On": "开启On",
+                "Off": "关闭Off",
+            "lora_name_1": "LoRA名称1lora_name_1",
+            "model_weight_1": "模型强度1model_weight_1",
+            "clip_weight_1": "CLIP强度1clip_weight_1",
+            "switch_2": "开关2switch_2",
+            "lora_name_2": "LoRA名称2lora_name_2",
+            "model_weight_2": "模型强度2model_weight_2",
+            "clip_weight_2": "CLIP强度2clip_weight_2",
+            "switch_3": "开关3switch_3",
+            "lora_name_3": "LoRA名称3lora_name_3",
+            "model_weight_3": "模型强度3model_weight_3",
+            "clip_weight_3": "CLIP强度3clip_weight_3"
+        },
+        "outputs": {
+        }
+    },
+    "CR Random LoRA Stack": {
+        "title": "随机LoRA堆CR Random LoRA Stack",
+        "inputs": {
+            "lora_stack": "LoRA堆lora_stack"
+        },
+        "widgets": {
+            "exclusive_mode": "非重复模式exclusive_mode",
+            "stride": "步幅stride",
+            "force_randomize_after_stride": "强制每次随机force_randomize_after_stride",
+            "lora_name_1": "LoRA名称1lora_name_1",
+            "switch_1": "开关1switch_1",
+            "chance_1": "概率1chance_1",
+            "model_weight_1": "模型强度1model_weight_1",
+            "clip_weight_1": "CLIP强度1clip_weight_1",
+            "lora_name_2": "LoRA名称2lora_name_2",
+            "switch_2": "开关2switch_2",
+            "chance_2": "概率2chance_2",
+            "model_weight_2": "模型强度2model_weight_2",
+            "clip_weight_2": "CLIP强度2clip_weight_2",
+            "lora_name_3": "LoRA名称3lora_name_3",
+            "switch_3": "开关3switch_3",
+            "chance_3": "概率3chance_3",
+            "model_weight_3": "模型强度3model_weight_3",
+            "clip_weight_3": "CLIP强度3clip_weight_3"
+        },
+        "outputs": {
+            "LORA_STACK": "LoRa堆LORA_STACK"
+        }
+    },
+    "CR Random Weight LoRA": {
+        "title": "随机权重LoRACR Random Weight LoRA",
+        "inputs": {
+            "lora_stack": "LoRA堆lora_stack"
+        },
+        "widgets": {
+            "stride": "步幅stride",
+            "force_randomize_after_stride": "强制每次随机force_randomize_after_stride",
+            "lora_name": "LoRA名称lora_name",
+            "switch": "开关switch",
+            "weight_min": "最小强度weight_min",
+            "weight_max": "最大强度weight_max",
+            "clip_weight": "CLIP强度clip_weight"
+        },
+        "outputs": {
+            "LORA_STACK": "LoRa堆LORA_STACK"
+        }
+    },
+    "CR Apply LoRA Stack": {
+        "title": "应用LoRA堆CR Apply LoRA Stack",
+        "inputs": {
+            "model": "模型model",
+            "clip": "CLIPclip",
+            "lora_stack": "LoRA堆lora_stack"
+        },
+        "outputs": {
+            "MODEL": "模型MODEL",
+            "CLIP": "CLIPCLIP"
+        }
+    },
+
+
+
+
+    "CR Apply ControlNet": {
+        "title": "应用ControlNetCR Apply ControlNet",
+        "inputs": {
+            "conditioning": "条件conditioning",
+            "control_net": "ControlNetcontrol_net",
+            "image": "图像image"
+        },
+        "widgets": {
+            "switch": "切换switch",
+            "strength": "强度strength"
+        },
+        "outputs": {
+            "CONDITIONING": "条件CONDITIONING"
+        }
+    },
+    "CR Multi-ControlNet Stack": {
+        "title": "ControlNet堆CR Multi-ControlNet Stack",
+        "inputs": {
+            "image_1": "图像1image_1",
+            "image_2": "图像2image_2",
+            "image_3": "图像3image_3",
+            "controlnet_stack": "ControlNet堆controlnet_stack"
+        },
+        "widgets": {
+            "switch_1": "开关1switch_1",
+            "controlnet_1": "ControlNet1controlnet_1",
+            "controlnet_strength_1": "强度1controlnet_strength_1",
+            "start_percent_1": "开始时间1start_percent_1",
+            "end_percent_1": "结束时间1end_percent_1",
+            "switch_2": "开关2switch_2",
+            "controlnet_2": "ControlNet2controlnet_2",
+            "controlnet_strength_2": "强度2controlnet_strength_2",
+            "start_percent_2": "开始时间2start_percent_2",
+            "end_percent_2": "结束时间2end_percent_2",
+            "switch_3": "开关3switch_3",
+            "controlnet_3": "ControlNet3controlnet_3",
+            "controlnet_strength_3": "强度3controlnet_strength_3",
+            "start_percent_3": "开始时间3start_percent_3",
+            "end_percent_3": "结束时间3end_percent_3"
+        },
+        "outputs": {
+            "CONTROLNET_STACK": "ControlNet堆CONTROLNET_STACK"
+        }
+    },
+    "CR Apply Multi-ControlNet": {
+        "title": "应用ControlNet堆CR Apply Multi-ControlNet",
+        "inputs": {
+            "base_positive": "正面条件base_positive",
+            "base_negative": "负面条件base_negative",
+            "controlnet_stack": "ControlNet堆controlnet_stack"
+        },
+        "widgets": {
+            "switch": "开关switch",
+                "On": "开启On",
+                "Off": "关闭Off"
+        },
+        "outputs": {
+            "base_pos": "正面条件base_pos",
+            "base_neg": "负面条件base_neg"
+        }
+    },
+
+
+
+
+    "CR Image Size": {
+        "title": "图像尺寸CR Image Size",
+        "widgets": {
+            "width": "宽度width",
+            "height": "高度height",
+            "upscale_factor": "放大系数upscale_factor"
+        },
+        "outputs": {
+            "INT": "整数INT",
+            "FLOAT": "浮点FLOAT"
+        }
+    },
+    "CR Image Output": {
+        "title": "图像输出CR Image Output",
+        "inputs": {
+            "images": "图像images"
+        },
+        "widgets": {
+            "output_type": "输出类型output_type",
+            "filename_prefix": "文件名前缀filename_prefix"
+        }
+    },
+    "CR Aspect Ratio": {
+        "title": "宽高比CR Aspect Ratio",
+        "widgets": {
+            "width": "宽度width",
+            "height": "高度height",
+            "aspect_ratio": "宽高比aspect_ratio",
+                "custom": "自定义custom",
+                "1:1 square 512x512": "1:1 方形 512x5121:1 square 512x512",
+                "1:1 square 1024x1024": "1:1 方形 1024x10241:1 square 1024x1024",
+                "2:3 portrait 512x768": "2:3 人像 512x7682:3 portrait 512x768",
+                "3:4 portrait 512x682": "3:4 人像 512x6823:4 portrait 512x682",
+                "3:2 landscape 768x512": "3:2 景观 768x5123:2 landscape 768x512",
+                "4:3 landscape 682x512": "4:3 景观 682x5124:3 landscape 682x512",
+                "16:9 cinema 910x512": "16:9 影视 910x51216:9 cinema 910x512",
+                "2:1 cinema 1024x512": "2:1 影视 1024x5122:1 cinema 1024x512",
+            "swap_dimensions": "切换宽高swap_dimensions",
+            "upscale_factor1": "放大系数1upscale_factor1",
+            "upscale_factor2": "放大系数2upscale_factor2",
+            "batch_size": "批次大小batch_size"
+        },
+        "outputs": {
+            "INT": "整数INT",
+            "FLOAT": "浮点FLOAT"
+        }
+    },
+    "CR Aspect Ratio Banners": {
+        "title": "宽高比(Banner)CR Aspect Ratio Banners",
+        "widgets": {
+            "width": "宽度width",
+            "height": "高度height",
+            "aspect_ratio": "宽高比aspect_ratio",
+            "swap_dimensions": "切换宽高swap_dimensions",
+            "upscale_factor": "放大系数upscale_factor",
+            "prescale_factor": "预放大系数prescale_factor",
+            "batch_size": "批次大小batch_size"
+        },
+        "outputs": {
+            "width": "宽度width",
+            "height": "高度height",
+            "upscale_factor": "放大系数upscale_factor",
+            "prescale_factor": "预放大系数prescale_factor",
+            "batch_size": "批次大小batch_size",
+            "empty_latent": "空Latentempty_latent",
+            "show_help": "显示帮助show_help"
+        }
+    },
+    "CR SDXL Prompt Mixer": {
+        "title": "SDXL提示词CR SDXL Prompt Mixer",
+        "widgets": {
+            "prompt_positive": "正面提示词prompt_positive",
+            "prompt_negative": "负面提示词prompt_negative",
+            "style_positive": "正面风格style_positive",
+            "style_negative": "负面风格style_negative",
+            "preset": "预设preset",
+                "preset 1": "预设1preset 1",
+                "preset 2": "预设2preset 2",
+                "preset 3": "预设3preset 3",
+                "preset 4": "预设4preset 4",
+                "preset 5": "预设5preset 5"
+        },
+        "outputs": {
+            "pos_g": "正面bigG文本pos_g",
+            "pos_l": "正面L文本pos_l",
+            "pos_r": "正面优化文本pos_r",
+            "neg_g": "负面bigG文本neg_g",
+            "neg_l": "负面L文本neg_l",
+            "neg_r": "负面优化文本neg_r"
+        }
+    },
+    "CR Aspect Ratio SDXL": {
+        "title": "SDXL宽高比CR Aspect Ratio SDXL",
+        "widgets": {
+            "width": "宽度width",
+            "height": "高度height",
+            "aspect_ratio": "宽高比aspect_ratio",
+                "custom": "自定义custom",
+                "1:1 square 512x512": "1:1 方形 512x5121:1 square 512x512",
+                "1:1 square 1024x1024": "1:1 方形 1024x10241:1 square 1024x1024",
+                "2:3 portrait 512x768": "2:3 人像 512x7682:3 portrait 512x768",
+                "3:4 portrait 512x682": "3:4 人像 512x6823:4 portrait 512x682",
+                "3:2 landscape 768x512": "3:2 景观 768x5123:2 landscape 768x512",
+                "4:3 landscape 682x512": "4:3 景观 682x5124:3 landscape 682x512",
+                "16:9 cinema 910x512": "16:9 影视 910x51216:9 cinema 910x512",
+                "2:1 cinema 1024x512": "2:1 影视 1024x5122:1 cinema 1024x512",
+            "swap_dimensions": "切换宽高swap_dimensions",
+            "upscale_factor1": "放大系数1upscale_factor1",
+            "upscale_factor2": "放大系数2upscale_factor2",
+            "batch_size": "批次大小batch_size"
+        },
+        "outputs": {
+            "INT": "整数INT",
+            "FLOAT": "浮点FLOAT"
+        }
+    },
+
+
+
+
+    "CR Integer Multiple": {
+        "title": "整数乘以CR Integer Multiple",
+        "widgets": {
+            "integer": "整数integer",
+            "multiple": "系数multiple"
+        },
+        "outputs": {
+            "INT": "整数INT"
+        }
+    },
+
+
+
+
+    "CR Seed to Int": {
+        "title": "随机种到整数CR Seed to Int",
+        "inputs": {
+            "seed": "随机种seed"
+        },
+        "outputs": {
+            "INT": "整数INT"
+        }
+    },
+    "CR Seed": {
+        "title": "随机种CR Seed",
+        "widgets": {
+            "seed": "随机种seed",
+            "control_after_generate": "运行后操作control_after_generate",
+                "fixed": "固定fixed",
+                "increment": "增加increment",
+                "decrement": "减少decrement",
+                "randomize": "随机randomize"
+        },
+        "outputs": {
+            "seed": "随机种seed"
+        }
+    },
+
+
+
+
+    "CR Integer To String": {
+        "title": "整数到字符串CR Integer To String",
+        "widgets": {
+            "int_": "整数int_"
+        },
+        "outputs": {
+            "STRING": "字符串STRING"
+        }
+    },
+    "CR Float To String": {
+        "title": "浮点到字符串CR Float To String",
+        "widgets": {
+            "float_": "浮点float_",
+            "float": "浮点float"
+        },
+        "outputs": {
+            "STRING": "字符串STRING"
+        }
+    },
+    "CR String To Number": {
+        "title": "字符串到数字CR String To Number",
+        "widgets": {
+            "text": "文本text"
+        },
+        "outputs": {
+            "INT": "整数INT",
+            "FLOAT": "浮点FLOAT"
+        }
+    },
+    "CR Split String": {
+        "title": "分割字符串CR Split String",
+        "widgets": {
+            "text": "文本text",
+            "delimiter": "分隔符delimiter"
+        },
+        "outputs": {
+            "string_1": "字符串_1string_1",
+            "string_2": "字符串_2string_2",
+            "string_3": "字符串_3string_3",
+            "string_4": "字符串_4string_4"
+        }
+    },
+    "CR Value": {
+        "title": "值CR Value",
+        "widgets": {
+            "value": "值value"
+        },
+        "outputs": { 
+            "FLOAT": "浮点FLOAT",
+            "INT": "整数INT"
+        }
+    },
+    "CR Conditioning Mixer": {
+        "title": "条件混合CR Conditioning Mixer",
+        "inputs": {
+            "conditioning_1": "条件_1conditioning_1",
+            "conditioning_2": "条件_2conditioning_2"
+        },
+        "widgets": {
+            "mix_method": "混合方式mix_method",
+                "Combine": "合并Combine",
+                "Average": "平均Average",
+                "Concatenate": "联结Concatenate",
+            "average_strength": "平均强度average_strength"
+        },
+        "outputs": {
+            "CONDITIONING": "条件CONDITIONING",
+            "show_help": "显示帮助show_help"
+        }
+    },
+    "CR Select Model": {
+        "title": "选择模型CR Select Model",
+        "widgets": {
+            "ckpt_name1": "模型名1ckpt_name1",
+            "ckpt_name2": "模型名2ckpt_name2",
+            "ckpt_name3": "模型名3ckpt_name3",
+            "ckpt_name4": "模型名4ckpt_name4",
+            "ckpt_name5": "模型名5ckpt_name5",
+            "select_model": "选择select_model"
+        },
+        "outputs": {
+            "MODEL": "模型MODEL",
+            "CLIP": "CLIPCLIP",
+            "VAE": "VAEVAE",
+            "ckpt_name": "模型名ckpt_name",
+            "show_help": "显示帮助show_help"
+        }
+    },
+    "CR Multiline Text": {
+        "title": "多行文本CR Multiline Text",
+        "widgets": {
+            "text": "文本text",
+            "convert_from_csv": "使用CSVconvert_from_csv",
+            "csv_quote_char": "CSV引用符csv_quote_char",
+            "remove_chars": "移除字段remove_chars",
+            "chars_to_remove": "移除内容chars_to_remove",
+            "split_string": "分离字符串split_string"
+        },
+        "outputs": {
+            "multiline_text": "文本multiline_text",
+            "show_help": "显示帮助show_help"
+        }
+    },
+    "CR Random Hex Color": {
+        "title": "随机HEX色CR Random Hex Color",
+        "widgets": {
+            "seed": "随机种seed",
+            "control_after_generate": "运行后操作control_after_generate",
+                "fixed": "固定fixed",
+                "increment": "增加increment",
+                "decrement": "减少decrement",
+                "randomize": "随机randomize"
+        },
+        "outputs": {
+            "hex_color1": "HEX_1hex_color1",
+            "hex_color2": "HEX_2hex_color2",
+            "hex_color3": "HEX_3hex_color3",
+            "hex_color4": "HEX_4hex_color4",
+            "show_help": "显示帮助show_help"
+        }
+    },
+    "CR Random RGB": {
+        "title": "随机RGB色CR Random RGB",
+        "widgets": {
+            "seed": "随机种seed",
+            "control_after_generate": "运行后操作control_after_generate",
+                "fixed": "固定fixed",
+                "increment": "增加increment",
+                "decrement": "减少decrement",
+                "randomize": "随机randomize"
+        },
+        "outputs": {
+            "rgb_1": "RGB_1rgb_1",
+            "rgb_2": "RGB_2rgb_2",
+            "rgb_3": "RGB_3rgb_3",
+            "rgb_4": "RGB_4rgb_4",
+            "show_help": "显示帮助show_help"
+        }
+    },
+    "CR Random Multiline Values": {
+        "title": "随机多行值CR Random Multiline Values",
+        "widgets": {
+            "seed": "随机种seed",
+            "control_after_generate": "运行后操作control_after_generate",
+                "fixed": "固定fixed",
+                "increment": "增加increment",
+                "decrement": "减少decrement",
+                "randomize": "随机randomize",
+            "value_type": "值类型value_type",
+                "binary": "二进制binary",
+                "decimal": "十进制decimal",
+                "hexadecimal": "十六进制hexadecimal",
+                "alphabetic": "字母alphabetic",
+                "alphanumeric": "字母数字alphanumeric",
+            "rows": "行数rows",
+            "string_length": "字符串长度string_length"
+        },
+        "outputs": {
+            "multiline_text": "多行文本multiline_text",
+            "show_help": "显示帮助show_help"
+        }
+    },
+    "CR Random RGB Gradient": {
+        "title": "随机RGB渐变CR Random RGB Gradient",
+        "widgets": {
+            "seed": "随机种seed",
+            "control_after_generate": "运行后操作control_after_generate",
+                "fixed": "固定fixed",
+                "increment": "增加increment",
+                "decrement": "减少decrement",
+                "randomize": "随机randomize",
+            "rows": "行数rows"
+        },
+        "outputs": {
+            "multiline_text": "多行文本multiline_text",
+            "show_help": "显示帮助show_help"
+        }
+    },
+
+
+
+    "CR Text List To String": {
+        "title": "文本列表到字符串CR Text List To String",
+        "widgets": {
+            "text_list": "文本列表text_list"
+        },
+        "outputs": {
+            "STRING": "字符串STRING"
+        }
+    },
+    "CR String To Combo": {
+        "title": "字符串到ComboCR String To Combo",
+        "widgets": {
+            "text": "文本text"
+        },
+        "outputs": {
+            "*": "输出*"
+        }
+    },
+    "CR Prompt Text": {
+        "title": "提示词文本CR Prompt Text",
+        "widgets": {
+            "prompt": "提示词prompt"
+        },
+        "outputs": {
+            "prompt": "提示词文本prompt"
+        }
+    },
+
+
+
+
+    "CR Color Tint": {
+        "title": "颜色渐变CR Color Tint",
+        "inputs": {
+            "image": "图像image"
+        },
+        "widgets": {
+            "strength": "强度strength",
+            "mode": "模式mode"
+        },
+        "outputs": {
+            "IMAGE": "图像IMAGE"
+        }
+    },
+    "CR Halftone Grid": {
+        "title": "半色调网格CR Halftone Grid",
+        "widgets": {
+            "width": "宽度width",
+            "height": "高度height",
+            "dot_style": "网点类型dot_style",
+            "reverse_dot_style": "反转网点reverse_dot_style",
+            "dot_frequency": "网点频率dot_frequency",
+            "background_color": "背景颜色background_color",
+            "background_R": "背景红色background_R",
+            "background_B": "背景蓝色background_B",
+            "background_G": "背景绿色background_G",
+            "x_pos": "位置Xx_pos",
+            "y_pos": "位置Yy_pos"
+        },
+        "outputs": {
+            "IMAGE": "图像IMAGE"
+        }
+    },
+    "CR Color Bars": {
+        "title": "颜色栅格CR Color Bars",
+        "widgets": {
+            "mode": "模式mode",
+                "2-color": "2色2-color",
+            "width": "宽度width",
+            "height": "高度height",
+            "color1": "颜色1color1",
+            "color2": "颜色2color2",
+            "orientation": "方向orientation",
+                "vertical": "竖直vertical",
+                "horizontal": "水平horizontal",
+                "diagonal": "斜角diagonal",
+            "bar_frequency": "密度bar_frequency"
+        },
+        "outputs": {
+            "IMAGE": "图像IMAGE"
+        }
+    },
+    "CR Style Bars": {
+        "title": "风格栅格CR Style Bars",
+        "widgets": {
+            "mode": "模式mode",
+                "color bars": "颜色color bars",
+                "sin wave": "正弦波sin wave",
+                "gradient bars": "渐变gradient bars",
+            "width": "宽度width",
+            "height": "高度height",
+            "orientation": "方向orientation",
+                "vertical": "竖直vertical",
+                "horizontal": "水平horizontal",
+                "diagonal": "斜角diagonal",
+            "bar_frequency": "密度bar_frequency"
+        },
+        "outputs": {
+            "IMAGE": "图像IMAGE"
+        }
+    },
+    "CR Checker Pattern": {
+        "title": "棋盘格CR Checker Pattern",
+        "widgets": {
+            "mode": "模式mode",
+                "regular": "正常regular",
+                "stepped": "阶梯stepped",
+            "width": "宽度width",
+            "height": "高度height",
+            "color1": "颜色1color1",
+            "color2": "颜色2color2",
+            "orientation": "方向orientation",
+                "vertical": "竖直vertical",
+                "horizontal": "水平horizontal",
+                "diagonal": "斜角diagonal",
+            "grid_frenquency": "栅格密度grid_frenquency",
+            "step": "阶梯步长step"
+        },
+        "outputs": {
+            "IMAGE": "图像IMAGE"
+        }
+    },
+    "CR Polygons": {
+        "title": "多边面CR Polygons",
+        "widgets": {
+            "mode": "模式mode",
+                "hexagons": "六边面hexagons",
+                "triangles": "三边面triangles",
+            "width": "宽度width",
+            "height": "高度height",
+            "rows": "行数rows",
+            "columns": "列数columns",
+            "face_color": "面色face_color",
+            "line_color": "线色line_color",
+            "line_width": "线宽line_width"
+        },
+        "outputs": {
+            "IMAGE": "图像IMAGE"
+        }
+    },
+    "CR Color Gradient": {
+        "title": "渐变色CR Color Gradient",
+        "widgets": {
+            "mode": "模式mode",
+                "linear": "线性linear",
+                "radial": "径向radial",
+            "width": "宽度width",
+            "height": "高度height",
+            "start_color": "起始色start_color",
+            "end_color": "终点色end_color",
+            "orientation": "方向orientation",
+                "vertical": "竖直vertical",
+                "horizontal": "水平horizontal"
+        },
+        "outputs": {
+            "IMAGE": "图像IMAGE"
+        }
+    },
+    "CR Starburst Lines": {
+        "title": "辐射线CR Starburst Lines",
+        "widgets": {
+            "width": "宽度width",
+            "height": "高度height",
+            "num_lines": "线数量num_lines",
+            "line_length": "线长度line_length",
+            "line_width": "线宽line_width",
+            "line_color": "线色line_color",
+            "background_color": "背景色background_color",
+            "center_x": "中心Xcenter_x",
+            "center_y": "中心Ycenter_y"
+        },
+        "outputs": {
+            "IMAGE": "图像IMAGE"
+        }
+    },
+    "CR Starburst Colors": {
+        "title": "辐射颜色CR Starburst Colors",
+        "widgets": {
+            "width": "宽度width",
+            "height": "高度height",
+            "num_triangles": "三角数量num_triangles",
+            "color_1": "颜色_1color_1",
+            "color_2": "颜色_2color_2",
+            "center_x": "中心Xcenter_x",
+            "center_y": "中心Ycenter_y",
+            "bbox_factor": "范围系数bbox_factor"
+        },
+        "outputs": {
+            "IMAGE": "图像IMAGE"
+        }
+    },
+    "CR Simple Binary Pattern": {
+        "title": "二值图案(简易)CR Simple Binary Pattern",
+        "widgets": {
+            "binary_pattern": "二值图案binary_pattern",
+            "width": "宽度width",
+            "height": "高度height"
+        },
+        "outputs": {
+            "IMAGE": "图像IMAGE",
+            "show_help": "显示帮助show_help"
+        }
+    },
+    "CR Binary Pattern": {
+        "title": "二值图案CR Binary Pattern",
+        "widgets": {
+            "binary_pattern": "二值图案binary_pattern",
+            "width": "宽度width",
+            "height": "高度height",
+            "background_color": "背景色background_color",
+            "color_0": "颜色_0color_0",
+            "color_1": "颜色_1color_1",
+            "outline_thickness": "轮廓线厚度outline_thickness",
+            "outline_color": "轮廓线颜色outline_color",
+            "jitter_distance": "抖动距离jitter_distance",
+            "bg_color_hex": "背景色HEXbg_color_hex",
+            "color0_hex": "颜色_0HEXcolor0_hex",
+            "color1_hex": "颜色_1HEXcolor1_hex",
+            "outline_color_hex": "轮廓线颜色HEXoutline_color_hex"
+        },
+        "outputs": {
+            "IMAGE": "图像IMAGE",
+            "show_help": "显示帮助show_help"
+        }
+    },
+    "CR Draw Text": {
+        "title": "艺术字CR Draw Text",
+        "widgets": {
+            "image_width": "宽度image_width",
+            "image_height": "高度image_height",
+            "text": "文本text",
+            "font_name": "字体font_name",
+            "font_size": "字体大小font_size",
+            "font_color": "字体颜色font_color",
+            "background_color": "背景颜色background_color",
+            "alignment_options": "对齐到alignment_options",
+                "center": "中心center",
+                "top left": "左上top left",
+                "top right": "右上top right",
+                "top center":" 中上",
+                "bottom left": "左下bottom left",
+                "bottom right": "右下bottom right",
+                "bottom center": "中下bottom center",
+            "justify": "两端对齐justify",
+            "text_padding": "文本分区text_padding",
+            "position_x": "位置Xposition_x",
+            "position_y": "位置Yposition_y",
+            "rotation_angle": "旋转角度rotation_angle",
+            "rotation_options": "旋转设置rotation_options"
+        },
+        "outputs": {
+            "IMAGE": "图像IMAGE"
+        }
+    },
+    "CR Mask Text": {
+        "title": "遮罩字CR Mask Text",
+        "inputs": {
+            "image": "图像image"
+        },
+        "widgets": {
+            "image_width": "宽度image_width",
+            "image_height": "高度image_height",
+            "text": "文本text",
+            "font_name": "字体font_name",
+            "font_size": "字体大小font_size",
+            "background_color": "背景颜色background_color",
+            "alignment_options": "对齐到alignment_options",
+                "center": "中心center",
+                "top left": "左上top left",
+                "top right": "右上top right",
+                "top center":" 中上",
+                "bottom left": "左下bottom left",
+                "bottom right": "右下bottom right",
+                "bottom center": "中下bottom center",
+            "justify": "两端对齐justify",
+            "text_padding": "文本分区text_padding",
+            "position_x": "位置Xposition_x",
+            "position_y": "位置Yposition_y",
+            "rotation_angle": "旋转角度rotation_angle",
+            "rotation_options": "旋转设置rotation_options"
+        },
+        "outputs": {
+            "IMAGE": "图像IMAGE"
+        }
+    },
+    "CR Composite Text": {
+        "title": "合成字CR Composite Text",
+        "inputs": {
+            "image_text": "字体图像image_text",
+            "image_background": "背景图像image_background"
+        },
+        "widgets": {
+            "image_width": "宽度image_width",
+            "image_height": "高度image_height",
+            "text": "文本text",
+            "font_name": "字体font_name",
+            "font_size": "字体大小font_size",
+            "alignment_options": "对齐到alignment_options",
+                "center": "中心center",
+                "top left": "左上top left",
+                "top right": "右上top right",
+                "top center":" 中上",
+                "bottom left": "左下bottom left",
+                "bottom right": "右下bottom right",
+                "bottom center": "中下bottom center",
+            "justify": "两端对齐justify",
+            "text_padding": "文本分区text_padding",
+            "position_x": "位置Xposition_x",
+            "position_y": "位置Yposition_y",
+            "rotation_angle": "旋转角度rotation_angle",
+            "rotation_options": "旋转设置rotation_options"
+        },
+        "outputs": {
+            "IMAGE": "图像IMAGE"
+        }
+    },
+    "CR Simple Text Watermark": {
+        "title": "文本水印(简易)CR Simple Text Watermark",
+        "inputs": {
+            "image": "图像image"
+        },
+        "widgets": {
+            "text": "文本text",
+            "align": "对齐到align",
+                "center": "中心center",
+                "top left": "左上top left",
+                "top right": "右上top right",
+                "top center":" 中上",
+                "bottom left": "左下bottom left",
+                "bottom right": "右下bottom right",
+                "bottom center": "中下bottom center",
+            "opacity": "不透明度opacity",
+            "font_name": "字体font_name",
+            "font_color": "字体颜色font_color",
+            "x_margin": "X页边距x_margin",
+            "y_margin": "Y页边距y_margin",
+            "font_color_hex": "字体颜色HEXfont_color_hex"
+        },
+        "outputs": {
+            "IMAGE": "图像IMAGE",
+            "show_help": "显示帮助show_help"
+        }
+    },
+
+
+
+
+    "CR SD1.5 Aspect Ratio": {
+        "title": "SD1.5宽高比CR SD1.5 Aspect Ratio",
+        "widgets": {
+            "width": "宽度width",
+            "height": "高度height",
+            "aspect_ratio": "宽高比aspect_ratio",
+                "custom": "自定义custom",
+                "1:1 square 512x512": "1:1 方形 512x5121:1 square 512x512",
+                "1:1 square 1024x1024": "1:1 方形 1024x10241:1 square 1024x1024",
+                "2:3 portrait 512x768": "2:3 人像 512x7682:3 portrait 512x768",
+                "3:4 portrait 512x682": "3:4 人像 512x6823:4 portrait 512x682",
+                "3:2 landscape 768x512": "3:2 景观 768x5123:2 landscape 768x512",
+                "4:3 landscape 682x512": "4:3 景观 682x5124:3 landscape 682x512",
+                "16:9 cinema 910x512": "16:9 影视 910x51216:9 cinema 910x512",
+                "2:1 cinema 1024x512": "2:1 影视 1024x5122:1 cinema 1024x512",
+            "swap_dimensions": "切换宽高swap_dimensions",
+            "upscale_factor": "放大系数upscale_factor",
+            "batch_size": "批次大小batch_size"
+        },
+        "outputs": {
+            "width": "宽度width",
+            "height": "高度height",
+            "upscale_factor": "放大系数upscale_factor",
+            "batch_size": "批次大小batch_size"
+        }
+    },
+
+
+
+
+    "CR Img2Img Process Switch": {
+        "title": "Latent切换(CR-图生图)CR Img2Img Process Switch",
+        "inputs": {
+            "txt2img": "文生图txt2img",
+            "img2img": "图生图img2img"
+        },
+        "widgets": {
+            "Input": "输入Input"
+        },
+        "outputs": {
+            "LATENT": "LatentLATENT"
+        }
+    },
+    "CR Hires Fix Process Switch": {
+        "title": "Latent切换(CR-高清修复)CR Hires Fix Process Switch",
+        "inputs": {
+            "latent_upscale": "放大Latentlatent_upscale",
+            "image_upscale": "放大图像image_upscale"
+        },
+        "widgets": {
+            "Input": "输入Input"
+        },
+        "outputs": {
+            "LATENT": "LatentLATENT"
+        }
+    },
+    "CR Batch Process Switch": {
+        "title": "图像切换(CR-批处理)CR Batch Process Switch",
+        "inputs": {
+            "image": "图像image",
+            "image_batch": "图像批次image_batch"
+        },
+        "widgets": {
+            "Input": "输入Input"
+        },
+        "outputs": {
+            "IMAGE": "图像IMAGE"
+        }
+    },
+
+
+    "CR Latent Batch Size": {
+        "title": "Latent批次大小CR Latent Batch Size",
+        "inputs": {
+            "latent": "Latentlatent"
+        },
+        "widgets": {
+            "batch_size": "批次大小batch_size"
+        },
+        "outputs": {
+            "LATENT": "LatentLATENT"
+        }
+    },
+
+
+    "CR Apply Model Merge": {
+        "title": "应用模型融合CR Apply Model Merge",
+        "inputs": {
+            "model_stack": "模型堆model_stack"
+        },
+        "widgets": {
+            "merge_method": "融合方法merge_method",
+                "Rescursive": "递归Rescursive",
+                "Weighted": "权重Weighted",
+            "normalise_ratios": "规格化比率normalise_ratios",
+            "weight_factor": "权重系数weight_factor"
+        },
+        "outputs": {
+            "MODEL": "模型MODEL",
+            "CLIP": "CLIPCLIP",
+            "model_mix_info": "模型融合信息model_mix_info"
+        }
+    },
+    "CR Model Merge Stack": {
+        "title": "模型融合堆CR Model Merge Stack",
+        "inputs": {
+            "model_stack": "模型堆model_stack"
+        },
+        "widgets": {
+            "switch_1": "开关1switch_1",
+            "ckpt_name1": "模型名1ckpt_name1",
+            "model_ratio1": "模型比率1model_ratio1",
+            "switch_2": "开关2switch_2",
+            "ckpt_name2": "模型名2ckpt_name2",
+            "model_ratio2": "模型比率2model_ratio2",
+            "switch_3": "开关3switch_3",
+            "ckpt_name3": "模型名3ckpt_name3",
+            "model_ratio3": "模型比率3model_ratio3"
+        },
+        "outputs": {
+            "MODEL_STACK": "模型堆MODEL_STACK"
+        }
+    },
+
+
+
+
+    "CR Module Pipe Loader": {
+        "title": "模块节点束CR Module Pipe Loader",
+        "inputs": {
+            "model": "模型model",
+            "pos": "正面条件pos",
+            "neg": "负面条件neg",
+            "latent": "Latentlatent",
+            "vae": "VAEvae",
+            "clip": "CLIPclip",
+            "controlnet": "ControlNetcontrolnet",
+            "image": "图像image"
+        },
+        "widgets": {
+            "seed": "随机种seed",
+            "control_after_generate": "运行后操作control_after_generate",
+                "fixed": "固定fixed",
+                "increment": "增加increment",
+                "decrement": "减少decrement",
+                "randomize": "随机randomize"
+        },
+        "outputs": {
+            "pipe": "节点束pipe"
+        }
+    },
+    "CR Module Input": {
+        "title": "模块输入CR Module Input",
+        "inputs": {
+            "pipe": "节点束pipe"
+        },
+        "outputs": {
+            "model": "模型model",
+            "pos": "正面条件pos",
+            "neg": "负面条件neg",
+            "latent": "Latentlatent",
+            "vae": "VAEvae",
+            "clip": "CLIPclip",
+            "controlnet": "ControlNetcontrolnet",
+            "image": "图像image",
+            "seed": "随机种seed"
+        }
+    },
+    "CR Module Output": {
+        "title": "模块输出CR Module Output",
+        "inputs": {
+            "pipe": "节点束pipe",
+            "model": "模型model",
+            "pos": "正面条件pos",
+            "neg": "负面条件neg",
+            "latent": "Latentlatent",
+            "vae": "VAEvae",
+            "clip": "CLIPclip",
+            "controlnet": "ControlNetcontrolnet",
+            "image": "图像image"
+        },
+        "widgets": {
+            "seed": "随机种seed",
+            "control_after_generate": "运行后操作control_after_generate",
+                "fixed": "固定fixed",
+                "increment": "增加increment",
+                "decrement": "减少decrement",
+                "randomize": "随机randomize"
+        },
+        "outputs": {
+            "pipe": "节点束pipe"
+        }
+    },
+    "CR Pipe Switch": {
+        "title": "节点束切换CR Pipe Switch",
+        "inputs": {
+            "pipe1": "节点束1pipe1",
+            "pipe2": "节点束2pipe2"
+        },
+        "widgets": {
+            "Input": "输入Input"
+        },
+        "outputs": {
+            "PIPE_LINE": "节点束PIPE_LINE"
+        }
+    },
+
+
+
+    "CR Image Pipe In": {
+        "title": "图像到节点束CR Image Pipe In",
+        "inputs": {
+            "image": "图像image"
+        },
+        "widgets": {
+            "width": "宽度width",
+            "height": "高度height",
+            "upscale_factor": "放大系数upscale_factor"
+        },
+        "outputs": {
+            "pipe": "节点束pipe"
+        }
+    },
+    "CR Image Pipe Edit": {
+        "title": "节点束编辑CR Image Pipe Edit",
+        "inputs": {
+            "pipe": "节点束pipe",
+            "image": "图像image"
+        },
+        "widgets": {
+            "width": "宽度width",
+            "height": "高度height",
+            "upscale_factor": "放大系数upscale_factor"
+        },
+        "outputs": {
+            "pipe": "节点束pipe"
+        }
+    },
+    "CR Image Pipe Out": {
+        "title": "节点数输出CR Image Pipe Out",
+        "inputs": {
+            "pipe": "节点束pipe"
+        },
+        "outputs": {
+            "pipe": "节点束pipe",
+            "image": "图像image",
+            "width": "宽度width",
+            "height": "高度height",
+            "upscale_factor": "放大系数upscale_factor"
+        }
+    },
+
+
+
+    "CR SDXL Prompt Mix Presets": {
+        "title": "SDXL提示词v2CR SDXL Prompt Mix Presets",
+        "widgets": {
+            "prompt_positive": "正面提示词prompt_positive",
+            "prompt_negative": "负面提示词prompt_negative",
+            "style_positive": "正面风格style_positive",
+            "style_negative": "负面风格style_negative",
+            "preset": "预设preset"
+        },
+        "outputs": {
+            "pos_g": "正面bigG文本pos_g",
+            "pos_l": "正面L文本pos_l",
+            "pos_r": "正面优化文本pos_r",
+            "neg_g": "负面bigG文本neg_g",
+            "neg_l": "负面L文本neg_l",
+            "neg_r": "负面优化文本neg_r"
+        }
+    },
+    "CR SDXL Aspect Ratio": {
+        "title": "SDXL宽高比v2CR SDXL Aspect Ratio",
+        "widgets": {
+            "width": "宽度width",
+            "height": "高度height",
+            "aspect_ratio": "宽高比aspect_ratio",
+            "swap_dimensions": "切换宽高swap_dimensions",
+            "upscale_factor1": "放大系数1upscale_factor1",
+            "upscale_factor2": "放大系数2upscale_factor2",
+            "batch_size": "批次大小batch_size"
+        },
+        "outputs": {
+            "width": "宽度width",
+            "height": "高度height",
+            "upscale_factor": "放大系数upscale_factor",
+            "batch_size": "批次大小batch_size"
+        }
+    },
+    "CR SDXL Style Text": {
+        "title": "SDXL风格文本CR SDXL Style Text",
+        "widgets": {
+            "positive_style": "正面风格positive_style",
+            "negative_style": "负面风格negative_style"
+        },
+        "outputs": {
+            "positive_prompt_text_l": "正面提示词Lpositive_prompt_text_l",
+            "negative_prompt_text_l": "负面提示词Lnegative_prompt_text_l"
+        }
+    },
+    "CR SDXL Base Prompt Encoder": {
+        "title": "SDXL基础提示词CR SDXL Base Prompt Encoder",
+        "inputs": {
+            "base_clip": "基础CLIPbase_clip"
+        },
+        "widgets": {
+            "pos_g": "正面bigG文本pos_g",
+            "pos_l": "正面L文本pos_l",
+            "neg_g": "负面bigG文本neg_g",
+            "neg_l": "负面L文本neg_l",
+            "preset": "预设preset",
+            "base_width": "基础宽度base_width",
+            "base_height": "基础高度base_height",
+            "crop_w": "裁剪宽度crop_w",
+            "crop_h": "裁剪高度crop_h",
+            "target_width": "目标宽度target_width",
+            "target_height": "目标高度target_height"
+        },
+        "outputs": {
+            "base_positive": "正面条件base_positive",
+            "base_negative": "负面条件base_negative"
+        }
+    },
+    
+
+    "CR Multi Upscale Stack": {
+        "title": "多重放大堆CR Multi Upscale Stack",
+        "inputs": {
+            "upscale_stack": "放大堆upscale_stack"
+        },
+        "widgets": {
+            "switch_1": "开关1switch_1",
+            "upscale_model_1": "放大模型1upscale_model_1",
+            "rescale_factor_1": "缩放系数1rescale_factor_1",
+            "switch_2": "开关2switch_2",
+            "upscale_model_2": "放大模型2upscale_model_2",
+            "rescale_factor_2": "缩放系数2rescale_factor_2",
+            "switch_3": "开关3switch_3",
+            "upscale_model_3": "放大模型3upscale_model_3",
+            "rescale_factor_3": "缩放系数3rescale_factor_3"
+        },
+        "outputs": {
+            "UPSCALE_STACK": "放大堆UPSCALE_STACK"
+        }
+    },
+    "CR Upscale Image": {
+        "title": "放大图像CR Upscale Image",
+        "inputs": {
+            "image": "图像image"
+        },
+        "widgets": {
+            "upscale_model": "放大模型upscale_model",
+            "mode": "模式mode",
+                "rescale": "缩放rescale",
+                "resize": "拉伸resize",
+            "rescale_factor": "缩放系数rescale_factor",
+            "resize_width": "拉伸宽度resize_width",
+            "resampling_method": "重采样方法resampling_method",
+                "Lanczos": "Lanczos插值Lanczos",
+                "nearest": "邻近nearest",
+                "bilinear": "双线性插值bilinear",
+                "bicubic": "双三次插值bicubic",
+            "supersample": "超采样supersample",
+            "rounding_modulus": "舍入到倍数rounding_modulus"
+        },
+        "outputs": {
+            "IMAGE": "图像IMAGE"
+        }
+    },
+    "CR Apply Multi Upscale": {
+        "title": "应用多重放大CR Apply Multi Upscale",
+        "inputs": {
+            "image": "图像image",
+            "upscale_stack": "放大堆upscale_stack"
+        },
+        "widgets": {
+            "resampling_method": "重采样方法resampling_method",
+                "Lanczos": "Lanczos插值Lanczos",
+                "nearest": "邻近nearest",
+                "bilinear": "双线性插值bilinear",
+                "bicubic": "双三次插值bicubic",
+            "supersample": "超采样supersample",
+            "rounding_modulus": "舍入到倍数rounding_modulus"
+        }
+    },
+
+
+
+    "CR XY List": {
+        "title": "XY图表CR XY List",
+        "widgets": {
+            "index": "编号index",
+            "list1": "列表1list1",
+            "x_prepend": "X预置x_prepend",
+            "x_append": "X附加x_append",
+            "x_annotation_prepend": "X预置注释x_annotation_prepend",
+            "list2": "列表2list2",
+            "y_prepend": "Y预置y_prepend",
+            "y_append": "Y附加y_append",
+            "y_annotation_prepend": "Y预置注释y_annotation_prepend"
+        },
+        "outputs": {
+            "X": "XX",
+            "Y": "YY",
+            "x_annotation": "X注释x_annotation",
+            "y_annotation": "Y注释y_annotation",
+            "trigger": "触发器trigger"
+        }
+    },
+    "CR XY Interpolate": {
+        "title": "XY插值CR XY Interpolate",
+        "widgets": {
+            "x_columns": "X列数x_columns",
+            "x_start_value": "X起始值x_start_value",
+            "x_step": "X步数x_step",
+            "x_annotation_prepend": "X预置注释x_annotation_prepend",
+            "y_rows": "Y行数y_rows",
+            "y_start_value": "Y起始值y_start_value",
+            "y_step": "Y步数y_step",
+            "y_annotation_prepend": "Y预置注释y_annotation_prepend",
+            "index": "编号index",
+            "gradient_profile": "渐变gradient_profile",
+                "Lerp": "Lerp"
+        },
+        "outputs": {
+            "X": "XX",
+            "Y": "YY",
+            "x_annotation": "X注释x_annotation",
+            "y_annotation": "Y注释y_annotation",
+            "trigger": "触发器trigger"
+        }
+    },
+    "CR XY Index": {
+        "title": "XY编号CR XY Index",
+        "widgets": {
+            "x_columns": "X列数x_columns",
+            "y_rows": "Y行数y_rows",
+            "index": "编号index"
+        },
+        "outputs": {
+            "x": "Xx",
+            "y": "Yy"
+        }
+    },
+    "CR XY From Folder": {
+        "title": "XY文件夹CR XY From Folder",
+        "widgets": {
+            "image_folder": "图像文件夹image_folder",
+            "start_index": "起始编号start_index",
+            "end_index": "结束编号end_index",
+            "max_columns": "最大列数max_columns",
+            "x_annotation": "X注释x_annotation",
+            "y_annotation": "Y注释y_annotation",
+            "font_size": "字体大小font_size",
+            "gap": "间隙gap",
+            "trigger": "触发器trigger"
+        },
+        "outputs": {
+            "IMAGE": "图像IMAGE",
+            "trigger": "触发器trigger"
+        }
+    },
+    "CR XY Save Grid Image": {
+        "title": "XY保存图表CR XY Save Grid Image",
+        "inputs": {
+            "image": "图像image"
+        },
+        "widgets": {
+            "mode": "模式mode",
+                "Save": "保存Save",
+                "Previw": "预览Previw",
+            "output_folder": "输出文件夹output_folder",
+            "filename_prefix": "文件名前缀filename_prefix",
+            "file_format": "格式file_format",
+            "output_path": "输出路径output_path",
+            "trigger": "触发器trigger"
+        }
+    },
+
+
+
+    "CR Index": {
+        "title": "编号CR Index",
+        "widgets": {
+            "index": "编号index"
+        },
+        "outputs": {
+            "INT": "整数INT"
+        }
+    },
+    "CR Index Increment": {
+        "title": "编号增加CR Index Increment",
+        "widgets": {
+            "index": "编号index",
+            "interval": "间隔interval"
+        },
+        "outputs": {
+            "index": "编号index",
+            "interval": "间隔interval"
+        }
+    },
+    "CR Index Multiply": {
+        "title": "编号相乘CR Index Multiply",
+        "widgets": {
+            "index": "编号index",
+            "factor": "系数factor"
+        },
+        "outputs": {
+            "index": "编号index",
+            "factor": "系数factor"
+        }
+    },
+    "CR Index Reset": {
+        "title": "编号重置CR Index Reset",
+        "widgets": {
+            "index": "编号index",
+            "reset_to": "重置到reset_to"
+        },
+        "outputs": {
+            "index": "编号index",
+            "reset_to": "重置到reset_to"
+        }
+    },
+    "CR Trigger": {
+        "title": "触发器CR Trigger",
+        "widgets": {
+            "index": "编号index",
+            "trigger_value": "触发值trigger_value"
+        },
+        "outputs": {
+            "index": "编号index",
+            "trigger": "触发器trigger"
+        }
+    },
+    "CR Float To Integer": {
+        "title": "浮点到整数CR Float To Integer",
+        "widgets": {
+            "float": "浮点float"
+        },
+        "outputs": {
+            "INT": "整数INT"
+        }
+    },
+
+
+
+    "CR Overlay Text": {
+        "title": "文字覆盖CR Overlay Text",
+        "inputs": {
+            "image": "图像image"
+        },
+        "widgets": {
+            "text": "文本text",
+            "font_name": "字体font_name",
+            "font_size": "字体大小font_size",
+            "font_color": "字体颜色font_color",
+            "align": "对齐到align",
+                "top": "顶top",
+                "center": "中心center",
+                "bottom": "底bottom",
+            "justify": "两端对齐justify",
+                "left": "左left",
+                "right": "右right",
+            "margins": "页边距margins",
+            "line_spacing": "行间距line_spacing",
+            "position_x": "位置Xposition_x",
+            "position_y": "位置Yposition_y",
+            "rotation_angle": "旋转角度rotation_angle",
+            "rotation_options": "旋转设置rotation_options",
+                "text center": "文本中心text center",
+                "image center": "图像中心image center",
+            "font_color_hex": "字体颜色HEXfont_color_hex"
+        },
+        "outputs": {
+            "IMAGE": "图像IMAGE"
+        }
+    },
+    "CR Simple Meme Template": {
+        "title": "meme模板(简易)CR Simple Meme Template",
+        "inputs": {
+            "image": "图像image"
+        },
+        "widgets": {
+            "preset": "预设preset",
+            "text_top": "文本上text_top",
+            "text_bottom": "文本下text_bottom",
+            "font_name": "字体font_name",
+            "max_font_size": "最大字体大小max_font_size",
+            "font_color": "字体颜色font_color",
+            "font_outline": "字体轮廓线font_outline",
+            "bar_color": "条颜色bar_color",
+            "bar_options": "条设置bar_options"
+        },
+        "outputs": {
+            "image": "图像image",
+            "show_help": "显示帮助show_help"
+        }
+    },
+    "CR Simple Banner": {
+        "title": "Banner(简易)CR Simple Banner",
+        "inputs": {
+            "image": "图像image"
+        },
+        "widgets": {
+            "banner_text": "Banner文本banner_text",
+            "font_name": "字体font_name",
+            "max_font_size": "最大字体大小max_font_size",
+            "font_color": "字体颜色font_color",
+            "outline_color": "轮廓线颜色outline_color",
+            "outline_thickness": "轮廓线厚度outline_thickness",
+            "margin_size": "页边距margin_size",
+            "font_color_hex": "字体颜色HEXfont_color_hex",
+            "outline_color_hex": "轮廓线颜色HEXoutline_color_hex"
+        },
+        "outputs": {
+            "image": "图像image",
+            "show_help": "显示帮助show_help"
+        }
+    },
+    "CR VAE Input Switch": {
+        "title": "VAE切换CR VAE Input Switch",
+        "inputs": {
+            "VAE1": "VAE1VAE1",
+            "VAE2": "VAE2VAE2"
+        },
+        "widgets": {
+            "Input": "输入Input"
+        },
+        "outputs": {
+            "VAE": "VAEVAE"
+        }
+    },
+    "CR Radial Gradient": {
+        "title": "径向渐变CR Radial Gradient",
+        "widgets": {
+            "width": "宽度width",
+            "height": "高度height",
+            "start_color": "起始色start_color",
+            "end_color": "终点色end_color",
+            "gradient distance": "渐变距离gradient distance",
+            "radial_center_x": "中心Xradial_center_x",
+            "radial_center_y": "中心Yradial_center_y",
+            "start_color_hex": "起始色HEXstart_color_hex",
+            "end_color_hex": "终点色HEXend_color_hex"
+        },
+        "outputs": {
+            "IMAGE": "图像IMAGE"
+        }
+    },
+    "CR Image Panel": {
+        "title": "图像面板CR Image Panel",
+        "inputs": {
+            "image_1": "图像_1image_1",
+            "image_2": "图像_2image_2",
+            "image_3": "图像_3image_3",
+            "image_4": "图像_4image_4"
+        },
+        "widgets": {
+            "border_thickness": "边框厚度border_thickness",
+            "border_color": "边框颜色border_color",
+            "outline_thickness": "轮廓线厚度outline_thickness",
+            "outline_color": "轮廓线颜色outline_color",
+            "layout_direction": "布局方向layout_direction",
+            "border_color_hex": "边框颜色HEXborder_color_hex"
+        },
+        "outputs": {
+            "image": "图像image",
+            "show_help": "显示帮助show_help"
+        }
+    },
+    "CR Arabic Text RTL": {
+        "title": "阿拉伯文本RTLCR Arabic Text RTL",
+        "widgets": {
+            "arabic_text": "文本arabic_text"
+        },
+        "outputs": {
+            "arabic_text_rtl": "文本arabic_text_rtl",
+            "show help": "显示帮助show help"
+        }
+    },
+    "CR Draw Shape": {
+        "title": "绘制形状CR Draw Shape",
+        "widgets": {
+            "width": "宽度width",
+            "height": "高度height",
+            "shape": "形状shape",
+            "shape_color": "形状颜色shape_color",
+            "back_color": "背景颜色back_color",
+            "x_offset": "X偏移x_offset",
+            "y_offset": "Y偏移y_offset",
+            "zoom": "缩放zoom",
+            "rotation": "旋转rotation",
+            "shape_color_hex": "形状颜色HEXshape_color_hex",
+            "bg_color_hex": "背景色HEXbg_color_hex"
+        },
+        "outputs": {
+            "IMAGE": "图像IMAGE",
+            "show_help": "显示帮助show_help"
+        }
+    },
+    "CR Halftone Filter": {
+        "title": "半调滤镜CR Halftone Filter",
+        "inputs": {
+            "image": "图像image"
+        },
+        "widgets": {
+            "dot_size": "网点大小dot_size",
+            "dot_style": "网点类型dot_style",
+            "scale": "缩放scale",
+            "angle_c": "C角度angle_c",
+            "angle_m": "M角度angle_m",
+            "angle_y": "Y角度angle_y",
+            "angle_k": "K角度angle_k",
+            "greyscale": "灰度greyscale",
+            "antialias": "抗锯齿antialias",
+            "antialias_scale": "抗锯齿缩放antialias_scale",
+            "border_blending": "边框融合border_blending"
+        },
+        "outputs": {
+            "image": "图像image",
+            "show_help": "显示帮助show_help"
+        }
+    },
+    "CR Vignette FIlter": {
+        "title": "暗角滤镜CR Vignette FIlter",
+        "inputs": {
+            "image": "图像image"
+        },
+        "widgets": {
+            "vignette_shape": "暗角形状vignette_shape",
+            "fether_amount": "羽化fether_amount",
+            "x_offset": "X偏移x_offset",
+            "y_offset": "Y偏移y_offset",
+            "zoom": "缩放zoom",
+            "reverse": "反转reverse"
+        },
+        "outputs": {
+            "IMAGE": "图像IMAGE",
+            "MASK": "遮罩MASK",
+            "show_help": "显示帮助show_help"
+        }
+    },
+    "CR Page Layout": {
+        "title": "页面布局CR Page Layout",
+        "inputs": {
+            "image_panel": "图像面版image_panel"
+        },
+        "widgets": {
+            "layout_options": "布局选项layout_options",
+                "header": "页头header",
+                "footer": "页尾footer",
+                "header and footer": "页头页尾header and footer",
+                "no header or footer": "无no header or footer",
+            "header_height": "页头高度header_height",
+            "header_text": "页头文本header_text",
+            "header_align": "页头对齐header_align",
+            "footer_height": "页尾高度footer_height",
+            "footer_text": "页尾文本footer_text",
+            "footer_align": "页尾对齐footer_align",
+            "font_name": "字体font_name",
+            "font_color": "字体颜色font_color",
+            "header_font_size": "页头字体大小header_font_size",
+            "footer_font_size": "页尾字体大小footer_font_size",
+            "border_thickness": "边框厚度border_thickness",
+            "border_color": "边框颜色border_color",
+            "background_color": "背景色background_color",
+            "font_color_hex": "字体颜色HEXfont_color_hex",
+            "border_color_hex": "边框颜色HEXborder_color_hex",
+            "bg_color_hex": "背景色HEXbg_color_hex"
+        },
+        "outputs": {
+            "image": "图像image",
+            "show help": "显示帮助show help"
+        }
+    },
+    "CR Image Grid Panel": {
+        "title": "图像表格面板CR Image Grid Panel",
+        "inputs": {
+            "images": "图像images",
+            "image": "图像image"
+        },
+        "widgets": {
+            "border_thickness": "边框厚度border_thickness",
+            "border_color": "边框颜色border_color",
+            "outline_thickness": "轮廓线厚度outline_thickness",
+            "outline_color": "轮廓线颜色outline_color",
+            "max_columns": "最大列数max_columns",
+            "border_color_hex": "边框颜色HEXborder_color_hex"
+        },
+        "outputs": {
+            "image": "图像image",
+            "show_help": "显示帮助show_help"
+        }
+    },
+    "CR Image Border": {
+        "title": "图像边框CR Image Border",
+        "inputs": {
+            "image": "图像image"
+        },
+        "widgets": {
+            "top_thickness": "顶厚度top_thickness",
+            "bottom_thickness": "底厚度bottom_thickness",
+            "left_thickness": "左厚度left_thickness",
+            "right_thickness": "右厚度right_thickness",
+            "border_color": "边框颜色border_color",
+            "outline_color": "轮廓线颜色outline_color",
+            "outline_thickness": "轮廓线厚度outline_thickness",
+            "border_color_hex": "边框颜色HEXborder_color_hex"
+        },
+        "outputs": {
+            "image": "图像image",
+            "show_help": "显示帮助show_help"
+        }
+    },
+    "CR Feathered Border": {
+        "title": "羽化边框CR Feathered Border",
+        "inputs": {
+            "image": "图像image"
+        },
+        "widgets": {
+            "top_thickness": "顶厚度top_thickness",
+            "bottom_thickness": "底厚度bottom_thickness",
+            "left_thickness": "左厚度left_thickness",
+            "right_thickness": "右厚度right_thickness",
+            "border_color": "边框颜色border_color",
+            "feather_amount": "羽化feather_amount",
+            "border_color_hex": "边框颜色HEXborder_color_hex"
+        },
+        "outputs": {
+            "image": "图像image",
+            "show_help": "显示帮助show_help"
+        }
+    },
+    "CR Color Panel": {
+        "title": "颜色面板CR Color Panel",
+        "widgets": {
+            "panel_width": "面板宽度panel_width",
+            "panel_height": "面板高度panel_height",
+            "fill_color": "填充色fill_color",
+            "fill_color_hex": "填充色HEXfill_color_hex"
+        },
+        "outputs": {
+            "image": "图像image",
+            "show_help": "显示帮助show_help"
+        }
+    },
+    "CR Overlay Transparent Image": {
+        "title": "图像覆盖CR Overlay Transparent Image",
+        "inputs": {
+            "back_image": "背景图像back_image",
+            "overlay_image": "覆盖图像overlay_image"
+        },
+        "widgets": {
+            "transparency": "透明transparency",
+            "offset_x": "偏移_Xoffset_x",
+            "offset_y": "偏移_Yoffset_y",
+            "rotation_angle": "旋转角度rotation_angle",
+            "overlay_scale_factor": "缩放系数overlay_scale_factor"
+        },
+        "outputs": {
+            "IMAGE": "图像IMAGE"
+        }
+    },
+    "CR Simple Text Panel": {
+        "title": "文本面板(简易)CR Simple Text Panel",
+        "widgets": {
+            "panel_height": "面板高度panel_height",
+            "panel_width": "面板宽度panel_width",
+            "text": "文本text",
+            "font_color": "字体颜色font_color",
+            "font_name": "字体font_name",
+            "font_color_hex": "字体颜色HEXfont_color_hex",
+            "font_size": "字体大小font_size",
+            "background_color": "背景色background_color",
+            "align": "对齐到align",
+            "justify": "两端对齐justify",
+            "bg_color_hex": "背景色HEXbg_color_hex"
+        },
+        "outputs": {
+            "image": "图像image",
+            "show_help": "显示帮助show_help"
+        }
+    },
+    "CR Comic Panel Templates": {
+        "title": "漫画面板模板CR Comic Panel Templates",
+        "inputs": {
+            "images": "图像images"
+        },
+        "widgets": {
+            "page_width": "页宽page_width",
+            "page_height": "页高page_height",
+            "template": "模板template",
+            "reading_direction": "阅读方向reading_direction",
+                "left to right": "左到右left to right",
+                "right to left": "右到左right to left",
+            "border_thickness": "边框厚度border_thickness",
+            "outline_thickness": "轮廓线厚度outline_thickness",
+            "outline_color": "轮廓线颜色outline_color",
+            "panel_color": "面板颜色panel_color",
+            "background_color": "背景色background_color",
+            "custom_panel_layout": "自定面板布局custom_panel_layout",
+            "outline_color_hex": "轮廓线颜色HEXoutline_color_hex",
+            "panel_color_HEX": "面板颜色HEXpanel_color_HEX",
+            "bg_color_hex": "背景色HEXbg_color_hex"
+        },
+        "outputs": {
+            "image": "图像image",
+            "show_help": "显示帮助show_help"
+        }
+    },
+    "CR Simple Image Compare": {
+        "title": "图像对比(简易)CR Simple Image Compare",
+        "inputs": {
+            "image1": "图像1image1",
+            "image2": "图像2image2"
+        },
+        "widgets": {
+            "text1": "文本1text1",
+            "text2": "文本2text2",
+            "footer_height": "页尾高度footer_height",
+            "font_name": "字体font_name",
+            "font_size": "字体大小font_size",
+            "mode": "模式mode",
+            "border_thickness": "边框厚度border_thickness"
+        },
+        "outputs": {
+            "image": "图像image",
+            "show_help": "显示帮助show_help"
+        }
+    },
+
+
+
+    "CR Simple Schedule": {
+        "title": "简易调度CR Simple Schedule",
+        "widgets": {
+            "schedule": "调度schedule",
+            "schedule_type": "类型schedule_type",
+                "Value": "值Value",
+                "Text": "文本Text",
+                "Prompt": "提示词Prompt",
+                "Prompt Weight": "提示词权重Prompt Weight",
+                "Model": "模型Model",
+                "LoRA": "LoRALoRA",
+                "ControlNet": "ControlNetControlNet",
+                "Style": "风格Style",
+                "Upscale": "放大Upscale",
+                "Camera": "相机Camera",
+                "Job": "工作Job",
+            "schedule_alias": "别名schedule_alias",
+            "schedule_format": "格式schedule_format"
+        },
+        "outputs": {
+            "SCHEDULE": "调度SCHEDULE"
+        }
+    },
+    "CR Central Schedule": {
+        "title": "中心调度CR Central Schedule",
+        "widgets": {
+            "schedule1": "调度schedule1",
+            "schedule_type1": "类型schedule_type1",
+            "schedule_alias1": "别名schedule_alias1",
+            "schedule2": "调度schedule2",
+            "schedule_type2": "类型schedule_type2",
+            "schedule_alias2": "别名schedule_alias2",
+            "schedule3": "调度schedule3",
+            "schedule_type3": "类型schedule_type3",
+            "schedule_alias3": "别名schedule_alias3",
+            "schedule_format": "格式schedule_format"
+        },
+        "outputs": {
+            "SCHEDULE": "调度SCHEDULE",
+            "show_text": "显示文本show_text"
+        }
+    },
+    "CR Combine Schedules": {
+        "title": "合并调度CR Combine Schedules",
+        "inputs": {
+            "schedule_1": "调度_1schedule_1",
+            "schedule_2": "调度_2schedule_2",
+            "schedule_3": "调度_3schedule_3",
+            "schedule_4": "调度_4schedule_4"
+        },
+        "outputs": {
+            "SCHEDULE": "调度SCHEDULE",
+            "show_text": "显示文本show_text"
+        }
+    },
+    "CR Output Schedule To File": {
+        "title": "输出调度到文件CR Output Schedule To File",
+        "inputs": {
+            "schedule": "调度schedule"
+        },
+        "widgets": {
+            "output_file_path": "输出路径output_file_path",
+            "file_name": "文件名file_name",
+            "file_extension": "后缀名file_extension"
+        }
+    },
+    "CR Load Schedule From File": {
+        "title": "加载调度CR Load Schedule From File",
+        "widgets": {
+            "input_file_path": "文件路径input_file_path",
+            "file_name": "文件名file_name",
+            "file_extension": "后缀名file_extension"
+        },
+        "outputs": {
+            "SCHEDULE": "调度SCHEDULE",
+            "show_text": "显示文本show_text"
+        }
+    },
+    "CR Schedule Input Switch": {
+        "title": "切换调度CR Schedule Input Switch",
+        "inputs": {
+            "schedule1": "调度_1schedule1",
+            "schedule2": "调度_2schedule2"
+        },
+        "widgets": {
+            "Input": "输入Input"
+        },
+        "outputs": {
+            "SCHEDULE": "调度SCHEDULE"
+        }
+    },
+
+
+
+    "CR Simple Value Scheduler": {
+        "title": "值调度器(简易)CR Simple Value Scheduler",
+        "widgets": {
+            "schedule": "调度schedule",
+            "current_frame": "当前帧current_frame"
+        },
+        "outputs": {
+            "INT": "整数INT",
+            "FLOAT": "浮点FLOAT"
+        }
+    },
+    "CR Simple Text Scheduler": {
+        "title": "文本调度器(简易)CR Simple Text Scheduler",
+        "widgets": {
+            "schedule": "调度schedule",
+            "current_frame": "当前帧current_frame"
+        },
+        "outputs": {
+            "STRING": "字符串STRING"
+        }
+    },
+    "CR Value Scheduler": {
+        "title": "值调度器CR Value Scheduler",
+        "widgets": {
+            "mode": "模式mode",
+                "Default Value": "默认值Default Value",
+                "Schedule": "调度Schedule",
+            "current_frame": "当前帧current_frame",
+            "schedule_alias": "别名schedule_alias",
+            "dafault_value": "默认值dafault_value",
+            "schedule_format": "格式schedule_format"
+        },
+        "outputs": {
+            "INT": "整数INT",
+            "FLOAT": "浮点FLOAT"
+        }
+    },
+    "CR Text Scheduler": {
+        "title": "文本调度器CR Text Scheduler",
+        "widgets": {
+            "mode": "模式mode",
+                "Default Value": "默认值Default Value",
+                "Schedule": "调度Schedule",
+            "current_frame": "当前帧current_frame",
+            "schedule_alias": "别名schedule_alias",
+            "dafault_value": "默认值dafault_value",
+            "schedule_format": "格式schedule_format"
+        },
+        "outputs": {
+            "STRING": "字符串STRING"
+        }
+    },
+    "CR Load Scheduled Models": {
+        "title": "加载调度模型CR Load Scheduled Models",
+        "inputs": {
+            "model_list": "模型列表model_list",
+            "schedule": "调度schedule"
+        },
+        "widgets": {
+            "mode": "模式mode",
+                "Load default Value": "默认模型Load default Value",
+                "Schedule": "调度Schedule",
+            "current_frame": "当前帧current_frame",
+            "schedule_alias": "别名schedule_alias",
+            "dafault_model": "默认模型dafault_model",
+            "schedule_format": "格式schedule_format"
+        },
+        "outputs": {
+            "MODEL": "模型MODEL",
+            "CLIP": "CLIPCLIP",
+            "VAE": "VAEVAE"
+        }
+    },
+    "CR Load Scheduled LoRAs": {
+        "title": "加载调度LoRaCR Load Scheduled LoRAs",
+        "inputs": {
+            "model": "模型model",
+            "clip": "CLIPclip",
+            "lora_list": "LoRA列表lora_list",
+            "schedule": "调度schedule"
+        },
+        "widgets": {
+            "mode": "模式mode",
+                "Off": "关闭Off",
+                "Load default LoRA": "默认模型Load default LoRA",
+                "Schedule": "调度Schedule",
+            "current_frame": "当前帧current_frame",
+            "schedule_alias": "别名schedule_alias",
+            "dafault_lora": "默认LoRAdafault_lora",
+            "strength_model": "模型强度strength_model",
+            "strength_clip": "CLIP强度strength_clip",
+            "schedule_format": "格式schedule_format"
+        },
+        "outputs": {
+            "MODEL": "模型MODEL",
+            "CLIP": "CLIPCLIP",
+            "show_help": "显示帮助show_help"
+        }
+    },
+
+    "CR Simple Prompt Scheduler": {
+        "title": "提示词调度器(简易)CR Simple Prompt Scheduler",
+        "widgets": {
+            "keyframe_list": "关键帧列表keyframe_list",
+            "current_frame": "当前帧current_frame",
+            "keyframe_format": "关键帧格式keyframe_format"
+        },
+        "outputs": {
+            "current_prompt": "当前提示词current_prompt",
+            "next_prompt": "下一提示词next_prompt",
+            "weight": "权重weight",
+            "show_help": "显示帮助show_help"
+        }
+    },
+    "CR Prompt Scheduler": {
+        "title": "提示词调度器CR Prompt Scheduler",
+        "inputs": {
+            "schedule": "调度schedule"
+        },
+        "widgets": {
+            "mode": "模式mode",
+            "current_frame": "当前帧current_frame",
+            "default_prompt": "默认提示词default_prompt",
+            "schedule_format": "格式schedule_format",
+            "interpolate_prompt": "插入提示词interpolate_prompt",
+            "schedule_alias": "别名schedule_alias",
+            "keyframe_list": "关键帧列表keyframe_list",
+            "prepend_text": "预置文本prepend_text",
+            "append_text": "追加文本append_text"
+        },
+        "outputs": {
+            "current_prompt": "当前提示词current_prompt",
+            "next_prompt": "下一提示词next_prompt",
+            "weight": "权重weight",
+            "show_help": "显示帮助show_help"
+        }
+    },
+    "CR Simple Prompt List": {
+        "title": "提示词列表(简易)CR Simple Prompt List",
+        "inputs": {
+            "simple_prompt_list": "提示词列表(简易)simple_prompt_list"
+        },
+        "widgets": {
+            "prompt_1": "提示词_1prompt_1",
+            "prompt_2": "提示词_2prompt_2",
+            "prompt_3": "提示词_3prompt_3",
+            "prompt_4": "提示词_4prompt_4",
+            "prompt_5": "提示词_5prompt_5"
+        },
+        "outputs": {
+            "SIMPLE_PROMPT_LIST": "提示词列表(简易)SIMPLE_PROMPT_LIST",
+            "show_help": "显示帮助show_help"
+        }
+    },
+    "CR Prompt List": {
+        "title": "提示词列表CR Prompt List",
+        "inputs": {
+            "prompt_list": "提示词列表prompt_list"
+        },
+        "widgets": {
+            "keyframe_interval": "关键帧间隔keyframe_interval",
+            "loops": "循环次数loops",
+            "prompt_1": "提示词_1prompt_1",
+            "transition_type1": "过渡类型_1transition_type1",
+            "transition_speed1": "过渡速度_1transition_speed1",
+            "transition_profile1": "过渡配置_1transition_profile1",
+            "prompt_2": "提示词_2prompt_2",
+            "transition_type2": "过渡类型_2transition_type2",
+            "transition_speed2": "过渡速度_2transition_speed2",
+            "transition_profile2": "过渡配置_2transition_profile2",
+            "prompt_3": "提示词_3prompt_3",
+            "transition_type3": "过渡类型_3transition_type3",
+            "transition_speed3": "过渡速度_3transition_speed3",
+            "transition_profile3": "过渡配置_3transition_profile3",
+            "prompt_4": "提示词_4prompt_4",
+            "transition_type4": "过渡类型_4transition_type4",
+            "transition_speed4": "过渡速度_4transition_speed4",
+            "transition_profile4": "过渡配置_4transition_profile4",
+            "prompt_5": "提示词_5prompt_5",
+            "transition_type5": "过渡类型_5transition_type5",
+            "transition_speed5": "过渡速度_5transition_speed5",
+            "transition_profile5": "过渡配置_5transition_profile5"
+        },
+        "outputs": {
+            "PROMPT_LIST": "提示词列表PROMPT_LIST",
+            "show_help": "显示帮助show_help"
+        }
+    },
+    "CR Prompt List Keyframes": {
+        "title": "提示词列表关键帧CR Prompt List Keyframes",
+        "inputs": {
+            "prompt_list": "提示词列表prompt_list"
+        },
+        "widgets": {
+            "keyframe_format": "关键帧格式keyframe_format"
+        },
+        "outputs": {
+            "keyframe_list": "关键帧列表keyframe_list",
+            "show_help": "显示帮助show_help"
+        }
+    },
+    "CR Simple Prompt List Keyframes": {
+        "title": "提示词列表关键帧(简易)CR Simple Prompt List Keyframes",
+        "inputs": {
+            "simple_prompt_list": "提示词列表(简易)simple_prompt_list"
+        },
+        "widgets": {
+            "keyframe_interval": "关键帧间隔keyframe_interval",
+            "loops": "循环次数loops",
+            "transition_type": "过渡类型transition_type",
+            "transition_speed": "过渡速度transition_speed",
+            "transition_profile": "过渡配置transition_profile",
+            "keyframe_format": "关键帧格式keyframe_format"
+        },
+        "outputs": {
+            "keyframe_list": "关键帧列表keyframe_list",
+            "show_help": "显示帮助show_help"
+        }
+    },  
+    "CR Keyframe List": {
+        "title": "关键帧列表CR Keyframe List",
+        "widgets": {
+            "keyframe_list": "关键帧列表keyframe_list",
+            "keyframe_format": "关键帧格式keyframe_format"
+        },
+        "outputs": {
+            "keyframe_list": "关键帧列表keyframe_list",
+            "show_help": "显示帮助show_help"
+        }
+    },
+    "CR Encode Scheduled Prompts": {
+        "title": "编码调度提示词CR Encode Scheduled Prompts",
+        "inputs": {
+            "clip": "CLIPclip"
+        },
+        "widgets": {
+            "current_prompt": "当前提示词current_prompt",
+            "next_prompt": "下一提示词next_prompt",
+            "weight": "权重weight"
+        },
+        "outputs": {
+            "CONDITIONING": "条件CONDITIONING",
+            "show_help": "显示帮助show_help"
+        }
+    },
+    "CR Gradient Float": {
+        "title": "渐变浮点CR Gradient Float",
+        "widgets": {
+            "start_value": "起始值start_value",
+            "end_value": "最终值end_value",
+            "start_frame": "起始帧start_frame",
+            "frame_duration": "帧持续frame_duration",
+            "current_frame": "当前帧current_frame",
+            "gradient_profile": "渐变配置gradient_profile"
+        },
+        "outputs": {
+            "FLOAT": "浮点FLOAT",
+            "show_help": "显示帮助show_help"
+        }
+    },
+    "CR Gradient Integer": {
+        "title": "渐变整数CR Gradient Integer",
+        "widgets": {
+            "start_value": "起始值start_value",
+            "end_value": "最终值end_value",
+            "start_frame": "起始帧start_frame",
+            "frame_duration": "帧持续frame_duration",
+            "current_frame": "当前帧current_frame",
+            "gradient_profile": "渐变配置gradient_profile"
+        },
+        "outputs": {
+            "INT": "整数INT",
+            "show_help": "显示帮助show_help"
+        }
+    },
+    "CR Increment Float": {
+        "title": "递增浮点CR Increment Float",
+        "widgets": {
+            "start_value": "起始值start_value",
+            "step": "步长step",
+            "start_frame": "起始帧start_frame",
+            "frame_duration": "帧持续frame_duration",
+            "current_frame": "当前帧current_frame"
+        },
+        "outputs": {
+            "FLOAT": "浮点FLOAT",
+            "show_help": "显示帮助show_help"
+        }
+    },
+    "CR Increment Integer": {
+        "title": "递增整数CR Increment Integer",
+        "widgets": {
+            "start_value": "起始值start_value",
+            "step": "步长step",
+            "start_frame": "起始帧start_frame",
+            "frame_duration": "帧持续frame_duration",
+            "current_frame": "当前帧current_frame"
+        },
+        "outputs": {
+            "INT": "整数INT",
+            "show_help": "显示帮助show_help"
+        }
+    },
+    "CR Interpolate Latents": {
+        "title": "插入LatentCR Interpolate Latents",
+        "inputs": {
+            "latent1": "Latent_1latent1",
+            "latent2": "Latent_2latent2"
+        },
+        "widgets": {
+            "weight": "权重weight",
+            "method": "方法method"
+        },
+        "outputs": {
+            "LATENT": "LatentLATENT",
+            "show_help": "显示帮助show_help"
+        }
+    },
+
+
+    "CR Model List": {
+        "title": "模型列表CR Model List",
+        "inputs": {
+            "model_list": "模型列表model_list"
+        },
+        "widgets": {
+            "ckpt_name1": "模型名_1ckpt_name1",
+            "alias1": "模型别名_1alias1",
+            "ckpt_name2": "模型名_2ckpt_name2",
+            "alias2": "模型别名_2alias2",
+            "ckpt_name3": "模型名_3ckpt_name3",
+            "alias3": "模型别名_3alias3",
+            "ckpt_name4": "模型名_4ckpt_name4",
+            "alias4": "模型别名_4alias4",
+            "ckpt_name5": "模型名_5ckpt_name5",
+            "alias5": "模型别名_5alias5"
+        },
+        "outputs": {
+            "MODEL_LIST": "模型列表MODEL_LIST",
+            "show_text": "显示文本show_text"
+        }
+    },
+    "CR LoRA List": {
+        "title": "LoRA列表CR LoRA List",
+        "inputs": {
+            "lora_list": "LoRA列表lora_list"
+        },
+        "widgets": {
+            "lora_name1": "LoRA_1lora_name1",
+            "alias1": "LoRA别名_1alias1",
+            "model_strength_1": "模型强度_1model_strength_1",
+            "clip_strength_1": "CLIP强度_1clip_strength_1",
+            "lora_name2": "LoRA_2lora_name2",
+            "alias2": "LoRA别名_2alias2",
+            "model_strength_2": "模型强度_2model_strength_2",
+            "clip_strength_2": "CLIP强度_2clip_strength_2",
+            "lora_name3": "LoRA_3lora_name3",
+            "alias3": "LoRA别名_3alias3",
+            "model_strength_3": "模型强度_3model_strength_3",
+            "clip_strength_3": "CLIP强度_3clip_strength_3"
+        },
+        "outputs": {
+            "LORA_LIST": "LoRA列表LORA_LIST",
+            "show_text": "显示文本show_text"
+        }
+    },
+    "CR Font File List": {
+        "title": "字体文件列表CR Font File List",
+        "widgets": {
+            "source_folder": "文件夹source_folder",
+            "start_index": "起始编号start_index",
+            "max_rows": "最大行数max_rows",
+            "folder_path": "路径folder_path"
+        },
+        "outputs": {
+            "LIST": "列表LIST",
+            "show_help": "显示帮助show_help"
+        }
+    },
+    "CR Text List": {
+        "title": "文本列表CR Text List",
+        "inputs": {
+            "text_list": "文本列表text_list"
+        },
+        "widgets": {
+            "text_1": "文本_1text_1",
+            "alias1": "别名_1alias1",
+            "text_2": "文本_2text_2",
+            "alias2": "别名_2alias2",
+            "text_3": "文本_3text_3",
+            "alias3": "别名_3alias3",
+            "text_4": "文本_4text_4",
+            "alias4": "别名_4alias4",
+            "text_5": "文本_5text_5",
+            "alias5": "别名_5alias5"
+        },
+        "outputs": {
+            "MODEL_LIST": "文本列表MODEL_LIST",
+            "show_text": "显示文本show_text"
+        }
+    },
+    "CR Text List Simple": {
+        "title": "文本列表(简易)CR Text List Simple",
+        "inputs": {
+            "text_list_simple": "简易文本列表text_list_simple"
+        },
+        "widgets": {
+            "text_1": "文本_1text_1",
+            "text_2": "文本_2text_2",
+            "text_3": "文本_3text_3",
+            "text_4": "文本_4text_4",
+            "text_5": "文本_5text_5"
+        },
+        "outputs": {
+            "TEXT_LIST_SIMPLE": "简易文本列表TEXT_LIST_SIMPLE",
+            "show_help": "显示帮助show_help"
+        }
+    },
+    "CR Load Image List": {
+        "title": "加载图像列表CR Load Image List",
+        "widgets": {
+            "input_folder": "文件夹input_folder",
+            "start_index": "起始编号start_index",
+            "max_images": "最大数量max_images",
+            "input_path": "输入路径input_path"
+        },
+        "outputs": {
+            "IMAGE": "图像IMAGE"
+        }
+    },
+    "CR Load Image List Plus": {
+        "title": "加载图像列表(高级)CR Load Image List Plus",
+        "widgets": {
+            "input_folder": "文件夹input_folder",
+            "start_index": "起始编号start_index",
+            "max_images": "最大数量max_images",
+            "input_path": "输入路径input_path"
+        },
+        "outputs": {
+            "IMAGE": "图像IMAGE",
+            "MASK": "遮罩MASK",
+            "index": "编号index",
+            "filename": "文件名filename",
+            "width": "宽度width",
+            "height": "高度height",
+            "list_length": "列表长度list_length",
+            "show_help": "显示帮助show_help"
+        }
+    },
+    "CR Image List": {
+        "title": "图像列表CR Image List",
+        "inputs": {
+            "image_1": "图像_1image_1",
+            "image_2": "图像_2image_2",
+            "image_3": "图像_3image_3",
+            "image_4": "图像_4image_4",
+            "image_5": "图像_5image_5",
+            "image_list": "图像列表image_list"
+        },
+        "widgets": {
+            "alias1": "别名_1alias1",
+            "alias2": "别名_2alias2",
+            "alias3": "别名_3alias3",
+            "alias4": "别名_4alias4",
+            "alias5": "别名_5alias5"
+        },
+        "outputs": {
+            "IMAGE_LIST": "图像列表IMAGE_LIST",
+            "show_help": "显示帮助show_help"
+        }
+    },
+    "CR Image List Simple": {
+        "title": "图像列表(简易)CR Image List Simple",
+        "inputs": {
+            "image_1": "图像_1image_1",
+            "image_2": "图像_2image_2",
+            "image_3": "图像_3image_3",
+            "image_4": "图像_4image_4",
+            "image_5": "图像_5image_5",
+            "image_list_simple": "简易图像列表image_list_simple"
+        },
+        "outputs": {
+            "IMAGE_LIST_SIMPLE": "简易图像列表IMAGE_LIST_SIMPLE",
+            "show_help": "显示帮助show_help"
+        }
+    },
+    "CR Input Text List": {
+        "title": "文本输入列表CR Input Text List",
+        "widgets": {
+            "text": "文本text"
+        },
+        "outputs": {
+            "TEXT_LIST_SIMPLE": "简易文本列表TEXT_LIST_SIMPLE",
+            "show_help": "显示帮助show_help"
+        }
+    },
+
+
+
+    "CR Cycle Models": {
+        "title": "循环模型CR Cycle Models",
+        "inputs": {
+            "model": "模型model",
+            "clip": "CLIPclip",
+            "model_list": "模型列表model_list"
+        },
+        "widgets": {
+            "mode": "模式mode",
+            "frame_interval": "帧间隔frame_interval",
+            "loops": "循环次数loops",
+            "current_frame": "当前帧current_frame"
+        },
+        "outputs": {
+            "MODEL": "模型MODEL",
+            "CLIP": "CLIPCLIP",
+            "VAE": "VAEVAE",
+            "show_help": "显示帮助show_help"
+        }
+    },
+    "CR Cycle LoRAs": {
+        "title": "循环LoRACR Cycle LoRAs",
+        "inputs": {
+            "model": "模型model",
+            "clip": "CLIPclip",
+            "lora_list": "LoRA列表lora_list"
+        },
+        "widgets": {
+            "mode": "模式mode",
+            "frame_interval": "帧间隔frame_interval",
+            "loops": "循环次数loops",
+            "current_frame": "当前帧current_frame"
+        },
+        "outputs": {
+            "MODEL": "模型MODEL",
+            "CLIP": "CLIPCLIP",
+            "show_help": "显示帮助show_help"
+        }
+    },
+    "CR Cycle Text": {
+        "title": "循环文本CR Cycle Text",
+        "inputs": {
+            "text_list": "文本列表text_list"
+        },
+        "widgets": {
+            "mode": "模式mode",
+            "frame_interval": "帧间隔frame_interval",
+            "loops": "循环次数loops",
+            "current_frame": "当前帧current_frame"
+        },
+        "outputs": {
+            "STRING": "字符串STRING",
+            "show_help": "显示帮助show_help"
+        }
+    },
+    "CR Cycle Text Simple": {
+        "title": "循环文本(简易)CR Cycle Text Simple",
+        "inputs": {
+            "text_list_simple": "简易文本列表text_list_simple"
+        },
+        "widgets": {
+            "mode": "模式mode",
+            "frame_interval": "帧间隔frame_interval",
+            "loops": "循环次数loops",
+            "current_frame": "当前帧current_frame",
+            "text_1": "文本_1text_1",
+            "text_2": "文本_2text_2",
+            "text_3": "文本_3text_3",
+            "text_4": "文本_4text_4",
+            "text_5": "文本_5text_5"
+        },
+        "outputs": {
+            "STRING": "字符串STRING",
+            "show_help": "显示帮助show_help"
+        }
+    },
+    "CR Cycle Images": {
+        "title": "循环图像CR Cycle Images",
+        "inputs": {
+            "image_list": "图像列表image_list"
+        },
+        "widgets": {
+            "mode": "模式mode",
+            "frame_interval": "帧间隔frame_interval",
+            "loops": "循环次数loops",
+            "current_frame": "当前帧current_frame"
+        },
+        "outputs": {
+            "IMAGE": "图像IMAGE",
+            "show_help": "显示帮助show_help"
+        }
+    },
+    "CR Cycle Images Simple": {
+        "title": "循环图像(简易)CR Cycle Images Simple",
+        "inputs": {
+            "image_list_simple": "简易图像列表image_list_simple"
+        },
+        "widgets": {
+            "mode": "模式mode",
+            "frame_interval": "帧间隔frame_interval",
+            "loops": "循环次数loops",
+            "current_frame": "当前帧current_frame",
+            "image_1": "图像_1image_1",
+            "image_2": "图像_2image_2",
+            "image_3": "图像_3image_3",
+            "image_4": "图像_4image_4",
+            "image_5": "图像_5image_5"
+        },
+        "outputs": {
+            "IMAGE": "图像IMAGE",
+            "show_help": "显示帮助show_help"
+        }
+    },
+
+
+
+    "CR Debatch Frames": {
+        "title": "分解帧CR Debatch Frames",
+        "inputs": {
+            "frames": "图像frames"
+        },
+        "outputs": {
+            "debatched_frames": "分解图像debatched_frames"
+        }
+    },
+    "CR Current Frame": {
+        "title": "当前帧CR Current Frame",
+        "widgets": {
+            "index": "编号index",
+            "print_to_console": "输出到控制台print_to_console"
+        }
+    },
+    
+
+    "CR Load Animation Frames": {
+        "title": "加载序列帧CR Load Animation Frames",
+        "widgets": {
+            "image_sequence_folder": "文件夹image_sequence_folder",
+            "start_index": "起始编号start_index",
+            "max_frames": "最大帧数max_frames"
+        },
+        "outputs": {
+            "IMAGE": "图像IMAGE",
+            "show_help": "显示帮助show_help"
+        }
+    },
+    "CR Load Flow Frames": {
+        "title": "加载流程帧CR Load Flow Frames",
+        "widgets": {
+            "input_folder": "文件夹input_folder",
+            "sort_by": "排序sort_by",
+            "current_frame": "当前帧current_frame",
+            "skip_stat_frames": "跳过第一帧skip_stat_frames",
+            "input_path": "输入路径input_path",
+            "file_pattern": "后缀名file_pattern"
+        },
+        "outputs": {
+            "current_image": "当前图像current_image",
+            "previous_image": "前一图像previous_image",
+            "current_frame": "当前帧current_frame",
+            "show_help": "显示帮助show_help"
+        }
+    },
+    "CR Output Flow Frames": {
+        "title": "输出流程帧CR Output Flow Frames",
+        "inputs": {
+            "current_image": "当前图像current_image",
+            "interpolated_img": "插入图像interpolated_img"
+        },
+        "widgets": {
+            "output_folder": "输出文件夹output_folder",
+            "filename_prefix": "文件名前缀filename_prefix",
+            "current_frame": "当前帧current_frame",
+            "output_path": "输出路径output_path"
+        }
+    }
+}

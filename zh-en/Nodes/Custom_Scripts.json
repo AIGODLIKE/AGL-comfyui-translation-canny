@@ -1,0 +1,177 @@
+{
+    "LoraLoader|pysssss": {
+        "title": "LoRA加载器(pysss)LoraLoader|pysssss",
+        "inputs": {
+            "model": "模型model",
+            "clip": "CLIPclip"
+        },
+        "widgets": {
+            "lora_name": "LoRA名称lora_name",
+            "strength_model": "模型强度strength_model",
+            "strength_clip": "CLIP强度strength_clip"
+        },
+        "outputs": {
+            "MODEL": "模型MODEL",
+            "CLIP": "CLIPCLIP"
+        }
+    },
+    "CheckpointLoader|pysssss": {
+        "title": "Checkpoint加载器(pysss)CheckpointLoader|pysssss",
+        "widgets": {
+            "ckpt_name": "Checkpoint名称ckpt_name"
+        },
+        "outputs": {
+            "MODEL": "模型MODEL",
+            "CLIP": "CLIPCLIP",
+            "VAE": "VAEVAE"
+        }
+    },
+
+    "ConstrainImage|pysssss": {
+        "title": "限制图像区域ConstrainImage|pysssss",
+        "inputs": {
+            "images": "图像images"
+        },
+        "widgets": {
+            "max_width": "最大宽度max_width",
+            "max_height": "最大高度max_height",
+            "min_width": "最小宽度min_width",
+            "min_height": "最小高度min_height",
+            "crop_if_required": "裁剪crop_if_required",
+                "yes": "是yes",
+                "no": "否no"
+        },
+        "outputs": {
+            "IMAGE": "图像IMAGE"
+        }
+    },
+
+    "MathExpression|pysssss": {
+        "title": "数学表达式MathExpression|pysssss",
+        "inputs": {
+            "a": "A",
+            "b": "B",
+            "c": "C"
+        },
+        "widgets": {
+            "expression": "表达式expression"
+        },
+        "outputs": {
+            "INT": "整数INT",
+            "FLOAT": "浮点FLOAT"
+        }
+    },
+    "PlaySound|pysssss": {
+        "title": "播放声音PlaySound|pysssss",
+        "inputs": {
+            "any": "输入any"
+        },
+        "widgets": {
+            "mode": "模式mode",
+                "alway": "总是alway",
+                "on empty queue": "空队列on empty queue",
+            "volume": "音量volume"
+        }
+    },
+    "Repeater|pysssss": {
+        "title": "复制器Repeater|pysssss",
+        "inputs": {
+            "source": "源source"
+        },
+        "widgets": {
+            "repeats": "复制次数repeats",
+            "output": "输出output",
+                "single": "单个single",
+                "multi": "多个multi",
+            "node_mode": "节点模式node_mode",
+                "reuse": "复用reuse",
+                "create": "生成create"
+        },
+        "outputs": {
+            "*": "输出*"
+        }
+    },
+    "ReroutePrimitive|pysssss": {
+        "title": "Primitive连接点ReroutePrimitive|pysssss",
+        "inputs": {
+            "value": "值value"
+        },
+        "outputs": {
+            "*": "输出*"
+        }
+    },
+    "ReroutePrimitve 🐍": {
+        "title": "Primitive连接点ReroutePrimitve 🐍",
+        "inputs": {
+            "value": "值value"
+        },
+        "outputs": {
+            "*": "输出*"
+        }
+    },
+    "ShowText|pysssss": {
+        "title": "展示文本ShowText|pysssss",
+        "widgets": {
+            "text": "文本text"
+        },
+        "outputs": {
+            "STRING": "字符串STRING"
+        }
+    },
+    "StringFunction|pysssss": {
+        "title": "字符串操作StringFunction|pysssss",
+        "widgets": {
+            "action": "操作action",
+                "append": "相加append",
+                "replace": "替换replace",
+            "tidy_tags": "整理词条tidy_tags",
+                "yes": "是yes",
+                "no": "否no",
+            "text_a": "文本_Atext_a",
+            "text_b": "文本_Btext_b",
+            "text_c": "文本_Ctext_c"
+        },
+        "outputs": {
+            "STRING": "字符串STRING"
+        }
+    },
+    "LoadText|pysssss": {
+        "title": "加载文本LoadText|pysssss",
+        "widgets": {
+            "root_dir": "根目录root_dir",
+                "input": "输入input",
+                "output": "输出output",
+                "temp": "缓存temp",
+            "file": "文件file"
+        },
+        "outputs": {
+            "STRING": "字符串STRING"
+        }
+    },
+    "SaveText|pysssss": {
+        "title": "保存文本SaveText|pysssss",
+        "widgets": {
+            "root_dir": "根目录root_dir",
+                "input": "输入input",
+                "output": "输出output",
+                "temp": "缓存temp",
+            "file": "文件file",
+            "append": "附加append",
+                "overwrite": "覆盖overwrite",
+                "new only": "仅新文件new only",
+            "insert": "插入insert",
+            "text": "文本text"
+        }
+    },
+
+    "PresetText|pysssss": {
+        "title": "预设文本PresetText|pysssss",
+        "widgets": {
+            "value": "值value",
+            "Manage": "管理Manage"
+        },
+        "outputs": {
+            "text": "文本text"
+        }
+    }
+}

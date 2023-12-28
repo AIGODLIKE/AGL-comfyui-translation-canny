@@ -1,0 +1,148 @@
+{
+    "LoadVideo": {
+        "title": "加载视频LoadVideo",
+        "widgets": {
+            "video": "视频video",
+            "choose file to upload": "选择文件上传choose file to upload",
+            "frame_start": "起始帧frame_start",
+            "frame_limit": "帧数限制frame_limit"
+        },
+        "outputs": {
+            "frames": "帧frames",
+            "frame_count": "帧数frame_count"
+        }
+    },
+    "ImageSizeAndBatchSize": {
+        "title": "图像尺寸与批次大小ImageSizeAndBatchSize",
+        "inputs": {
+            "image": "图像image"
+        },
+        "outputs": {
+            "width": "宽度width",
+            "height": "高度height",
+            "batch_size": "批次大小batch_size"
+        }
+    },
+    "AnimateDiffLoader": {
+        "title": "动态扩散加载器AnimateDiffLoader",
+        "inputs": {
+            "model": "模型model",
+            "init_latent": "初始Latentinit_latent"
+        },
+        "widgets": {
+            "model_name": "模型model_name",
+            "width": "宽度width",
+            "height": "高度height",
+            "frame_number": "帧数frame_number"
+        },
+        "outputs": {
+            "MODEL": "模型MODEL",
+            "LATENT": "LatentLATENT"
+        }
+    },
+    "AnimateDiffLoader_v2": {
+        "title": "动态扩散加载器v2AnimateDiffLoader_v2",
+        "inputs": {
+            "model": "模型model",
+            "init_latent": "初始Latentinit_latent"
+        },
+        "widgets": {
+            "model_name": "模型model_name",
+            "frame_number": "帧数frame_number"
+        },
+        "outputs": {
+            "MODEL": "模型MODEL",
+            "LATENT": "LatentLATENT"
+        }
+    },
+    "AnimateDiffLoraLoader": {
+        "title": "动态LoRA加载器AnimateDiffLoraLoader",
+        "inputs": {
+            "lora_stack": "LoRA堆lora_stack"
+        },
+        "widgets": {
+            "lora_name": "LoRA名称lora_name",
+            "alpha": "Alphaalpha"
+        },
+        "outputs": {
+            "MOTION_LORA_STACK": "动态LoRA堆MOTION_LORA_STACK"
+        }
+    },
+    "AnimateDiffSlidingWindowOptions":{
+        "title": "动态滑动窗口",
+        "widgets": {
+            "context_length": "上下文帧长度context_length",
+            "context_stride": "上下文帧步长context_stride",
+            "context_overlap": "上下文帧重叠context_overlap",
+            "context_schedule": "上下文调度context_schedule",
+            "closed_loop": "闭合循环closed_loop"
+        },
+        "outputs": {
+            "SLIDING_WINDOW_OPTS": "滑动窗口SLIDING_WINDOW_OPTS"
+        }
+    },
+    "AnimateDiffUnload": {
+        "title": "卸载动态扩散AnimateDiffUnload",
+        "inputs": {
+            "model": "模型model"
+        },
+        "outputs": {
+            "MODEL": "模型MODEL"
+        }
+    },
+    "AnimateDiffModuleLoader": {
+        "title": "动态扩散组件加载器AnimateDiffModuleLoader",
+        "widgets": {
+            "model_name": "模型model_name"
+        },
+        "outputs": {
+            "MOTION_MODULE": "运动模块MOTION_MODULE"
+        }
+    },
+    "AnimateDiffCombine": {
+        "title": "合并为GIFAnimateDiffCombine",
+        "inputs": {
+            "images": "图像images"
+        },
+        "widgets": {
+            "frame_rate": "帧率frame_rate",
+            "loop_count": "循环次数loop_count",
+            "save_image": "是否保存save_image",
+                "Enabled": "是Enabled",
+                "Disabled": "否Disabled",
+            "filename_prefix": "文件名前缀filename_prefix",
+            "format": "格式format",
+            "pingpong": "Ping-Pongpingpong"
+        }
+    },
+    "AnimateDiffSampler": {
+        "title": "动态扩散采样器AnimateDiffSampler",
+        "inputs": {
+            "motion_module": "运动模块motion_module",
+            "model": "模型model",
+            "positive": "正面条件positive",
+            "negative": "负面条件negative",
+            "latent_image": "Latentlatent_image"
+        },
+        "widgets": {
+            "inject_method": "模块插入方式inject_method",
+                "default": "默认default",
+                "legacy": "旧版legacy",
+            "frame_number": "帧数frame_number",
+            "seed": "随机种seed",
+            "control_after_generate": "运行后操作control_after_generate",
+                "fixed": "固定fixed",
+                "increment": "增加increment",
+                "decrement": "减少decrement",
+                "randomize": "随机randomize",
+            "steps": "步数steps",
+            "cfg": "CFGcfg",
+            "sampler_name": "采样器sampler_name",
+            "scheduler": "调度器scheduler",
+            "denoise": "降噪denoise"
+        },
+        "outputs": {
+            "LATENT": "LatentLATENT"
+        }
+    }
+}

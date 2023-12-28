@@ -1,0 +1,71 @@
+{
+    "BNK_CLIPTextEncodeAdvanced": {
+        "title": "CLIP文本编码器(BNK)BNK_CLIPTextEncodeAdvanced",
+        "inputs": {
+            "clip": "CLIPclip"
+        },
+        "widgets": {
+            "text": "文本text",
+            "token_normalization": "Token规格化token_normalization",
+                "none": "无none",
+                "length": "长度length",
+                "mean": "平均mean",
+                "length+mean": "混合length+mean",
+            "weight_interpretation": "权重插值方式weight_interpretation"
+        },
+        "outputs": {
+            "CONDITIONING": "条件CONDITIONING"
+        }
+    },
+    "BNK_CLIPTextEncodeSDXLAdvanced": {
+        "title": "CLIP文本编码器(BNK-SDXL)BNK_CLIPTextEncodeSDXLAdvanced",
+        "inputs": {
+            "clip": "CLIPclip"
+        },
+        "widgets": {
+            "text_l": "L条件text_l",
+            "text_g": "G条件text_g",
+            "token_normalization": "Token规格化token_normalization",
+                "none": "无none",
+                "length": "长度length",
+                "mean": "平均mean",
+                "length+mean": "混合length+mean",
+            "weight_interpretation": "权重插值方式weight_interpretation",
+            "balance": "平衡balance"
+        },
+        "outputs": {
+            "CONDITIONING": "条件CONDITIONING"
+        }
+    },
+    "BNK_AddCLIPSDXLParams": {
+        "title": "添加SDXL参数BNK_AddCLIPSDXLParams",
+        "inputs": {
+            "conditioning": "条件conditioning"
+        },
+        "widgets": {
+            "width": "宽度width",
+            "height": "高度height",
+            "crop_w": "裁剪宽度crop_w",
+            "crop_h": "裁剪高度crop_h",
+            "target_width": "目标宽度target_width",
+            "target_height": "目标高度target_height"
+        },
+        "outputs": {
+            "CONDITIONING": "条件CONDITIONING"
+        }
+    },
+    "BNK_AddCLIPSDXLRParams": {
+        "title": "添加SDXL优化参数BNK_AddCLIPSDXLRParams",
+        "inputs": {
+            "conditioning": "条件conditioning"
+        },
+        "widgets": {
+            "width": "宽度width",
+            "height": "高度height",
+            "ascore": "美学分数ascore"
+        },
+        "outputs": {
+            "CONDITIONING": "条件CONDITIONING"
+        }
+    }
+}

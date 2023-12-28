@@ -1,0 +1,142 @@
+{
+    "IPAdapterModelLoader": {
+        "title": "IP适配模型加载器IPAdapterModelLoader",
+        "widgets": {
+            "ipadapter_file": "IP适配文件ipadapter_file"
+        },
+        "outputs": {
+            "IPADAPTER": "IP适配IPADAPTER"
+        }
+    },
+    "IPAdapterApply": {
+        "title": "IP适配应用IPAdapterApply",
+        "inputs": {
+            "ipadapter": "IP适配ipadapter",
+            "clip_vision": "CLIP视觉clip_vision",
+            "image": "图像image",
+            "model": "模型model",
+            "attn_mask": "关注层遮罩attn_mask"
+        },
+        "widgets": {
+            "weight": "权重weight",
+            "noise": "噪波增强noise",
+            "weight_type": "权重类型weight_type",
+                "original": "初始original",
+                "linear": "线性linear",
+                "channel penalty": "通道惩罚channel penalty",
+            "start_at": "开始应用位置start_at",
+            "end_at": "结束应用位置end_at"
+        },
+        "outputs": {
+            "MODEL": "模型MODEL"
+        }
+    },
+    "IPAdapterApplyEncoded": {
+        "title": "IP适配应用(已编码)IPAdapterApplyEncoded",
+        "inputs": {
+            "ipadapter": "IP适配ipadapter",
+            "embeds": "嵌入组embeds",
+            "model": "模型model",
+            "attn_mask": "关注层遮罩attn_mask"
+        },
+        "widgets": {
+            "weight": "权重weight",
+            "noise": "噪波增强noise",
+            "start_at": "开始应用位置start_at",
+            "end_at": "结束应用位置end_at"
+        },
+        "outputs": {
+            "MODEL": "模型MODEL"
+        }
+    },
+    "PrepImageForClipVision": {
+        "title": "CLIP视觉图像处理PrepImageForClipVision",
+        "inputs": {
+            "image": "图像image"
+        },
+        "widgets": {
+            "interpolation": "插值方式interpolation",
+            "crop_position": "裁剪位置crop_position",
+            "sharpening": "锐化sharpening",
+            "add_weight": "附加权重add_weight"
+        },
+        "outputs": {
+            "IMAGE": "图像IMAGE"
+        }
+    },
+    "IPAdapterEncoder": {
+        "title": "IP适配编码IPAdapterEncoder",
+        "inputs": {
+            "clip_vision": "CLIP视觉clip_vision",
+            "image": "图像image",
+            "image_1": "图像_1image_1",
+            "image_2": "图像_2image_2",
+            "image_3": "图像_3image_3",
+            "image_4": "图像_4image_4"
+        },
+        "widgets": {
+            "plus": "plusplus",
+            "ipadapter_plus": "使用plusipadapter_plus",
+            "noise": "噪波增强noise",
+            "weight_1": "权重_1weight_1",
+            "weight_2": "权重_2weight_2",
+            "weight_3": "权重_3weight_3",
+            "weight_4": "权重_4weight_4"
+        },
+        "outputs": {
+            "EMBEDS": "嵌入组EMBEDS"
+        }
+    },
+    "IPAdapterSaveEmbeds": {
+        "title": "保存嵌入组IPAdapterSaveEmbeds",
+        "inputs": {
+            "embeds": "嵌入组embeds"
+        },
+        "widgets": {
+            "filename_prefix": "文件名前缀filename_prefix"
+        }
+    },
+    "IPAdapterLoadEmbeds": {
+        "title": "读取嵌入组IPAdapterLoadEmbeds",
+        "widgets": {
+            "embeds": "嵌入组embeds"
+        },
+        "outputs": {
+            "EMBEDS": "嵌入组EMBEDS"
+        }
+    },
+    "IPAdapterBatchEmbeds": {
+        "title": "组合嵌入组IPAdapterBatchEmbeds",
+        "inputs": {
+            "embed1": "嵌入组1embed1",
+            "embed2": "嵌入组2embed2"
+        },
+        "outputs": {
+            "EMBEDS": "嵌入组EMBEDS"
+        }
+    },
+
+    "InsightFaceLoader": {
+        "title": "InsightFace加载器InsightFaceLoader",
+        "widgets": {
+            "provider": "设备provider"
+        },
+        "outputs": {
+            "CLIP_VISION": "CLIP视觉CLIP_VISION"
+        }
+    },
+    "PrepImageForInsighFace": {
+        "title": "InsightFace预处理PrepImageForInsighFace",
+        "inputs": {
+            "image": "图像image"
+        },
+        "widgets": {
+            "crop_position": "裁剪位置crop_position",
+            "sharpening": "锐化sharpening",
+            "pad_around": "填充四周pad_around"
+        },
+        "outputs": {
+            "IMAGE": "图像IMAGE"
+        }
+    }
+}

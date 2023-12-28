@@ -1,0 +1,244 @@
+{
+    "VHS_SplitLatents": {
+        "title": "拆分LatentVHS_SplitLatents",
+        "inputs": {
+            "latents": "Latentlatents"
+        },
+        "widgets": {
+            "split_index": "拆分索引split_index"
+        },
+        "outputs": {
+            "LATENT_A": "Latent_ALATENT_A",
+            "A_count": "A组计数A_count",
+            "LATENT_B": "Latent_BLATENT_B",
+            "B_count": "B组计数B_count"
+        }
+    },
+    "VHS_MergeLatents": {
+        "title": "融合LatentVHS_MergeLatents",
+        "inputs": {
+            "latents_A": "Latent_Alatents_A",
+            "latents_B": "Latent_Blatents_B"
+        },
+        "widgets": {
+            "merge_strategy": "融合策略merge_strategy",
+                "match A": "匹配Amatch A",
+                "match B": "匹配Bmatch B",
+                "match smaller": "匹配更小的match smaller",
+                "match larger": "匹配更大的match larger",
+            "scale_method": "缩放方法scale_method",
+                "nearest-exact": "邻近-精确nearest-exact",
+                "bilinear": "双线性插值bilinear",
+                "area": "区域area",
+                "bislerp": "球面线性bislerp",
+                "bicubic": "双三次插值bicubic",
+            "crop": "裁剪crop",
+                "disabled": "关闭disabled",
+                "ceter": "中心ceter"
+        },
+        "outputs": {
+            "LATENT": "LatentLATENT",
+            "count": "计数count"
+        }
+    },
+    "VHS_SelectEveryNthLatent": {
+        "title": "选择LatentVHS_SelectEveryNthLatent",
+        "inputs": {
+            "latents": "Latentlatents"
+        },
+        "widgets": {  
+            "select_every_nth": "模选select_every_nth"
+        },
+        "outputs": {
+            "LATENT": "LatentLATENT",
+            "count": "计数count"
+        }
+    },
+    "VHS_GetLatentCount": {
+        "title": "获取Latent数量VHS_GetLatentCount",
+        "inputs": {
+            "latents": "Latentlatents"
+        },
+        "outputs": {
+            "count": "计数count"
+        }
+    },
+    "VHS_DuplicateLatents": {
+        "title": "复制LatentVHS_DuplicateLatents",
+        "inputs": {
+            "latents": "Latentlatents"
+        },
+        "widgets": {
+            "multiply_by": "系数multiply_by"
+        },
+        "outputs": {
+            "LATENT": "LatentLATENT",
+            "count": "计数count"
+        }
+    },
+
+
+    "VHS_SplitImages": {
+        "title": "拆分图像VHS_SplitImages",
+        "inputs": {
+            "images": "图像images"
+        },
+        "widgets": {
+            "split_index": "拆分索引split_index"
+        },
+        "outputs": {
+            "IMAGE_A": "图像_AIMAGE_A",
+            "A_count": "A组计数A_count",
+            "IMAGE_B": "图像_BIMAGE_B",
+            "B_count": "B组计数B_count"
+        }
+    },
+    "VHS_MergeImages": {
+        "title": "融合图像VHS_MergeImages",
+        "inputs": {
+            "images_A": "图像_Aimages_A",
+            "images_B": "图像_Bimages_B"
+        },
+        "widgets": {
+            "merge_strategy": "融合策略merge_strategy",
+                "match A": "匹配Amatch A",
+                "match B": "匹配Bmatch B",
+                "match smaller": "匹配更小的match smaller",
+                "match larger": "匹配更大的match larger",
+            "scale_method": "缩放方法scale_method",
+                "nearest-exact": "邻近-精确nearest-exact",
+                "bilinear": "双线性插值bilinear",
+                "area": "区域area",
+                "bislerp": "球面线性bislerp",
+                "bicubic": "双三次插值bicubic",
+            "crop": "裁剪crop",
+                "disabled": "关闭disabled",
+                "ceter": "中心ceter"
+        },
+        "outputs": {
+            "IMAGE": "图像IMAGE",
+            "count": "计数count"
+        }
+    },
+    "VHS_SelectEveryNthImage": {
+        "title": "选择图像VHS_SelectEveryNthImage",
+        "inputs": {
+            "images": "图像images"
+        },
+        "widgets": {  
+            "select_every_nth": "模选select_every_nth"
+        },
+        "outputs": {
+            "IMAGE": "图像IMAGE",
+            "count": "计数count"
+        }
+    },
+    "VHS_GetImageCount": {
+        "title": "获取图像数量VHS_GetImageCount",
+        "inputs": {
+            "images": "图像images"
+        },
+        "outputs": {
+            "count": "计数count"
+        }
+    },
+    "VHS_DuplicateImages": {
+        "title": "复制图像VHS_DuplicateImages",
+        "inputs": {
+            "images": "图像images"
+        },
+        "widgets": {
+            "multiply_by": "系数multiply_by"
+        },
+        "outputs": {
+            "IMAGE": "图像IMAGE",
+            "count": "计数count"
+        }
+    },
+
+
+
+    "VHS_VideoCombine": {
+        "title": "合并为视频VHS_VideoCombine",
+        "inputs": {
+            "images": "图像images"
+        },
+        "widgets": {
+            "frame_rate": "帧率frame_rate",
+            "loop_count": "循环次数loop_count",
+            "filename_prefix": "文件名前缀filename_prefix",
+            "format": "格式format",
+            "pingpong": "Ping-Pongpingpong",
+            "save_image": "保存图像save_image",
+            "Sync playback": "同步播放Sync playback",
+            "save_metadata": "保存元数据save_metadata",
+            "audio_file": "音频文件audio_file"
+        }
+    },
+
+
+    
+    "VHS_LoadVideo": {
+        "title": "加载视频VHS_LoadVideo",
+        "widgets": {
+            "video": "视频video",
+            "choose file to upload": "选择文件上传choose file to upload",
+            "choose video to upload": "选择视频上传choose video to upload",
+            "force_rate": "强制帧率force_rate",
+            "force_size": "强制尺寸force_size",
+                "Disabled": "关闭Disabled",
+            "frame_load_cap": "帧数读取上限frame_load_cap",
+            "skip_first_frames": "跳过第一帧skip_first_frames",
+            "select_every_nth": "模选select_every_nth"
+        },
+        "outputs": {
+            "IMAGE": "图像IMAGE",
+            "frame_count": "帧计数frame_count"
+        }
+    },
+    "VHS_LoadVideoPath": {
+        "title": "加载路径视频VHS_LoadVideoPath",
+        "widgets": {
+            "video": "视频video",
+            "force_rate": "强制帧率force_rate",
+            "force_size": "强制尺寸force_size",
+                "Disabled": "关闭Disabled",
+            "frame_load_cap": "帧数读取上限frame_load_cap",
+            "skip_first_frames": "跳过第一帧skip_first_frames",
+            "select_every_nth": "模选select_every_nth"
+        },
+        "outputs": {
+            "IMAGE": "图像IMAGE",
+            "frame_count": "帧计数frame_count"
+        }
+    },
+    "VHS_LoadImages": {
+        "title": "加载图像VHS_LoadImages",
+        "widgets": {
+            "directory": "路径directory",
+            "choose folder to upload": "选择文件夹上传choose folder to upload",
+            "image_load_cap": "图像读取上限image_load_cap",
+            "skip_first_images": "跳过第一张图skip_first_images",
+            "select_every_nth": "模选select_every_nth"
+        },
+        "outputs": {
+            "IMAGE": "图像IMAGE",
+            "MASK": "遮罩MASK",
+            "INT": "整数INT"
+        }
+    },
+    "VHS_LoadImagesPath": {
+        "title": "加载路径图像VHS_LoadImagesPath",
+        "widgets": {
+            "directory": "路径directory",
+            "image_load_cap": "图像读取上限image_load_cap",
+            "skip_first_imagess": "跳过第一张图skip_first_imagess",
+            "select_every_nth": "模选select_every_nth"
+        },
+        "outputs": {
+            "IMAGE": "图像IMAGE",
+            "MASK": "遮罩MASK",
+            "INT": "整数INT"
+        }
+    }
+}

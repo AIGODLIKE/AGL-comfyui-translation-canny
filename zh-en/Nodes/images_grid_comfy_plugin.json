@@ -1,0 +1,62 @@
+{
+    "LatentCombine": {
+        "title": "Latent组合LatentCombine",
+        "inputs": {
+            "latent_1": "Latent1latent_1",
+            "latent_2": "Latent2latent_2"
+        },
+        "outputs": {
+            "LATENT": "LatentLATENT"
+        }
+    },
+    
+    "ImageCombine": {
+        "title": "图像组合ImageCombine",
+        "inputs": {
+            "image_1": "图像1image_1",
+            "image_2": "图像2image_2"
+        },
+        "outputs": {
+            "IMAGE": "图像IMAGE"
+        }
+    },
+    "ImagesGridByColumns": {
+        "title": "由列建表ImagesGridByColumns",
+        "inputs": {
+            "images": "图像组images",
+            "annotation": "注释annotation"
+        },
+        "widgets": {
+            "gap": "间隔gap",
+            "max_columns": "最大列数max_columns"
+        },
+        "outputs": {
+            "IMAGE": "图像IMAGE"
+        }
+    },
+    "ImagesGridByRows": {
+        "title": "由行建表ImagesGridByRows",
+        "inputs": {
+            "images": "图像组images",
+            "annotation": "注释annotation"
+        },
+        "widgets": {
+            "gap": "间隔gap",
+            "max_rows": "最大行数max_rows"
+        },
+        "outputs": {
+            "IMAGE": "图像IMAGE"
+        }
+    },
+    "GridAnnotation": {
+        "title": "图表注释GridAnnotation",
+        "widgets": {
+            "column_texts": "列注释column_texts",
+            "row_texts": "行注释row_texts",
+            "font_size": "字体大小font_size"
+        },
+        "outputs": {
+            "GRID_ANNOTATION": "注释GRID_ANNOTATION"
+        }
+    }
+}

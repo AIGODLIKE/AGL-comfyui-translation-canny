@@ -1,0 +1,17 @@
+{
+    "roop": {
+        "title": "ROOProop",
+        "inputs": {
+            "image": "图像image",
+            "reference_image": "参考图像reference_image"
+        },
+        "widgets": {
+            "swap_model": "替换模型swap_model",
+            "faces_index": "面部编号faces_index",
+            "console_logging_level": "控制台日志等级console_logging_level"
+        },
+        "outputs": {
+            "IMAGE": "图像IMAGE"
+        }
+    }
+}

@@ -1,0 +1,56 @@
+{
+    "Seed Everywhere": {
+        "title": "全局随机种Seed Everywhere",
+        "widgets": {
+            "seed": "随机种seed",
+            "control_after_generate": "运行后操作control_after_generate",
+                "fixed": "固定fixed",
+                "increment": "增加increment",
+                "decrement": "减少decrement",
+                "randomize": "随机randomize"
+        },
+        "outputs": {
+            "INT": "整数INT"
+        }
+    },
+    "Anything Everywhere": {
+        "title": "全局输入Anything Everywhere",
+        "inputs": {
+            "anything": "输入anything"
+        }
+    },
+    "Anything Everywhere3": {
+        "title": "全局输入3Anything Everywhere3",
+        "inputs": {
+            "anything": "输入anything",
+            "anything2": "输入2anything2",
+            "anything3": "输入3anything3"
+        }
+    },
+    "Anything Everywhere?": {
+        "title": "全局输入?Anything Everywhere?",
+        "inputs": {
+            "anything": "输入anything"
+        },
+        "widgets": {
+            "title_regex": "名称正则title_regex",
+            "input_regex": "输入正则input_regex"
+        }
+    },
+    "Prompts Everywhere": {
+        "title": "全局提示词Prompts Everywhere",
+        "inputs": {
+            "(^prompt|^positive)": "正面提示词(^prompt|^positive)",
+            "neg": "负面提示词neg"
+        }
+    },
+    "Simple String": {
+        "title": "简易字符串Simple String",
+        "widgets": {
+            "string": "字符串string"
+        },
+        "outputs": {
+            "STRING": "字符串STRING"
+        }
+    }
+}

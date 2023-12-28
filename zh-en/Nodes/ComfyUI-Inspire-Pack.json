@@ -1,0 +1,957 @@
+{
+    "XY Input: Lora Block Weight //Inspire": {
+        "title": "XY输入：LoRA分层权重XY Input: Lora Block Weight //Inspire",
+        "widgets": {
+            "category_filter": "标签过滤category_filter",
+            "lora_name": "LoRA名称lora_name",
+            "strength_model": "模型强度strength_model",
+            "strength_clip": "CLIP强度strength_clip",
+            "inverse": "反转inverse",
+            "seed": "随机种seed",
+            "control_after_generate": "运行后操作control_after_generate",
+            "A": "A",
+            "B": "B",
+            "preset": "预设preset",
+            "block_vector": "层权重block_vector",
+            "heatmap_palette": "热度选项heatmap_palette",
+                "cividis": "cividiscividis",
+                "inferno": "炼狱inferno",
+                "plasma": "等离子plasma",
+                "magma": "岩浆magma",
+                "viridis": "翠绿viridis",
+            "heatmap_alpha": "热度透明heatmap_alpha",
+            "heatmap_strength": "热度强度heatmap_strength",
+            "xyplot_mode": "XY模式xyplot_mode",
+                "Simple": "简易Simple",
+                "Diff": "差值Diff",
+                "Diff+Heatmap": "差值+热度Diff+Heatmap"
+        },
+        "outputs": {
+            "X (vectors)": "X (向量)X (vectors)",
+            "Y (effect_compares)": "Y (效果)Y (effect_compares)"
+        }
+    },
+    "LoraLoaderBlockWeight //Inspire": {
+        "title": "LoRA加载器(分层)LoraLoaderBlockWeight //Inspire",
+        "inputs": {
+            "model": "模型model",
+            "clip": "CLIPclip"
+        },
+        "widgets": {
+            "category_filter": "标签过滤category_filter",
+            "lora_name": "LoRA名称lora_name",
+            "strength_model": "模型强度strength_model",
+            "strength_clip": "CLIP强度strength_clip",
+            "inverse": "反转inverse",
+            "seed": "随机种seed",
+            "control_after_generate": "运行后操作control_after_generate",
+            "A": "A",
+            "B": "B",
+            "preset": "预设preset",
+            "block_vectors": "层权重block_vectors",
+            "bypass": "停用bypass"
+        },
+        "outputs": {
+            "model": "模型model",
+            "clip": "CLIPclip",
+            "populated_vector": "填充向量populated_vector"
+        }
+    },
+    "LoraBlockInfo //Inspire": {
+        "title": "LoRA分层信息LoraBlockInfo //Inspire",
+        "inputs": {
+            "model": "模型model",
+            "clip": "CLIPclip"
+        },
+        "widgets": {
+            "lora_name": "LoRA名称lora_name",
+            "block_info": "层信息block_info"
+        }
+    },
+
+
+
+
+    "OpenPose_Preprocessor_Provider_for_SEGS //Inspire": {
+        "title": "OpenPose预处理(Seg)OpenPose_Preprocessor_Provider_for_SEGS //Inspire",
+        "widgets": {
+            "detect_hand": "检测手部detect_hand",
+            "detect_body": "检测身体detect_body",
+            "detect_face": "检测面部detect_face",
+            "resolution_upscale": "分辨率放大resolution_upscale"
+        },
+        "outputs": {
+            "SEGS_PREPROCESSOR": "Seg预处理SEGS_PREPROCESSOR"
+        }
+    },
+    "DWPreprocessor_Provider_for_SEGS //Inspire": {
+        "title": "DWPose预处理(Seg)DWPreprocessor_Provider_for_SEGS //Inspire",
+        "widgets": {
+            "detect_hand": "检测手部detect_hand",
+            "detect_body": "检测身体detect_body",
+            "detect_face": "检测面部detect_face",
+            "resolution_upscale": "分辨率放大resolution_upscale"
+        },
+        "outputs": {
+            "SEGS_PREPROCESSOR": "Seg预处理SEGS_PREPROCESSOR"
+        }
+    },
+    "MiDaS_DepthMap_Preprocessor_Provider_for_SEGS //Inspire": {
+        "title": "MiDaS深度预处理(Seg)MiDaS_DepthMap_Preprocessor_Provider_for_SEGS //Inspire",
+        "widgets": {
+            "a": "角度a",
+            "bg_threshold": "背景阈值bg_threshold"
+        },
+        "outputs": {
+            "SEGS_PREPROCESSOR": "Seg预处理SEGS_PREPROCESSOR"
+        }
+    },
+    "LeRes_DepthMap_Preprocessor_Provider_for_SEGS //Inspire": {
+        "title": "LeRes深度预处理(Seg)LeRes_DepthMap_Preprocessor_Provider_for_SEGS //Inspire",
+        "widgets": {
+            "rm_nearest": "移除近景rm_nearest",
+            "rm_background": "移除背景rm_background",
+            "boost": "增强boost"
+        },
+        "outputs": {
+            "SEGS_PREPROCESSOR": "Seg预处理SEGS_PREPROCESSOR"
+        }
+    },
+    "Canny_Preprocessor_Provider_for_SEGS //Inspire": {
+        "title": "Canny预处理(Seg)Canny_Preprocessor_Provider_for_SEGS //Inspire",
+        "widgets": {
+            "low_threshold": "低阈值low_threshold",
+            "high_threshold": "高阈值high_threshold"
+        },
+        "outputs": {
+            "SEGS_PREPROCESSOR": "Seg预处理SEGS_PREPROCESSOR"
+        }
+    },
+    "MediaPipe_FaceMesh_Preprocessor_Provider_for_SEGS //Inspire": {
+        "title": "MediaPipe面部网格预处理(Seg)MediaPipe_FaceMesh_Preprocessor_Provider_for_SEGS //Inspire",
+        "widgets": {
+            "max_faces": "最大面部数量max_faces",
+            "min_confidence": "最小置信度min_confidence",
+            "resolution_upscale": "分辨率放大resolution_upscale"
+        },
+        "outputs": {
+            "SEGS_PREPROCESSOR": "Seg预处理SEGS_PREPROCESSOR"
+        }
+    },
+    "MediaPipeFaceMeshDetectorProvider //Inspire": {
+        "title": "MediaPipe面部网格检测MediaPipeFaceMeshDetectorProvider //Inspire",
+        "widgets": {
+            "max_faces": "最大面部数量max_faces",
+            "face": "面部face",
+            "mouth": "嘴部mouth",
+            "left_eyebrow": "左眉毛left_eyebrow",
+            "left_eye": "左眼left_eye",
+            "left_pupil": "左瞳孔left_pupil",
+            "right_eyebrow": "右眉毛right_eyebrow",
+            "right_eye": "右眼right_eye",
+            "right_pupil": "右瞳孔right_pupil"
+        },
+        "outputs": {
+            "BBOX_DETECTOR": "BBox检测BBOX_DETECTOR",
+            "SEGM_DETECTOR": "SEGM检测SEGM_DETECTOR"
+        }
+    },
+    "HEDPreprocessor_Provider_for_SEGS //Inspire": {
+        "title": "HED预处理(Seg)HEDPreprocessor_Provider_for_SEGS //Inspire",
+        "widgets": {
+            "safe": "增稳safe"
+        },
+        "outputs": {
+            "SEGS_PREPROCESSOR": "Seg预处理SEGS_PREPROCESSOR"
+        }
+    },
+    "FakeScribblePreprocessor_Provider_for_SEGS //Inspire": {
+        "title": "FakeScribble预处理(Seg)FakeScribblePreprocessor_Provider_for_SEGS //Inspire",
+        "widgets": {
+            "safe": "增稳safe"
+        },
+        "outputs": {
+            "SEGS_PREPROCESSOR": "Seg预处理SEGS_PREPROCESSOR"
+        }
+    },
+    "AnimeLineArt_Preprocessor_Provider_for_SEGS //Inspire": {
+        "title": "AnimeLineArt预处理(Seg)AnimeLineArt_Preprocessor_Provider_for_SEGS //Inspire",
+        "outputs": {
+            "SEGS_PREPROCESSOR": "Seg预处理SEGS_PREPROCESSOR"
+        }
+    },
+    "Manga2Anime_LineArt_Preprocessor_Provider_for_SEGS //Inspire": {
+        "title": "Manga2Anime_LineArt预处理(Seg)Manga2Anime_LineArt_Preprocessor_Provider_for_SEGS //Inspire",
+        "outputs": {
+            "SEGS_PREPROCESSOR": "Seg预处理SEGS_PREPROCESSOR"
+        }
+    },
+    "LineArt_Preprocessor_Provider_for_SEGS //Inspire": {
+        "title": "LineArt预处理(Seg)LineArt_Preprocessor_Provider_for_SEGS //Inspire",
+        "widgets": {
+            "coarse": "粗糙化coarse"
+        },
+        "outputs": {
+            "SEGS_PREPROCESSOR": "Seg预处理SEGS_PREPROCESSOR"
+        }
+    },
+    "Color_Preprocessor_Provider_for_SEGS //Inspire": {
+        "title": "Color预处理(Seg)Color_Preprocessor_Provider_for_SEGS //Inspire",
+        "outputs": {
+            "SEGS_PREPROCESSOR": "Seg预处理SEGS_PREPROCESSOR"
+        }
+    },
+    "InpaintPreprocessor_Provider_for_SEGS //Inspire": {
+        "title": "Inpaint预处理(Seg)InpaintPreprocessor_Provider_for_SEGS //Inspire",
+        "outputs": {
+            "SEGS_PREPROCESSOR": "Seg预处理SEGS_PREPROCESSOR"
+        }
+    },
+    "TilePreprocessor_Provider_for_SEGS //Inspire": {
+        "title": "Tile预处理(Seg)TilePreprocessor_Provider_for_SEGS //Inspire",
+        "widgets": {
+            "pyrUp_iter": "迭代次数pyrUp_iter"
+        },
+        "outputs": {
+            "SEGS_PREPROCESSOR": "Seg预处理SEGS_PREPROCESSOR"
+        }
+    },
+
+
+
+    "KSampler //Inspire": {
+        "title": "K采样器(Inspire)KSampler //Inspire",
+        "inputs": {
+            "model": "模型model",
+            "positive": "正面条件positive",
+            "negative": "负面条件negative",
+            "latent_image": "Latentlatent_image"
+        },
+        "widgets": {
+            "seed": "随机种seed",
+            "control_after_generate": "运行后操作control_after_generate",
+                "fixed": "固定fixed",
+                "increment": "增加increment",
+                "decrement": "减少decrement",
+                "randomize": "随机randomize",
+            "steps": "步数steps",
+            "cfg": "CFGcfg",
+            "sampler_name": "采样器sampler_name",
+            "scheduler": "调度器scheduler",
+            "denoise": "降噪denoise",
+            "noise_mode": "噪波模式noise_mode"
+        },
+        "outputs": {
+            "LATENT": "LatentLATENT"
+        }
+    },
+    "KSamplerAdvanced //Inspire": {
+        "title": "K采样器(高级Inspire)KSamplerAdvanced //Inspire",
+        "inputs": {
+            "model": "模型model",
+            "positive": "正面条件positive",
+            "negative": "负面条件negative",
+            "latent_image": "Latentlatent_image"
+        },
+        "widgets": {
+            "add_noise": "添加噪波add_noise",
+            "noise_seed": "随机种noise_seed",
+            "control_after_generate": "运行后操作control_after_generate",
+                "fixed": "固定fixed",
+                "increment": "增加increment",
+                "decrement": "减少decrement",
+                "randomize": "随机randomize",
+            "steps": "步数steps",
+            "cfg": "CFGcfg",
+            "sampler_name": "采样器sampler_name",
+            "scheduler": "调度器scheduler",
+            "denoise": "降噪denoise",
+            "start_at_step": "开始降噪步数start_at_step",
+            "end_at_step": "结束降噪步数end_at_step",
+            "noise_mode": "噪波模式noise_mode",
+            "return_with_leftover_noise": "返回噪波return_with_leftover_noise"
+        },
+        "outputs": {
+            "LATENT": "LatentLATENT"
+        }
+    },
+
+
+
+    "LoadPromptsFromDir //Inspire": {
+        "title": "加载提示词(路径)LoadPromptsFromDir //Inspire",
+        "widgets": {
+            "prompt": "提示词prompt"
+        },
+        "outputs": {
+            "ZIPPED_PROMPT": "提示词包ZIPPED_PROMPT"
+        }
+    },
+    "LoadPromptsFromFile //Inspire": {
+        "title": "加载提示词(文件)LoadPromptsFromFile //Inspire",
+        "wdigets": {
+            "prompt": "提示词prompt"
+        },
+        "outputs": {
+            "ZIPPED_PROMPT": "提示词包ZIPPED_PROMPT"
+        }
+    },
+    "LoadSinglePromptsFromFile //Inspire": {
+        "title": "加载单独提示词(文件)LoadSinglePromptsFromFile //Inspire",
+        "wdigets": {
+            "prompt": "提示词prompt",
+            "index": "序号index"
+        },
+        "outputs": {
+            "ZIPPED_PROMPT": "提示词包ZIPPED_PROMPT"
+        }
+    },
+    "UnzipPrompt //Inspire": {
+        "title": "解包提示词UnzipPrompt //Inspire",
+        "inputs": {
+            "zipped_prompt": "提示词包zipped_prompt"
+        },
+        "outputs": {
+            "positive": "正面条件positive",
+            "negative": "负面条件negative",
+            "name": "名称name"
+        }
+    },
+    "ZipPrompt //Inspire": {
+        "title": "打包提示词ZipPrompt //Inspire",
+        "widgets": {
+            "positive": "正面条件positive",
+            "negative": "负面条件negative",
+            "name": "名称name"
+        },
+        "outputs": {
+            "ZIPPED_PROMPT": "提示词包ZIPPED_PROMPT"
+        }
+    },
+    "PromptExtractor //Inspire": {
+        "title": "提取提示词PromptExtractor //Inspire",
+        "widgets": {
+            "image": "图像image",
+            "positive": "正面条件positive",
+            "negative": "负面条件negative",
+            "info": "信息info"
+        },
+        "outputs": {
+            "positive": "正面条件positive",
+            "negative": "负面条件negative"
+        }
+    },
+    "PromptBuilder //Inspire": {
+        "title": "提示词搭建PromptBuilder //Inspire",
+        "widgets": {
+            "category": "类型category",
+                "picture quality": "质量picture quality",
+                "Compositiong form": "构图Compositiong form",
+                "angle of view": "视角angle of view",
+                "shot": "镜头shot",
+                "style": "风格style",
+                "picture effect": "效果picture effect",
+            "preset": "预设preset",
+            "text": "文本text"
+        },
+        "outputs": {
+            "STRING": "字符串STRING"
+        }
+    },
+    "SeedExplorer //Inspire": {
+        "title": "随机种管理器SeedExplorer //Inspire",
+        "inputs": {
+            "latent": "Latentlatent"
+        },
+        "widgets": {
+            "seed_prompt": "随机种提示词seed_prompt",
+            "enable_additional": "启用拓展enable_additional",
+            "additional_seed": "拓展随机种additional_seed",
+            "additional_strength": "拓展强度additional_strength",
+            "noise_mode": "噪波模式noise_mode",
+            "initial_batch_seed_mode": "批次随机种模式initial_batch_seed_mode"
+        },
+        "outputs": {
+            "noise": "噪波noise"
+        }
+    },
+
+
+
+    "LoadImage //Inspire": {
+        "title": "加载图像(Inspire)LoadImage //Inspire",
+        "widgets": {
+            "image": "图像image",
+            "image_data": "图像数据image_data"
+        },
+        "outputs": {
+            "IMAGE": "图像IMAGE",
+            "MASK": "遮罩MASK"
+        }
+    },
+    "ChangeImageBatchSize //Inspire": {
+        "title": "修改图像批次大小ChangeImageBatchSize //Inspire",
+        "inputs": {
+            "image": "图像image"
+        },
+        "widgets": {
+            "batch_size": "批次大小batch_size",
+            "mode": "模式mode"
+        },
+        "outputs": {
+            "IMAGE": "图像IMAGE"
+        }
+    },
+
+
+
+    "ListCounter //Inspire": {
+        "title": "列表计数ListCounter //Inspire",
+        "inputs": {
+            "signal": "值signal"
+        },
+        "widgets": {
+            "base_value": "基值base_value"
+        },
+        "outputs": {
+            "INT": "整数INT"
+        }
+    },
+    "CLIPTextEncodeWithWeight //Inspire": {
+        "title": "CLIP文本编码(权重)CLIPTextEncodeWithWeight //Inspire",
+        "inputs": {
+            "clip": "CLIPclip"
+        },
+        "widgets": {
+            "text": "文本text",
+            "strength": "强度strength",
+            "add_weight": "附加权重add_weight"
+        },
+        "outputs": {
+            "CONDITIONING": "条件CONDITIONING"
+        }
+    },
+    "FromIPAdapterPipe //Inspire": {
+        "title": "从IP适配FromIPAdapterPipe //Inspire",
+        "inputs": {
+            "ipadapter_pipe": "IP适配束ipadapter_pipe"
+        },
+        "outputs": {
+            "IPADAPTER": "IP适配IPADAPTER",
+            "CLIP_VISION": "CLIP视觉CLIP_VISION",
+            "MODEL": "模型MODEL"
+        }
+    },
+    "ToIPAdapterPipe //Inspire": {
+        "title": "到IP适配ToIPAdapterPipe //Inspire",
+        "inputs": {
+            "ipadapter": "IP适配ipadapter",
+            "clip_vision": "CLIP视觉clip_vision",
+            "model": "模型model"
+        },
+        "outputs": {
+            "IPADAPTER_PIPE": "IP适配束IPADAPTER_PIPE"
+        }
+    },
+
+
+
+    "KSamplerProgress //Inspire": {
+        "title": "K采样器(过程)KSamplerProgress //Inspire",
+        "inputs": {
+            "model": "模型model",
+            "positive": "正面条件positive",
+            "negative": "负面条件negative",
+            "latent_image": "Latentlatent_image"
+        },
+        "widgets": {
+            "seed": "随机种seed",
+            "control_after_generate": "运行后操作control_after_generate",
+                "fixed": "固定fixed",
+                "increment": "增加increment",
+                "decrement": "减少decrement",
+                "randomize": "随机randomize",
+            "steps": "步数steps",
+            "cfg": "CFGcfg",
+            "sampler_name": "采样器sampler_name",
+            "scheduler": "调度器scheduler",
+            "denoise": "降噪denoise",
+            "noise_mode": "噪波模式noise_mode",
+            "interval": "间隔interval",
+            "omit_start_latent": "忽略起始Latentomit_start_latent"
+        },
+        "outputs": {
+            "latent": "Latentlatent",
+            "progress_latent": "过程Latentprogress_latent"
+        }
+    },
+    "KSamplerAdvancedProgress //Inspire": {
+        "title": "K采样器(高级过程)KSamplerAdvancedProgress //Inspire",
+        "inputs": {
+            "model": "模型model",
+            "positive": "正面条件positive",
+            "negative": "负面条件negative",
+            "latent_image": "Latentlatent_image",
+            "prev_progress_latent_opt": "前过程Latentprev_progress_latent_opt"
+        },
+        "widgets": {
+            "add_noise": "添加噪波add_noise",
+            "noise_seed": "随机种noise_seed",
+            "control_after_generate": "运行后操作control_after_generate",
+                "fixed": "固定fixed",
+                "increment": "增加increment",
+                "decrement": "减少decrement",
+                "randomize": "随机randomize",
+            "steps": "步数steps",
+            "cfg": "CFGcfg",
+            "sampler_name": "采样器sampler_name",
+            "scheduler": "调度器scheduler",
+            "denoise": "降噪denoise",
+            "start_at_step": "开始降噪步数start_at_step",
+            "end_at_step": "结束降噪步数end_at_step",
+            "noise_mode": "噪波模式noise_mode",
+            "return_with_leftover_noise": "返回噪波return_with_leftover_noise",
+            "interval": "间隔interval",
+            "omit_start_latent": "忽略起始Latentomit_start_latent"
+        },
+        "outputs": {
+            "latent": "Latentlatent",
+            "progress_latent": "过程Latentprogress_latent"
+        }
+    },
+
+
+
+    "CacheBackendData //Inspire": {
+        "title": "缓存后端数据(字符串键)CacheBackendData //Inspire",
+        "inputs": {
+            "data": "数据data"
+        },
+        "widgets": {
+            "key": "键key",
+            "tag": "数据标签tag"
+        },
+        "outputs": {
+            "data opt": "数据data opt"
+        }
+    },
+    "CacheBackendDataNumberKey //Inspire": {
+        "title": "缓存后端数据(数字键)CacheBackendDataNumberKey //Inspire",
+        "inputs": {
+            "data": "数据data"
+        },
+        "widgets": {
+            "key": "键key",
+            "tag": "数据标签tag"
+        },
+        "outputs": {
+            "data opt": "数据data opt"
+        }
+    },
+    "RetrieveBackendData //Inspire": {
+        "title": "检索后端数据(字符串键)RetrieveBackendData //Inspire",
+        "widgets": {
+            "key": "键key"
+        },
+        "outputs": {
+            "data": "数据data"
+        }
+    },
+    "RetrieveBackendDataNumberKey //Inspire": {
+        "title": "检索后端数据(数字键)RetrieveBackendDataNumberKey //Inspire",
+        "widgets": {
+            "key": "键key"
+        },
+        "outputs": {
+            "data": "数据data"
+        }
+    },
+    "RemoveBackendData //Inspire": {
+        "title": "移除后端数据(字符串键)RemoveBackendData //Inspire",
+        "inputs": {
+            "signal_opt": "值(可选)signal_opt"
+        },
+        "widgets": {
+            "key": "键key"
+        },
+        "outputs": {
+            "signal": "值signal"
+        }
+    },
+    "RemoveBackendDataNumberKey //Inspire": {
+        "title": "移除后端数据(数字键)RemoveBackendDataNumberKey //Inspire",
+        "inputs": {
+            "signal_opt": "信号signal_opt"
+        },
+        "widgets": {
+            "key": "键key"
+        },
+        "outputs": {
+            "signal": "值signal"
+        }
+    },
+    "ShowCachedInfo //Inspire": {
+        "title": "显示缓存信息ShowCachedInfo //Inspire",
+        "widgets": {
+            "cache_info": "缓存信息cache_info"
+        }
+    },
+    "CacheBackendDataList //Inspire": {
+        "title": "后端缓存数据列表CacheBackendDataList //Inspire",
+        "inputs": {
+            "data": "数据data"
+        },
+        "widgets": {
+            "key": "键key",
+            "tag": "数据标签tag"
+        },
+        "outputs": {
+            "data opt": "数据data opt"
+        }
+    },
+    "CacheBackendDataNumberKeyList //Inspire": {
+        "title": "后端缓存数字键列表CacheBackendDataNumberKeyList //Inspire",
+        "inputs": {
+            "data": "数据data"
+        },
+        "widgets": {
+            "key": "键key",
+            "tag": "数据标签tag"
+        },
+        "outputs": {
+            "data opt": "数据data opt"
+        }
+    },
+
+
+
+    "GlobalSeed //Inspire": {
+        "title": "全局随机种GlobalSeed //Inspire",
+        "widgets": {
+            "value": "值(明度)value",
+            "mode": "模式mode",
+            "action": "行为action",
+                "fixed": "固定fixed",
+                "increment": "增加increment",
+                "decrement": "减少decrement",
+                "randomize": "随机randomize",
+                "increment for each node": "每个节点增加increment for each node",
+                "decrement for each node": "每个节点减少decrement for each node",
+                "randomize for each node": "每个节点随机randomize for each node",
+            "last_seed": "上个随机种last_seed"
+        }
+    },
+    "WildcardEncode //Inspire": {
+        "title": "通配符编码WildcardEncode //Inspire",
+        "inputs": {
+            "model": "模型model",
+            "clip": "CLIPclip"
+        },
+        "widgets": {
+            "token_normalization": "Token规格化token_normalization",
+            "weight_interpolation": "权重插值方式weight_interpolation",
+            "wildcard_text": "通配文本wildcard_text",
+            "populated_text": "填充文本populated_text",
+            "mode": "模式mode",
+            "Select to add LoRA": "添加LoRASelect to add LoRA",
+                "Select the LoRA to add to the text": "选择LoRASelect the LoRA to add to the text",
+            "Select to add Wildcard": "添加通配符Select to add Wildcard",
+                "Select the Wildcard to add to the text": "选择通配符Select the Wildcard to add to the text",
+            "seed": "随机种seed",
+            "control_after_generate": "运行后操作control_after_generate",
+                "fixed": "固定fixed",
+                "increment": "增加increment",
+                "decrement": "减少decrement",
+                "randomize": "随机randomize"
+        },
+        "outputs": {
+            "model": "模型model",
+            "clip": "CLIPclip",
+            "conditioning": "条件conditioning",
+            "populated_text": "填充文本populated_text"
+        }
+    },
+    "BindImageListPromptList //Inspire": {
+        "title": "绑定图像提示词列表BindImageListPromptList //Inspire",
+        "inputs": {
+            "images": "图像images",
+            "zipped_prompt": "提示词包zipped_prompt",
+            "zipped_prompts": "提示词包zipped_prompts"
+        },
+        "widgets": {
+            "default_positive": "默认正面条件default_positive",
+            "default_negative": "默认负面条件default_negative"
+        },
+        "outputs": {
+            "image": "图像image",
+            "positive": "正面条件positive",
+            "negative": "负面条件negative",
+            "prompt_label": "提示词标签prompt_label"
+        }
+    },
+
+
+
+
+    "LoadImagesFromDir //Inspire": {
+        "title": "加载图像(路径)LoadImagesFromDir //Inspire",
+        "widgets": {
+            "directory": "路径directory",
+            "image_load_cap": "图像加载上限image_load_cap",
+            "start_index": "起始索引start_index"
+        },
+        "outputs": {
+            "IMAGE": "图像IMAGE",
+            "MASK": "遮罩MASK",
+            "INT": "整数INT"
+        }
+    },
+    "LoadImageListFromDir //Inspire": {
+        "title": "加载图像列表(路径)LoadImageListFromDir //Inspire",
+        "widgets": {
+            "directory": "路径directory",
+            "image_load_cap": "图像加载上限image_load_cap",
+            "start_index": "起始索引start_index"
+        },
+        "outputs": {
+            "IMAGE": "图像IMAGE",
+            "MASK": "遮罩MASK"
+        }
+    },
+
+
+    "RegionalPromptSimple //Inspire": {
+        "title": "区域提示词(简易)RegionalPromptSimple //Inspire",
+        "inputs": {
+            "basic_pipe": "基础束basic_pipe",
+            "mask": "遮罩mask"
+        },
+        "widgets": {
+            "cfg": "CFGcfg",
+            "sampler_name": "采样器sampler_name",
+            "scheduler": "调度器scheduler",
+            "wildcard_prompt": "通配符提示词wildcard_prompt"
+        },
+        "outputs": {
+            "REGIONAL_PROMPTS": "区域提示词REGIONAL_PROMPTS"
+        }
+    },
+    "RegionalPromptColorMask //Inspire": {
+        "title": "区域提示词(颜色遮罩)RegionalPromptColorMask //Inspire",
+        "inputs": {
+            "basic_pipe": "基础束basic_pipe",
+            "color_mask": "图像遮罩color_mask"
+        },
+        "widgets": {
+            "mask_color": "遮罩颜色mask_color",
+            "cfg": "CFGcfg",
+            "sampler_name": "采样器sampler_name",
+            "scheduler": "调度器scheduler",
+            "wildcard_prompt": "通配符提示词wildcard_prompt"
+        },
+        "outputs": {
+            "REGIONAL_PROMPTS": "区域提示词REGIONAL_PROMPTS",
+            "MASK": "遮罩MASK"
+        }
+    },
+    "RegionalConditioningSimple //Inspire": {
+        "title": "区域条件(简易)RegionalConditioningSimple //Inspire",
+        "inputs": {
+            "clip": "CLIPclip",
+            "mask": "遮罩mask"
+        },
+        "widgets": {
+            "strength": "强度strength",
+            "set_cond_area": "设置条件区域set_cond_area",
+            "prompt": "提示词prompt"
+        },
+        "outputs": {
+            "CONDITIONING": "条件CONDITIONING"
+        }
+    },
+    "RegionalConditioningColorMask //Inspire": {
+        "title": "区域条件(颜色遮罩)RegionalConditioningColorMask //Inspire",
+        "inputs": {
+            "clip": "CLIPclip",
+            "color_mask": "图像遮罩color_mask"
+        },
+        "widgets": {
+            "mask_color": "遮罩颜色mask_color",
+            "strength": "强度strength",
+            "set_cond_area": "设置条件区域set_cond_area",
+            "prompt": "提示词prompt"
+        },
+        "outputs": {
+            "CONDITIONING": "条件CONDITIONING",
+            "MASK": "遮罩MASK"
+        }
+    },
+    "RegionalIPAdapterMask //Inspire": {
+        "title": "区域IP适配RegionalIPAdapterMask //Inspire",
+        "inputs": {
+            "ipadapter_pipe": "IP适配束ipadapter_pipe",
+            "mask": "遮罩mask",
+            "images": "图像images"
+        },
+        "widgets": {
+            "weight": "权重weight",
+            "noise": "噪波noise",
+            "weight_interpolation": "权重插值方式weight_interpolation",
+                "original": "初始original",
+                "linear": "线性linear",
+                "channel penalty": "通道惩罚channel penalty"
+        },
+        "outputs": {
+            "IPADAPTER_PIPE": "IP适配束IPADAPTER_PIPE",
+            "MODEL": "模型MODEL"
+        }
+    },
+    "RegionalIPAdapterColorMask //Inspire": {
+        "title": "区域IP适配(颜色遮罩)RegionalIPAdapterColorMask //Inspire",
+        "inputs": {
+            "ipadapter_pipe": "IP适配束ipadapter_pipe",
+            "color_mask": "图像遮罩color_mask",
+            "images": "图像images"
+        },
+        "widgets": {
+            "mask_color": "遮罩颜色mask_color",
+            "weight": "权重weight",
+            "noise": "噪波noise",
+            "weight_interpolation": "权重插值方式weight_interpolation",
+                "original": "初始original",
+                "linear": "线性linear",
+                "channel penalty": "通道惩罚channel penalty"
+        },
+        "outputs": {
+            "IPADAPTER_PIPE": "IP适配束IPADAPTER_PIPE",
+            "MODEL": "模型MODEL",
+            "MASK" : "遮罩"
+        }
+    },
+    "RegionalSeedExplorerMask //Inspire": {
+        "title": "区域随机种管理RegionalSeedExplorerMask //Inspire",
+        "inputs": {
+            "mask": "遮罩mask",
+            "noise": "噪波noise"
+        },
+        "widgets": {
+            "seed_prompt": "随机种提示词seed_prompt",
+            "enable_additional": "启用拓展enable_additional",
+            "additional_seed": "拓展随机种additional_seed",
+            "additional_strength": "拓展强度additional_strength",
+            "noise_mode": "噪波模式noise_mode"
+        },
+        "outputs": {
+            "NOISE": "噪波NOISE"
+        }
+    },
+    "RegionalSeedExplorerColorMask //Inspire": {
+        "title": "区域随机种管理(颜色遮罩)RegionalSeedExplorerColorMask //Inspire",
+        "inputs": {
+            "color_mask": "图像遮罩color_mask",
+            "noise": "噪波noise"
+        },
+        "widgets": {
+            "mask_color": "遮罩颜色mask_color",
+            "seed_prompt": "随机种提示词seed_prompt",
+            "enable_additional": "启用拓展enable_additional",
+            "additional_seed": "拓展随机种additional_seed",
+            "additional_strength": "拓展强度additional_strength",
+            "noise_mode": "噪波模式noise_mode"
+        },
+        "outputs": {
+            "NOISE": "噪波NOISE",
+            "MASK": "遮罩MASK"
+        }
+    },
+    "RegionalIPAdapterEncodedMask //Inspire": {
+        "title": "区域IP适配(编码遮罩)RegionalIPAdapterEncodedMask //Inspire",
+        "inputs": {
+            "mask": "遮罩mask",
+            "embeds": "嵌入组embeds"
+        },
+        "widgets": {
+            "weight": "权重weight",
+            "weight_interpolation": "权重插值方式weight_interpolation"
+        },
+        "outputs": {
+            "REGIONAL_IPADAPER": "区域IP适配REGIONAL_IPADAPER"
+        }
+    },
+    "RegionalIPAdapterEncodedColorMask //Inspire": {
+        "title": "区域IP适配(编码颜色遮罩)RegionalIPAdapterEncodedColorMask //Inspire",
+        "inputs": {
+            "color_mask": "图像遮罩color_mask",
+            "embeds": "嵌入组embeds"
+        },
+        "widgets": {
+            "mask_color": "遮罩颜色mask_color",
+            "weight": "权重weight",
+            "weight_interpolation": "权重插值方式weight_interpolation"
+        },
+        "outputs": {
+            "REGIONAL_IPADAPTER": "区域IP适配REGIONAL_IPADAPTER",
+            "MASK": "遮罩MASK"
+        }
+    },
+    "ApplyRegionalIPAdapters //Inspire": {
+        "title": "应用区域IP适配ApplyRegionalIPAdapters //Inspire",
+        "inputs": {
+            "ipadapter_pipe": "IP适配束ipadapter_pipe",
+            "regional_ipadapter1": "区域IP适配1regional_ipadapter1"
+        },
+        "outputs": {
+            "MODEL": "模型MODEL"
+        }
+    },
+    "CheckpointLoaderSimpleShared //Inspire": {
+        "title": "Checkpoint加载器(简易共享)CheckpointLoaderSimpleShared //Inspire",
+        "widgets": {
+            "ckpt_name": "模型名称ckpt_name",
+            "key_opt": "Keykey_opt"
+        },
+        "outputs": {
+            "model": "模型model",
+            "clip": "CLIPclip",
+            "vae": "VAEvae",
+            "cache key": "缓存Keycache key"
+        }
+    },
+
+
+    "FloatRange //Inspire": {
+        "title": "浮点范围FloatRange //Inspire",
+        "widgets": {
+            "start": "起始值start",
+            "stop": "终止值stop",
+            "step": "步长step",
+            "limit": "限制值limit",
+            "ensure_end": "确认终止ensure_end"
+        },
+        "outputs": {
+            "FLOAT": "浮点FLOAT"
+        }
+    },
+
+
+    "ConcatConditioningsWithMultiplier //Inspire": {
+        "title": "条件联结(系数)ConcatConditioningsWithMultiplier //Inspire",
+        "inputs": {
+            "conditioning1": "条件1conditioning1",
+            "conditioning2": "条件2conditioning2",
+            "conditioning3": "条件3conditioning3",
+            "conditioning4": "条件4conditioning4",
+            "conditioning5": "条件5conditioning5"
+        },
+        "widgets": {
+            "multiplier1": "系数1multiplier1",
+            "multiplier2": "系数2multiplier2",
+            "multiplier3": "系数3multiplier3",
+            "multiplier4": "系数4multiplier4",
+            "multiplier5": "系数5multiplier5"
+        },
+        "outputs": {
+            "CONDITIONING": "条件CONDITIONING"
+        }
+    }
+}

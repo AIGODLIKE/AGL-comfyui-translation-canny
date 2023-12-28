@@ -1,0 +1,62 @@
+{
+    "BNK_CutoffBasePrompt": {
+        "title": "截断区域PromptBNK_CutoffBasePrompt",
+        "inputs": {
+            "clip": "CLIPclip"
+        },
+        "widgets": {
+            "text": "文本text"
+        },
+        "outputs": {
+            "CLIPREGION": "CLIP范围CLIPREGION"
+        }
+    },
+    "BNK_CutoffSetRegions": {
+        "title": "截断设置范围BNK_CutoffSetRegions",
+        "inputs": {
+            "clip_regions": "CLIP范围clip_regions"
+        },
+        "widgets": {
+            "region_text": "范围文本region_text",
+            "target_text": "目标文本target_text",
+            "weight": "权重weight"
+        },
+        "outputs": {
+            "CLIPREGION": "CLIP范围CLIPREGION"
+        }
+    },
+    "BNK_CutoffRegionsToConditioning": {
+        "title": "截断范围到条件BNK_CutoffRegionsToConditioning",
+        "inputs": {
+            "clip_regions": "CLIP范围clip_regions"
+        },
+        "widgets": {
+            "mask_token": "token遮罩mask_token",
+            "strict_mask": "严格范围strict_mask",
+            "start_from_masked": "从区域开始start_from_masked"
+        },
+        "outputs": {
+            "CONDITIONING": "条件CONDITIONING"
+        }
+    },
+    "BNK_CutoffRegionsToConditioning_ADV": {
+        "title": "截断范围到条件(高级)BNK_CutoffRegionsToConditioning_ADV",
+        "inputs": {
+            "clip_regions": "CLIP范围clip_regions"
+        },
+        "widgets": {
+            "mask_token": "token遮罩mask_token",
+            "strict_mask": "严格范围strict_mask",
+            "start_from_masked": "从区域开始start_from_masked",
+            "token_normalization": "Token规格化token_normalization",
+                "none": "无none",
+                "length": "长度length",
+                "mean": "平均mean",
+                "length+mean": "混合length+mean",
+            "weight_interpretation": "权重插值方式weight_interpretation"
+        },
+        "outputs": {
+            "CONDITIONING": "条件CONDITIONING"
+        }
+    }
+}

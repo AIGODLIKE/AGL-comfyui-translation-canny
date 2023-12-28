@@ -1,0 +1,18 @@
+{
+    "lamaPreprocessor": {
+        "title": "LaMa预处理器lamaPreprocessor",
+        "inputs": {
+            "pixels": "图像pixels",
+            "vae": "VAEvae",
+            "mask": "遮罩mask"
+        },
+        "widgets": {
+            "horizontal_expansion": "水平扩展horizontal_expansion",
+            "vertical_expansion": "垂直扩展vertical_expansion"
+        },
+        "outputs": {
+            "LaMa Preprocessed Image": "图像LaMa Preprocessed Image",
+            "LaMa Preprocessed Latent": "LatentLaMa Preprocessed Latent"
+        }
+    }
+}
